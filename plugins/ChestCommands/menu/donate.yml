@@ -1,0 +1,165 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # REQUIRED
+  # Appears as the title of the menu.
+  name: '&1Донат меню'
+
+  # REQUIRED
+  # The number of rows in the menu.
+  rows: 5
+
+  # OPTIONAL
+  # Set which commands a player can execute to open the menu.
+  commands:
+  - 'donate'
+
+  # OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have placeholders in icon descriptions.
+  auto-refresh: 5
+
+  # OPTIONAL
+  # These actions will be executed when the menu is opened.
+  # Supports all the icon action types.
+  open-actions:
+  - 'tell: &eВы открыли Донат-меню'
+
+  # OPTIONAL
+  # The menu will open only when right-clicking with a compass.
+  open-with-item:
+    material: emerald
+    left-click: false
+    right-click: true
+
+
+######################
+#+                  +#
+#       ICONS        #
+#+                  +#
+######################
+
+
+keykaku:
+  MATERIAL: Light Blue Wool 
+  POSITION-X: 2
+  POSITION-Y: 1
+  NAME: '&b[Кейкаку] &r'
+  LORE:
+    - ''
+gosi:
+  MATERIAL: Cyan Wool
+  POSITION-X: 3
+  POSITION-Y: 1
+  NAME: '&3[Госи] &r'
+  LORE:
+    - ''
+
+samurai:
+  MATERIAL: Blue Wool 
+  POSITION-X: 4
+  POSITION-Y: 1
+  NAME: '&9[Самурай]'
+  LORE:
+    - ''
+
+buge:
+  MATERIAL: Orange Wool 
+  POSITION-X: 5
+  POSITION-Y: 1
+  NAME: '&6[Бюгё]'
+  LORE:
+    - ''
+
+dayme:
+  MATERIAL: Yellow Wool 
+  POSITION-X: 6
+  POSITION-Y: 1
+  NAME: '&e[Даймё]'
+  LORE:
+    - ''
+
+tenno:
+  MATERIAL: Brown Wool 
+  POSITION-X: 7
+  POSITION-Y: 1
+  NAME: '&1[Тенно]'
+  LORE:
+    - ''
+
+master:
+  MATERIAL: Black Wool 
+  POSITION-X: 8
+  POSITION-Y: 1
+  NAME: '&1&l[Мастер]'
+  LORE:
+    - ''
+
+sensei:
+  MATERIAL: Red Wool
+  POSITION-X: 2
+  POSITION-Y: 2
+  NAME: '&c[Сенсей]'
+  LORE:
+    - ''
+
+emperor:
+  MATERIAL: gold block
+  POSITION-X: 3
+  POSITION-Y: 2
+  NAME: '&4&o[Император]'
+  LORE:
+    - ''
+
+great-emperor:
+  MATERIAL: gold block 
+  POSITION-X: 4
+  POSITION-Y: 2
+  NAME: '&4&l[&6&l&nВеликий&r &c&lИмператор&4&l]'
+  LORE:
+    - ''
+  ENCHANTMENTS:
+  - sharpness, 5
+  - silk touch
+  - durability, 10
+
+
+like-god:
+  MATERIAL: nether star 
+  POSITION-X: 5
+  POSITION-Y: 2
+  NAME: '&l[&e⚡&f&lБог&4&9&lоподо&4&lбный&e⚡&f&l]'
+  LORE:
+    - ''
+
+dragon:
+  MATERIAL: dragon head 
+  POSITION-X: 6
+  POSITION-Y: 2
+  NAME: '&l[&e&lВеликий&l &4&l&nДракон-Предводитель&l] '
+  LORE:
+    - ''
+  ENCHANTMENTS:
+  - sharpness, 5
+  - silk touch
+  - durability, 10
+
+close:
+  MATERIAL: barrier
+  POSITION-X: 9
+  POSITION-Y: 5
+  NAME: '&l&cЗакрыть меню'
+  LORE:
+    - 'Выйти из Донат-меню'
+  ENCHANTMENTS:
+  - sharpness, 5
+  - silk touch
+  - durability, 10
+
+
+

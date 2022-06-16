@@ -1,0 +1,343 @@
+perks:
+  Arrow Recovery:
+    enabled: true
+    name: 'Arrow Recovery'
+    material: ARROW
+    price: 5000
+    permission: proskywars.perks.arrowrecovery
+    rarity: Rare
+    lore-unlocked:
+      - '&7Chance of getting back your'
+      - '&7arrows on bow hit. (15%)'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&aUnlocked'
+    lore-locked-permission:
+      - '&7Chance of getting back your'
+      - '&7arrows on bow hit. (15%)'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&eCan be found in the SoulWell!'
+    lore-locked-money:
+      - '&7Chance of getting back your'
+      - '&7arrows on bow hit. (15%)'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&ePrice: &b%price%'
+  Blazing Arrows:
+    enabled: true
+    name: 'Blazing Arrows'
+    material: BLAZE_POWDER
+    price: 7000
+    permission: proskywars.perks.blazingarrows
+    rarity: Rare
+    lore-unlocked:
+      - '&7Chance of shooting a fire'
+      - '&7arrow with your bow. (5%)'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&aUnlocked'
+    lore-locked-permission:
+      - '&7Chance of shooting a fire'
+      - '&7arrow with your bow. (5%)'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&eCan be found in the SoulWell!'
+    lore-locked-money:
+      - '&7Chance of shooting a fire'
+      - '&7arrow with your bow. (5%)'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&ePrice: &b%price%'
+  Bulldozer:
+    enabled: true
+    name: 'Bulldozer'
+    material: ANVIL
+    price: 10000
+    permission: proskywars.perks.bulldozer
+    rarity: Legendary
+    lore-unlocked:
+      - '&7Enemy kills give you'
+      - '&7strenght 1 for 3 seconds.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&aUnlocked'
+    lore-locked-permission:
+      - '&7Enemy kills give you'
+      - '&7strenght 1 for 3 seconds.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&eCan be found in the SoulWell!'
+    lore-locked-money:
+      - '&7Enemy kills give you'
+      - '&7strenght 1 for 3 seconds.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&ePrice: &b%price%'
+  Instant Smelting:
+    enabled: true
+    name: 'Instant Smelting'
+    material: FURNACE
+    price: 3000
+    permission: proskywars.perks.instantsmelting
+    rarity: Common
+    lore-unlocked:
+      - '&7Automatically smelt mined'
+      - '&7ores into ingots.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&aUnlocked'
+    lore-locked-permission:
+      - '&7Automatically smelt mined'
+      - '&7ores into ingots.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&eCan be found in the SoulWell!'
+    lore-locked-money:
+      - '&7Automatically smelt mined'
+      - '&7ores into ingots.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&ePrice: &b%price%'
+  Juggernaut:
+    enabled: true
+    name: 'Juggernaut'
+    material: DIAMOND_HELMET
+    price: 5000
+    permission: proskywars.perks.juggernaut
+    rarity: Rare
+    lore-unlocked:
+      - '&7Enemy kills give you'
+      - '&7regen I for 4 seconds.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&aUnlocked'
+    lore-locked-permission:
+      - '&7Enemy kills give you'
+      - '&7regen I for 4 seconds.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&eCan be found in the SoulWell!'
+    lore-locked-money:
+      - '&7Enemy kills give you'
+      - '&7regen I for 4 seconds.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&ePrice: &b%price%'
+  Mining Expertise:
+    enabled: true
+    name: 'Mining Expertise'
+    material: IRON_PICKAXE
+    price: 3500
+    permission: proskywars.perks.miningexpertise
+    rarity: Common
+    lore-unlocked:
+      - '&710% chance to get 1 extra'
+      - '&7ore per block mined.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&aUnlocked'
+    lore-locked-permission:
+      - '&710% chance to get 1 extra'
+      - '&7ore per block mined.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&eCan be found in the SoulWell!'
+    lore-locked-money:
+      - '&710% chance to get 1 extra'
+      - '&7ore per block mined.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&ePrice: &b%price%'
+  Resistance Boost:
+    enabled: true
+    name: 'Resistance Boost'
+    material: IRON_CHESTPLATE
+    price: 3500
+    permission: proskywars.perks.resistanceboost
+    rarity: Common
+    lore-unlocked:
+      - '&7Gain 10 seconds of resistance I'
+      - '&7when the game starts.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&aUnlocked'
+    lore-locked-permission:
+      - '&7Gain 10 seconds of resistance I'
+      - '&7when the game starts.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&eCan be found in the SoulWell!'
+    lore-locked-money:
+      - '&7Gain 10 seconds of resistance I'
+      - '&7when the game starts.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&ePrice: &b%price%'
+  Speed Boost:
+    enabled: true
+    name: 'Speed Boost'
+    material: DIAMOND_BOOTS
+    price: 5000
+    permission: proskywars.perks.speedboost
+    rarity: Rare
+    lore-unlocked:
+      - '&7Get haste I for 10 seconds'
+      - '&7when the game starts.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&aUnlocked'
+    lore-locked-permission:
+      - '&7Get haste I for 10 seconds'
+      - '&7when the game starts.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&eCan be found in the SoulWell!'
+    lore-locked-money:
+      - '&7Get haste I for 10 seconds'
+      - '&7when the game starts.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&ePrice: &b%price%'
+  Nourishment:
+    enabled: true
+    name: 'Nourishment'
+    material: BREAD
+    price: 3500
+    permission: proskywars.perks.nourishment
+    rarity: Common
+    lore-unlocked:
+      - '&7Every kill gives you full'
+      - '&7hunger and saturation.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&aUnlocked'
+    lore-locked-permission:
+      - '&7Every kill gives you full'
+      - '&7hunger and saturation.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&eCan be found in the SoulWell!'
+    lore-locked-money:
+      - '&7Every kill gives you full'
+      - '&7hunger and saturation.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&ePrice: &b%price%'
+  Revenge:
+    enabled: true
+    name: 'Revenge'
+    material: DIAMOND_SWORD
+    price: 15000
+    permission: proskywars.perks.revenge
+    rarity: Legendary
+    lore-unlocked:
+      - '&75% chance to spawn a zombie'
+      - '&7when you die.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&aUnlocked'
+    lore-locked-permission:
+      - '&75% chance to spawn a zombie'
+      - '&7when you die.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&eCan be found in the SoulWell!'
+    lore-locked-money:
+      - '&75% chance to spawn a zombie'
+      - '&7when you die.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&ePrice: &b%price%'
+  Fat:
+    enabled: true
+    name: 'Fat'
+    material: GOLDEN_APPLE
+    price: 7500
+    permission: proskywars.perks.fat
+    rarity: Rare
+    lore-unlocked:
+      - '&7Gains 4 seconds of absorption I'
+      - '&7when the game starts.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&aUnlocked'
+    lore-locked-permission:
+      - '&7Gains 4 seconds of absorption I'
+      - '&7when the game starts.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&eCan be found in the SoulWell!'
+    lore-locked-money:
+      - '&7Gains 4 seconds of absorption I'
+      - '&7when the game starts.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&ePrice: &b%price%' 
+  Triple Shot:
+    enabled: true
+    name: 'Triple Shot'
+    material: BOW
+    price: 10000
+    permission: proskywars.perks.tripleshot
+    rarity: Legendary
+    lore-unlocked:
+      - '&75% chance of shooting 3 arrows'
+      - '&7from a bow.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&aUnlocked'
+    lore-locked-permission:
+      - '&75% chance of shooting 3 arrows'
+      - '&7from a bow.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&eCan be found in the SoulWell!'
+    lore-locked-money:
+      - '&75% chance of shooting 3 arrows'
+      - '&7from a bow.'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&ePrice: &b%price%' 
+
+
+
+
+
+

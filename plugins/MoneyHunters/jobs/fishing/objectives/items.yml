@@ -1,0 +1,127 @@
+# Objective name. It depends on the job type.
+# List of possible objective names for each job type: http://77.222.60.131:8080/plugin/moneyhunters/guide/job/creation
+BOOK:
+  # Enables/Disables this objective.
+  Enabled: true
+  # Min. and max. money amount to drop for this objective.
+  # You can use negative values to take money from player's balance.
+  Money:
+    Min: 100
+    Max: 150
+  # Min. and max. exp amount to give for this objective.
+  # You can use negative values to take exp from player's job.
+  Exp:
+    Min: 10
+    Max: 30
+  # Chance that this objective will drop money and/or exp.
+  Chance: 100.0
+  # Objective unlock settings.
+  Unlock:
+    # Min. player's job level to be able to gain money/exp from this objective.
+    Job_Min_Level: 10
+  # Objective daily limits for Exp and Money.
+  # When player exceed the limit, no money or exp from this objective will be given until the next day.
+  # Set to -1 for no limit(s).
+  # Scalable. Level placeholder is %job_level%.
+  # http://77.222.60.131:8080/plugin/engine/config/formats
+  Daily_Limits:
+    MONEY: -1.0
+    EXP: -1.0
+BOW:
+  Enabled: true
+  Chance: 100.0
+  Money:
+    Min: 10
+    Max: 50
+  Exp:
+    Min: 1
+    Max: 10
+  Unlock:
+    Job_Min_Level: 3
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'
+FISHING_ROD:
+  Enabled: true
+  Chance: 100.0
+  Money:
+    Min: 10
+    Max: 10
+  Exp:
+    Min: 1
+    Max: 20
+  Unlock:
+    Job_Min_Level: 4
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'
+LEATHER:
+  Enabled: true
+  Chance: 100
+  Money:
+    Min: 10
+    Max: 20
+  Exp:
+    Min: 5
+    Max: 15
+  Unlock:
+    Job_Min_Level: 1
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'
+NAME_TAG:
+  Enabled: true
+  Chance: 100
+  Money:
+    Min: 50
+    Max: 100
+  Exp:
+    Min: 0
+    Max: 0
+  Unlock:
+    Job_Min_Level: 7
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'
+POTION:
+  Enabled: true
+  Chance: 100
+  Money:
+    Min: 300
+    Max: 1000
+  Exp:
+    Min: 30
+    Max: 100
+  Unlock:
+    Job_Min_Level: 12
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'
+SADDLE:
+  Enabled: true
+  Chance: 100
+  Money:
+    Min: 100
+    Max: 600
+  Exp:
+    Min: 10
+    Max: 30
+  Unlock:
+    Job_Min_Level: 10
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'
+STICK:
+  Enabled: true
+  Chance: 100
+  Money:
+    Min: 1
+    Max: 1
+  Exp:
+    Min: 1
+    Max: 1
+  Unlock:
+    Job_Min_Level: 0
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'

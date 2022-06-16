@@ -1,0 +1,34 @@
+location: world:-7589566,397:75,783:-12361039,547
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: ''
+    height: 0.3
+  - content: '&l&eПаркур'
+    height: 0.3
+  - content: '&fВстань на &aизумрудный блок&f и игра начнется!'
+    height: 0.3
+  - content: -Получи &a150$ &f за каждые 10 этапов!
+    height: 0.3
+  - content: -Получи &a500$ &f за каждые 20 этапов!
+    height: 0.3
+  - content: -Получи &a2500$ &f за каждые 50 этапов!
+    height: 0.3
+  - content: '&c&lТОП паркуристов'
+    height: 0.3
+  - content: '* ТОП 1: %ajpk_stats_top_name_1% (&e%ajpk_stats_top_score_1%&r этапа)'
+    height: 0.3
+  - content: '* ТОП 2: %ajpk_stats_top_name_2% (&e%ajpk_stats_top_score_2%&r этапа)'
+    height: 0.3
+  - content: '* ТОП 3: %ajpk_stats_top_name_3% (&e%ajpk_stats_top_score_3%&r этапа)'
+    height: 0.3
+  - content: '* ТОП 4: %ajpk_stats_top_name_4% (&e%ajpk_stats_top_score_4%&r этапа)'
+    height: 0.3
+  - content: '* ТОП 5: %ajpk_stats_top_name_5% (&e%ajpk_stats_top_score_5%&r этапа)'
+    height: 0.3
+  actions: {}

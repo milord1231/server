@@ -1,0 +1,15 @@
+signs:
+- SkyWarsMap=21994.0=57.0=93.0
+- SkyWarsMap=21992.0=57.0=93.0
+- SkyWarsMap=21994.0=57.0=93.0
+- SkyWarsMap=21992.0=57.0=93.0
+- SkyWarsMap=21992.0=57.0=93.0
+- SkyWarsMap=21989.0=57.0=93.0
+- SkyWarsMap=21990.0=58.0=93.0
+- SkyWarsMap=21991.0=57.0=93.0
+- SkyWarsMap=22005.0=58.0=93.0
+- SkyWarsMap=22004.0=57.0=93.0
+- SkyWarsMap=22006.0=57.0=93.0
+joinsigns:
+  bones_skywars:
+  - SkyWarsMap=21997.0=57.0=92.0

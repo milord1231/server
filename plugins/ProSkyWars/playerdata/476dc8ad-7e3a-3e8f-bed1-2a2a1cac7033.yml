@@ -1,0 +1,19 @@
+statistics:
+  name: milord
+  kills: 0
+  deaths: 2
+  wins: 1
+  money: 12581
+  souls: 10
+  projectiles_launched: 27
+  projectiles_hit: 5
+  blocks_breaked: 26
+  blocks_placed: 7
+  kit: Miner
+  cage: Yellow Cage
+  balloon: Test
+  unlockedKits: Default , Archer , Pyro , Miner
+  unlockedCages: Default
+  unlockedTrails: Default
+  unlockedPerks: Default
+  unlockedBalloons: Default

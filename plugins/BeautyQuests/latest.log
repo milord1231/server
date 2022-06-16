@@ -1,0 +1,103 @@
+[11:35:57] ---- BEAUTYQUESTS LOGGER - OPENED Thu Jun 16 11:35:57 MSK 2022 ----
+[11:36:15] [INFO]: Enabling BeautyQuests v0.19.7
+[11:36:15] [INFO]: ------------ BeautyQuests ------------
+[11:36:15] [DEBUG]: Hooked into [Citizens] v2.0.30-SNAPSHOT (build 2565)
+[11:36:15] [DEBUG]: Hooked into [WorldGuard] v7.0.7+216b061
+[11:36:15] [DEBUG]: Hooked into [Vault] v1.7.3-b131
+[11:36:15] [DEBUG]: Hooked into [PlaceholderAPI] v2.11.1
+[11:36:15] [INFO]: Loaded valid Minecraft version 1_18_R2.
+[11:36:15] [DEBUG]: Loading data file, last time edited : Thu Jun 16 11:27:59 MSK 2022
+[11:36:16] [INFO]: Loaded language file locales/en_US.yml (0.08s)!
+[11:36:16] [INFO]: Loaded start particles: REDSTONE in shape POINT with color "R255 G255 B0"
+[11:36:16] [INFO]: Loaded talk particles: VILLAGER_HAPPY in shape BAR
+[11:36:16] [INFO]: Loaded next particles: SMOKE_NORMAL in shape SPOT
+[11:36:16] [DEBUG]: Initlializing default stage types.
+[11:36:16] [DEBUG]: Stage registered (Find, 0)
+[11:36:16] [DEBUG]: Stage registered (Talk, 1)
+[11:36:16] [DEBUG]: Stage registered (Items, 2)
+[11:36:16] [DEBUG]: Stage registered (Mobs, 3)
+[11:36:16] [DEBUG]: Stage registered (Mine, 4)
+[11:36:16] [DEBUG]: Stage registered (Place, 5)
+[11:36:16] [DEBUG]: Stage registered (Chat, 6)
+[11:36:16] [DEBUG]: Stage registered (Interact, 7)
+[11:36:16] [DEBUG]: Stage registered (Fish, 8)
+[11:36:16] [DEBUG]: Stage registered (Melt, 9)
+[11:36:16] [DEBUG]: Stage registered (Enchant, 10)
+[11:36:16] [DEBUG]: Stage registered (Craft, 11)
+[11:36:16] [DEBUG]: Stage registered (Bucket, 12)
+[11:36:16] [DEBUG]: Stage registered (Location, 13)
+[11:36:16] [DEBUG]: Stage registered (PlayTime, 14)
+[11:36:16] [DEBUG]: Stage registered (Breed, 15)
+[11:36:16] [DEBUG]: Stage registered (Tame, 16)
+[11:36:16] [DEBUG]: Initlializing default rewards.
+[11:36:16] [DEBUG]: Quest object registered (id: commandReward, class: fr.skytasul.quests.rewards.CommandReward)
+[11:36:16] [DEBUG]: Quest object registered (id: itemReward, class: fr.skytasul.quests.rewards.ItemReward)
+[11:36:16] [DEBUG]: Quest object registered (id: removeItemsReward, class: fr.skytasul.quests.rewards.RemoveItemsReward)
+[11:36:16] [DEBUG]: Quest object registered (id: textReward, class: fr.skytasul.quests.rewards.MessageReward)
+[11:36:16] [DEBUG]: Quest object registered (id: tpReward, class: fr.skytasul.quests.rewards.TeleportationReward)
+[11:36:16] [DEBUG]: Quest object registered (id: expReward, class: fr.skytasul.quests.rewards.XPReward)
+[11:36:16] [DEBUG]: Quest object registered (id: checkpointReward, class: fr.skytasul.quests.rewards.CheckpointReward)
+[11:36:16] [DEBUG]: Quest object registered (id: questStopReward, class: fr.skytasul.quests.rewards.QuestStopReward)
+[11:36:16] [DEBUG]: Quest object registered (id: requirementDependentReward, class: fr.skytasul.quests.rewards.RequirementDependentReward)
+[11:36:16] [DEBUG]: Quest object registered (id: randomReward, class: fr.skytasul.quests.rewards.RandomReward)
+[11:36:16] [DEBUG]: Quest object registered (id: wait, class: fr.skytasul.quests.rewards.WaitReward)
+[11:36:16] [DEBUG]: Quest object registered (id: titleReward, class: fr.skytasul.quests.rewards.TitleReward)
+[11:36:16] [DEBUG]: Initlializing default requirements.
+[11:36:16] [DEBUG]: Quest object registered (id: logicalOr, class: fr.skytasul.quests.requirements.logical.LogicalOrRequirement)
+[11:36:16] [DEBUG]: Quest object registered (id: questRequired, class: fr.skytasul.quests.requirements.QuestRequirement)
+[11:36:16] [DEBUG]: Quest object registered (id: levelRequired, class: fr.skytasul.quests.requirements.LevelRequirement)
+[11:36:16] [DEBUG]: Quest object registered (id: permissionRequired, class: fr.skytasul.quests.requirements.PermissionsRequirement)
+[11:36:16] [DEBUG]: Quest object registered (id: scoreboardRequired, class: fr.skytasul.quests.requirements.ScoreboardRequirement)
+[11:36:16] [DEBUG]: Initlializing default quest options.
+[11:36:16] [DEBUG]: Quest option registered (id: pool)
+[11:36:16] [DEBUG]: Quest option registered (id: name)
+[11:36:16] [DEBUG]: Quest option registered (id: description)
+[11:36:16] [DEBUG]: Quest option registered (id: customItem)
+[11:36:16] [DEBUG]: Quest option registered (id: confirmMessage)
+[11:36:16] [DEBUG]: Quest option registered (id: hologramText)
+[11:36:16] [DEBUG]: Quest option registered (id: bypassLimit)
+[11:36:16] [DEBUG]: Quest option registered (id: hideNoRequirements)
+[11:36:16] [DEBUG]: Quest option registered (id: startableFromGUI)
+[11:36:16] [DEBUG]: Quest option registered (id: failOnDeath)
+[11:36:16] [DEBUG]: Quest option registered (id: cancellable)
+[11:36:16] [DEBUG]: Quest option registered (id: cancelActions)
+[11:36:16] [DEBUG]: Quest option registered (id: hologramLaunch)
+[11:36:16] [DEBUG]: Quest option registered (id: hologramLaunchNo)
+[11:36:16] [DEBUG]: Quest option registered (id: scoreboard)
+[11:36:16] [DEBUG]: Quest option registered (id: hide)
+[11:36:16] [DEBUG]: Quest option registered (id: auto)
+[11:36:16] [DEBUG]: Quest option registered (id: repeatable)
+[11:36:16] [DEBUG]: Quest option registered (id: timer)
+[11:36:16] [DEBUG]: Quest option registered (id: endSound)
+[11:36:16] [DEBUG]: Quest option registered (id: firework)
+[11:36:16] [DEBUG]: Quest option registered (id: requirements)
+[11:36:16] [DEBUG]: Quest option registered (id: startRewards)
+[11:36:16] [DEBUG]: Quest option registered (id: startMessage)
+[11:36:16] [DEBUG]: Quest option registered (id: starterNPC)
+[11:36:16] [DEBUG]: Quest option registered (id: startDialog)
+[11:36:16] [DEBUG]: Quest option registered (id: endRewards)
+[11:36:16] [DEBUG]: Quest option registered (id: endMsg)
+[11:36:16] [DEBUG]: Item comparison registered (id: bukkit)
+[11:36:16] [DEBUG]: Item comparison registered (id: customBukkit)
+[11:36:16] [DEBUG]: Item comparison registered (id: material)
+[11:36:16] [DEBUG]: Item comparison registered (id: name)
+[11:36:16] [DEBUG]: Item comparison registered (id: lore)
+[11:36:16] [DEBUG]: Item comparison registered (id: enchants)
+[11:36:16] [DEBUG]: Item comparison registered (id: repair)
+[11:36:16] [DEBUG]: Mob factory registered (id: bukkitEntity)
+[11:36:16] [DEBUG]: Bossbars manager has been registered: fr.skytasul.quests.api.bossbar.BQBossBarImplementation
+[11:36:16] [DEBUG]: Mob factory registered (id: citizensNPC)
+[11:36:16] [DEBUG]: Now using WorldGuard entry API.
+[11:36:16] [DEBUG]: Quest object registered (id: regionRequired, class: fr.skytasul.quests.requirements.RegionRequirement)
+[11:36:16] [DEBUG]: Quest object registered (id: moneyReward, class: fr.skytasul.quests.rewards.MoneyReward)
+[11:36:16] [DEBUG]: Quest object registered (id: permReward, class: fr.skytasul.quests.rewards.PermissionReward)
+[11:36:16] [DEBUG]: Quest object registered (id: moneyRequired, class: fr.skytasul.quests.requirements.MoneyRequirement)
+[11:36:16] [INFO]: Placeholders registered !
+[11:36:16] [DEBUG]: Quest object registered (id: placeholderRequired, class: fr.skytasul.quests.requirements.PlaceholderRequirement)
+[11:36:16] [DEBUG]: Started bStats metrics
+[11:36:16] [DEBUG]: Starting Spigot updater
+[11:36:17] [DEBUG]: 0 accounts loaded and 2 identifiers.
+[11:36:18] [DEBUG]: Registered 4 lines in scoreboard
+[11:36:18] [INFO]: 0 quests loaded (0.286s)!
+[11:36:18] [INFO]: Periodic saves task started (18000 ticks). Task ID: 72
+[11:36:18] [INFO]: You are using the latest version of BeautyQuests.

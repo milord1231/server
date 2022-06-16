@@ -1,0 +1,98 @@
+kits:
+  keykaku:
+    delay: 86400
+    items:
+    - chainmail_helmet 1
+    - chainmail_chestplate 1
+    - chainmail_leggings 1
+    - chainmail_boots 1
+    - iron_sword 1 knockback:2 damage_all:2
+    - bow 1
+    - golden_apple 8
+    - apple 64
+    - cod 64
+    - grass_block 64
+    - glass 64
+    - glass 64
+    - oak_log 64
+    - oak_log 64
+    - oak_log 64
+    - oak_log 64
+    - arrow 64
+    - arrow 64
+    - torch 64
+  gosi:
+    delay: 86400
+    items:
+    - diamond_shovel 1
+    - iron_axe 1
+    - golden_hoe 1
+    - cobblestone 64
+    - grass_block 64
+    - oak_log 64
+    - oak_log 64
+    - oak_log 64
+    - oak_log 64
+    - chainmail_helmet 1
+    - chainmail_chestplate 1
+    - chainmail_leggings 1
+    - chainmail_boots 1
+    - iron_pickaxe 1
+    - shears 1
+    - crafting_table 1
+    - ender_pearl 16
+    - diamond_block 1
+    - iron_sword 1
+    - bow 1
+    - shield 1 basecolor:16383998
+    - arrow 64
+    - arrow 64
+    - golden_apple 16
+    - cooked_beef 32
+    - enchanted_golden_apple 8
+    - torch 64
+  samurai:
+    delay: 259200
+    items:
+    - golden_helmet 1 protection_environmental:3 durability:3
+    - golden_chestplate 1 protection_environmental:3 durability:3
+    - golden_leggings 1 protection_environmental:3 durability:3
+    - golden_boots 1 protection_environmental:3 durability:3
+    - iron_sword 1 damage_all:5 durability:3
+    - diamond_pickaxe 1 loot_bonus_blocks:1
+    - iron_axe 1 dig_speed:3
+    - golden_shovel 1
+    - beetroot_soup 1
+    - beetroot_soup 1
+    - beetroot_soup 1
+    - beetroot_soup 1
+    - beetroot_soup 1
+    - shears 1
+    - oak_log 64
+    - oak_log 64
+    - oak_log 64
+    - golden_apple 32
+    - carrot 64
+    - ender_pearl 16
+    - ender_pearl 16
+    - red_bed 1
+    - grass_block 64
+    - spruce_log 64
+    - spruce_log 64
+    - spruce_log 64
+    - milk_bucket 1
+  start:
+    delay: 84600
+    items:
+    - wooden_sword 1 damage_all:3
+    - stone_pickaxe 1
+    - stone_axe 1
+    - apple 32
+    - sand 32
+    - oak_log 64
+    - oak_log 64
+    - leather_boots 1 color:10511680
+    - emerald 1 name:&6Донат-меню
+    - leather_helmet 1 color:10511680
+    - leather_leggings 1 color:10511680
+    - leather_chestplate 1 color:10511680

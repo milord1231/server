@@ -1,0 +1,13 @@
+mysql:
+  host: localhost
+  user: root
+  password: ''
+  database: test
+update: 20 #В секундах
+table: 'skywars'
+columName: 'playername'
+columCount: 'Kills'
+hologram:
+- '#{count} &7{player}'
+- '&eУбийств: &c{value}'
+locations: []

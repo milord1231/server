@@ -1,0 +1,22 @@
+location: world:-7589566,501:76,238:-12361165,875
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: ''
+    height: 0.3
+  - content: '&l&4PvP АРЕНА'
+    height: 0.3
+  - content: '&6Запрещенные команды:'
+    height: 0.3
+  - content: '>> &5/gm 1'
+    height: 0.3
+  - content: '>>&5/heal'
+    height: 0.3
+  - content: '>>&5/god'
+    height: 0.3
+  actions: {}

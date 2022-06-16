@@ -1,0 +1,547 @@
+Prefix: '&7[&bSkyWars&7] '
+Signs:
+  title: '&9SkyWars'
+  autojoin: '&6autoJoin'
+  map-color: '&d'
+  gamestate-color: '&a'
+  no-solo-arenas: '&cThere isn''t any solo arena available!'
+  no-team-arenas: '&cThere isn''t any team arena available!'
+  solo: '&4&lSOLO'
+  team: '&4&lTEAM'
+MysteryBox:
+  title-1: '&bMysteryBox'
+  title-2: '&e&lRight-click'
+  no-enough-souls: '&c&lYou need at least 10 souls to use the Soul Well!'
+  no-enough-money: '&c&lYou need at least 50 coins to use the Soul Well!'
+  broadcast-kit: '&b%player% &7 has found kit &b%kit% &7 in the soul well!'
+  broadcast-cage: '&b%player% &7 has found cage &b%cage% &7 in the soul well!'
+  broadcast-trail: '&b%player% &7 has found trail &b%trail% &7 in the soul well!'
+  broadcast-perk: '&b%player% &7 has found perk &b%perk% &7 in the soul well!'
+  message-kit: '&7&lYou have found kit &b&l%kit% &7&lin the soul well!'
+  message-cage: '&7&lYou have found cage &b&l%cage% &7&lin the soul well!'
+  message-trail: '&7&lYou have found trail &b&l%trail% &7&lin the soul well!'
+  message-perk: '&7&lYou have found perk &b&l%perk% &7&lin the soul well!'
+  already-have: '&7Since you already have it you have received 50 coins.'
+  Items:
+    mystery-box-name: '&8SoulWell'
+    glass-name: '&8Rolling...'
+    confirm-menu-name: '&8Are you sure?'
+    confirm-item-name: '&aConfirm'
+    confirm-item-lore:
+    - '&7Rolls for a random kit or'
+    - '&7cage.'
+    - ''
+    - '&7Cost: &b10 Souls'
+    deny-item-name: '&cDeny'
+    deny-item-lore:
+    - '&7Go back to previous'
+    - '&7menu.'
+Hologram:
+- '&7&m---  &a %name%''s &7stats &m---'
+- '&bKills → &e%kills%'
+- '&bCoins → &e%coins%'
+- '&bSouls → &e%souls%'
+- '&bDeaths → &e%deaths%'
+- '&bWins → &e%wins%'
+- '&bProjectiles launched → &e%projectileslaunched%'
+- '&bProjectiles hit → &e%projectileshit%'
+- '&bBlocks placed → &e%blocksplaced%'
+- '&bBlocks broken → &e%blocksbroken%'
+- '&7&m----------------------'
+In-Game-Broadcast:
+  dead: '&e%player% &a has died!'
+  dead-void: '&7%player% &efell into the void.'
+  dead-suffocation: '&7%player% &esuffocated.'
+  dead-drowning: '&7%player% &edrowned.'
+  dead-lava: '&7%player% &eburnt to a crisp in lava.'
+  dead-poison: '&7%player% &epoisoned.'
+  dead-by-player: '&e%player% &awas killed by &e%killer%'
+  dead-void-by-player: '&7%player% &ewas thrown into the void by &a%killer%'
+  dead-burned-by-player: '&7%player% &ewas burned to death by &a%killer%'
+  dead-projectile-by-player: '&7%player% &ewas shot to death by &a%killer%'
+  dead-poison-by-player: '&7%player% &ewas poisoned by &a%killer%'
+Arena-Messages:
+  arrow-hit: '&7%player% &eis on &c%health% &eHP!'
+Arena-Broadcast:
+  player-join: '&a%player% has joined the game! &e%ingame%&7/&e%max%'
+  player-leave: '&cPlayer &e%player% &cleave match! &e%ingame%&7/&e%max%'
+  player-death: '&cYou are now a spectator!'
+  player-disconnect: '&7%player% &elogged out!'
+  player-left: '&cPlayer %player% left match! &e%ingame%&7/&e%max%'
+  countdown: '&eGame will start in %time% seconds!'
+  beginBroadcast:
+  - '&a&l---------------------------------------------'
+  - '&f&l                      SkyWars                '
+  - '                                                 '
+  - ' &6Gather resources and equipment on your island '
+  - '    &6in order to eliminate every other player   '
+  - '   &6Go to the center island for special chests  '
+  - '              &6with special items!              '
+  - '                                                 '
+  - '&a&l---------------------------------------------'
+  endBroadcast:
+    top:
+    - '&a&l---------------------------------------------'
+    - '&f&l                      SkyWars                '
+    - '                                                 '
+    - '                  &eWinner &7- &b&l%winner%      '
+    - '                                                 '
+    first-killer: '                 &e&l1st Killer &7- %killer% - %kills%'
+    second-killer: '                 &6&l2nd Killer &7- %killer% - %kills%'
+    third-killer: '                 &c&l3rd Killer &7- %killer% - %kills%'
+    bottom:
+    - '                                                 '
+    - '&a&l---------------------------------------------'
+  waiting-lobby-countdown: '&6Game will start in %time% seconds!'
+Titles:
+  player-dead-1: '&cYou Died!'
+  player-dead-2: '&7You are now a spectator'
+  game-start-1: '&eGame Started!'
+  game-start-2: '&bKill them all!'
+  refill: '&eChests have been refilled!'
+  winner-1: '&6Victory!'
+  winner-2: '&7You were last man standing.'
+  tie-1: '&cGame End'
+  tie-2: '&7You weren''t victorious this time!'
+  countdown-1: '&c%time%'
+  countdown-2: '&ePrepare to fight!'
+  refill-1: ''
+Items:
+  return-to-lobby: '&c&lReturn to lobby &7(Right-click)'
+  spectators:
+    teleporter: '&a&lTeleporter &7(Right-click)'
+    teleporter-menu: '&8Teleporter'
+    spectators-settings: '&b&lSpectator Settings &7(Right-click)'
+    spectators-settings-menu: '&8Spectator Settings'
+    return-to-lobby: '&c&lReturn to lobby &7(Right-click)'
+    no-speed: '&aNo Speed'
+    speed-1: '&aSpeed I'
+    speed-2: '&aSpeed II'
+    speed-3: '&aSpeed III'
+    speed-4: '&aSpeed IV'
+    spectators-playagain: '&a&lPlay again &7(Right-click)'
+  lobby:
+    kit-selector: '&aKit Selector &7(Right-click)'
+    kit-selector-menu: '&8Kit Selector'
+    cage-selector: '&aCage Selector &7(Right-click)'
+    cage-selector-menu: '&8Cage Selector'
+  shop:
+    shop: '&a&lShop &7(Right-click)'
+    shop-menu: '&8Skywars Shop'
+    go-back: '&aGo back'
+    kits: '&aKits'
+    kits-lore:
+    - '&7Selection of unique kits.'
+    - ''
+    - '&eClick to view!'
+    cages: '&aCustom Cages'
+    cages-lore:
+    - '&7Change the color of your'
+    - '&7spawning cell.'
+    - ''
+    - '&eClick to view!'
+    trails: '&aTrails'
+    trails-lore:
+    - '&7Change your projectile trail'
+    - '&7particle effect.'
+    - ''
+    - '&eClick to view!'
+    perks: '&aPerks'
+    perks-lore:
+    - '&7Selection of unique perks'
+    - '&7for skywars.'
+    - ''
+    - '&eClick to view!'
+    stats: '&aStats'
+    stats-lore:
+    - '&7Check your stats.'
+    - ''
+    - '&7Kills: &b%kills%'
+    - '&7Deaths: &b%deaths%'
+    - '&7Wins: &b%wins%'
+    - '&7Projectiles Launched: &b%arrows_launched%'
+    - '&7Projectiles Hit: &b%arrows_hit%'
+    - '&7Blocks Breaked: &b%blocks_breaked%'
+    - '&7Blocks Placed: &b%blocks_placed%'
+    coins: '&aCoins and Souls'
+    coins-lore:
+    - ''
+    - '&b%coins% &eCoins'
+    - '&b%souls% &eSouls'
+  kits-shop:
+    shop-menu: '&8Kits Shop'
+    lore-unlocked:
+    - '&eArmor:'
+    - '%armor%'
+    - '&eItems:'
+    - '%items%'
+    - ''
+    - '&aUnlocked'
+    - ''
+    - '&7Rarity: &b%rarity%'
+    - '&eClick to select!'
+    lore-locked:
+    - '&eArmor:'
+    - '%armor%'
+    - '&eItems:'
+    - '%items%'
+    - ''
+    - '&7Price: &b%price%'
+    - ''
+    - '&7Rarity: &b%rarity%'
+    - '&eClick to buy!'
+    lore-no-permission:
+    - '&eArmor:'
+    - '%armor%'
+    - '&eItems:'
+    - '%items%'
+    - ''
+    - '&7Rarity: &b%rarity%'
+    - '&eCan be found in the soul well!'
+  cages-shop:
+    shop-menu: '&8Cages Shop'
+    lore-unlocked:
+    - '&7Select the %name% cage. This'
+    - '&7change is cosmetic'
+    - ''
+    - '&aUnlocked'
+    - ''
+    - '&7Rarity: &b%rarity%'
+    - '&eClick to select!'
+    lore-locked:
+    - '&7Select the %name% cage. This'
+    - '&7change is cosmetic'
+    - ''
+    - '&7Price: &b%price%'
+    - ''
+    - '&7Rarity: &b%rarity%'
+    - '&eClick to buy!'
+    lore-no-permission:
+    - '&7Select the %name% cage. This'
+    - '&7change is cosmetic'
+    - ''
+    - '&7Rarity: &b%rarity%'
+    - '&eCan be found in the soul well!'
+  trails-shop:
+    shop-menu: '&8Trails Shop'
+    lore-unlocked:
+    - '&7Select the %name% trail. This'
+    - '&7change is cosmetic'
+    - ''
+    - '&aUnlocked'
+    - ''
+    - '&7Rarity: &b%rarity%'
+    - '&eClick to select!'
+    lore-locked:
+    - '&7Select the %name% trail. This'
+    - '&7change is cosmetic'
+    - ''
+    - '&7Price: &b%price%'
+    - ''
+    - '&7Rarity: &b%rarity%'
+    - '&eClick to buy!'
+    lore-no-permission:
+    - '&7Select the %name% trail. This'
+    - '&7change is cosmetic'
+    - ''
+    - '&7Rarity: &b%rarity%'
+    - '&eCan be found in the soul well!'
+  perks-shop:
+    shop-menu: '&8Perks Shop'
+Kit:
+  kit-selected: '&aYou have selected kit &b%kit%'
+  no-permission: '&cYou don''t have permission to use that kit!'
+  kit-already-unlocked: '&cYou already have that kit!'
+  kit-buy: '&aYou have bought kit &b%kit%'
+  kit-no-enough-money: '&cYou don''t have enough money for that kit!'
+Cage:
+  cage-selected: '&aYou have selected cage &b%cage%'
+  no-permission: '&cYou don''t have permission to use that cage!'
+  cage-already-unlocked: '&cYou already have that cage!'
+  cage-buy: '&aYou have bought cage &b%cage%'
+  cage-no-enough-money: '&cYou don''t have enough money for that cage!'
+Trail:
+  trail-selected: '&aYou have selected trail &b%trail%'
+  no-permission: '&cYou don''t have permission to use that trail!'
+  trail-already-unlocked: '&cYou already have that trail!'
+  trail-buy: '&aYou have bought trail &b%trail%'
+  trail-no-enough-money: '&cYou don''t have enough money for that trail!'
+Perk:
+  already-unlocked: '&aSelected perk already unlocked!'
+  perk-buy: '&aYou have bought perk &b%perk%'
+  perk-no-enough-money: '&cYou don''t have enough money for that perk!'
+  no-permission: '&cYou don''t have permission to use that perk!'
+Teleport:
+  line-1: '&a&lTeleporting you to the lobby in 3 seconds...'
+  line-2: '&a&lRight-click again to cancel the teleport!'
+  cancelled: '&c&lTeleport cancelled!'
+ArenasGUI:
+  menu-name: '&8Arenas'
+  lore:
+  - '                     '
+  - '&ePlayers: &b%ingame%&7/&b%max%'
+  - '&eType: &d%gametype%'
+  - '&eState: &a%state%'
+  - '                     '
+  - '&bClick to join!'
+PartyGUI:
+  menu-name: '&8Party'
+  item-name: '&aParty'
+  material: MAGMA_CREAM
+  lore:
+  - '&eRight Click to open'
+  - '&eparty menu.'
+  invite-material: PAPER
+  invite-name: '&eClick to invite a player to your party!'
+  members-material: BLAZE_ROD
+  members-name: '&eClick to show party members'
+  leave-material: WOOL:14
+  leave-name: '&cClick to leave party'
+  not-in-party-material: WOOL:14
+  not-in-party-name: '&aClick to create party!'
+  party-members-menu-name: '&8Party Members'
+  party-invite-menu-name: '&8Party Invite'
+  slot: 8
+  go-back: '&aGo back'
+ArenaItem:
+  material: WOOL:5
+  name: '&aArena Selector'
+  slot: 0
+  lore:
+  - '&eRight Click to select'
+  - '&ean arena.'
+ShopItem:
+  material: EMERALD
+  name: '&aShop'
+  slot: 4
+  lore:
+  - '&eRight Click to open'
+  - '&eskywars shop.'
+Party:
+  prefix: '&6[&a%partyname%&6]'
+  created: '&6You have created the party &e%name%&6.'
+  joined: '&6You have joined the party.'
+  left: '&6You have left your party.'
+  disband: '&6You were the leader of your party, disbanding party.'
+  kicked: '&6You were kicked from the party by &e%kicker%&6.'
+  kick: '&6You kicked &e%player% &7from the party.'
+  invited: '&e%inviter% &6has invited you to join the party &e%party%&6.'
+  invite: '&6You invited &e%player% &7to join your party.'
+  player-joined: '&e%player% &7has joined the party.'
+  player-left: '&e%player% &7has left the party.'
+  player-disband: '&e%player% &7has disbanded the party.'
+  player-kick: '&e%kicker% &7kicked &e%kicked% &7from the party.'
+  player-invited: '&e%inviter% &7invited &e%invited% &7to join the party.'
+  leader-quit: '&cParty leader left the game! Party disbanded. '
+  party-declined: '&e%player% &7declined party invitation. '
+  player-declined: '&cYou have declined invitation to &e%party% &cparty!'
+  accept: '&7[&aAccept&7]  '
+  accept-hover: '&aClick to join the party!'
+  decline: '&7[&cDecline&7]'
+  decline-hover: '&cClick to decline party invitation.'
+Error:
+  no-permission: '&cYou don''t have permission to do that!'
+  teleport-cancel: '&c&lTeleport cancelled!'
+  game-full: '&cThere is already enough players!'
+  game-started: '&cThe game already started!'
+  player-already-on-game: '&cYou are already on this game!'
+  player-not-in-arena: '&cYou are not in an arena!'
+  arena-not-exist: '&cThis arena does not exists!'
+  party-already-exists: '&cThat party already exists.'
+  party-not-exist: '&cThat party does not exist.'
+  party-name: '&cYou did not specify a party name.'
+  not-leader: '&cYou are not the leader of this party.'
+  no-party: '&cYou do not have a party.'
+  no-invite: '&cYou do not have an invite to join that party.'
+  has-party: '&cYou already have a party.'
+  player-in-party: '&cThat player is already in your party.'
+  player-not-in-party: '&cThat player is not in your party.'
+  player-has-invite: '&cThat player already has an invite.'
+  player-has-party: '&cThat player already has a party.'
+  player-no-party: '&cThat player does not have a party.'
+  kick-self: '&cYou cannot kick yourself.'
+  team-not-available: '&cThere isn''t any team available for a party on this arena.'
+  party-size: '&cYou need a party of &b%teamsize% &cor less to be able to join this
+    game!'
+  not-party-leader: '&cYou are not party leader!'
+  blockPlaceOutsideArena: '&cYou can''t place blocks outside the arena!'
+CustomJoinSign:
+- '&9SkyWars'
+- '&a%gametype%'
+- '&e&l%arena%'
+- '&b%ingame%&7/&b%max%'
+GameState:
+  Lobby: '&aLobby'
+  Starting: '&eStarting'
+  InGame: '&eInGame'
+  End: '&bEnd'
+Scoreboard-GameType:
+  solo: '&e&lSOLO'
+  team: '&e&lTEAM'
+CustomScoreboards:
+  Events:
+    Starting: Starting
+    Refill: Refill
+    ingame-to-end: GameEnd
+    End: GameEnd
+  lobby:
+    title: '&eSkyWars'
+    scoreboard:
+    - '%blank%'
+    - '&fKills: &a%kills%'
+    - '&fWins: &a%wins%'
+    - '%blank%'
+    - '&fCoins: &a%coins%'
+    - '&FSouls: &a%souls%&7/%maxsouls%'
+    - '%blank%'
+    - '&fStarting In: &a%timer%'
+  ingame-solo:
+    title: '&eSkywars'
+    scoreboard:
+    - '&e&l%gametype% &7%date%'
+    - '%blank%'
+    - '&fNext Event:'
+    - '&a%event% %timer%'
+    - '%blank%'
+    - '&fPlayers left: &a%ingame%'
+    - '%blank%'
+    - '&fKills: &a%killscounter%'
+    - '%blank%'
+    - '&fMap: &a%arena%'
+  ingame-team:
+    title: '&eSkywars'
+    scoreboard:
+    - '&e&l%gametype% &7%date%'
+    - '%blank%'
+    - '&fNext Event:'
+    - '&a%event% %timer%'
+    - '%blank%'
+    - '&fPlayers left: &a%ingame%'
+    - '%blank%'
+    - '&fTeams: &a%teamscount%'
+    - '%blank%'
+    - '&fKills: &a%killscounter%'
+    - '%blank%'
+    - '&fMap: &a%arena%'
+  main-lobby:
+    title: '&eSkywars'
+    scoreboard:
+    - '%blank%'
+    - '&fKills: &a%kills%'
+    - '&fWins: &a%wins%'
+    - '%blank%'
+    - '&fCoins: &a%coins%'
+    - '&FSouls: &a%souls%&7/%maxsouls%'
+    - '%blank%'
+    - '&fUsing Kit:'
+    - '&a%kit%'
+    - '&fUsing Cage:'
+    - '&a%cage%'
+    - '&fUsing Trail:'
+    - '&a%trail%'
+    - '&fUsing Balloon:'
+    - '&a%balloon%'
+  not-in-arena: Not in arena!
+LobbyScoreboard:
+  title: '   &e&lSkyWars'
+  footer: '&e-------------'
+  tags:
+    kills: '&fKills: '
+    wins: '&fWins: '
+    coins: '&fCoins: '
+    souls: '&fSouls: '
+    selected-kit: '&fSelected Kit: '
+    selected-cage: '&fSelected Cage: '
+    selected-trail: '&fSelected Trail: '
+Scoreboard:
+  in-game:
+    tags:
+      teams: '&fTeams: '
+ArenasItem:
+  material: WOOL:6
+  name: '&aArena Selector'
+  slot: 0
+  lore:
+  - '&eRight Click to select'
+  - '&ean arena.'
+Motd:
+  Lobby: '&aLobby'
+  Starting: '&eStarting'
+  InGame: '&eInGame'
+  GameEnd: '&bGameEnd'
+CompassTracker:
+  item-name: 'Tracking: &a%player% &fDistance: &b%distance%'
+  message: '&aYou are now tracking player &b%player%'
+  cooldown: '&cYou need to wait %seconds% seconds!'
+Gui-Pagination:
+  next-page: '&eNext Page'
+  previous-page: '&ePrevious Page'
+  next-page-material: STAINED_GLASS_PANE:5
+  previous-page-material: STAINED_GLASS_PANE:14
+NPC:
+  SOLO:
+    '1': '&e&lCLICK TO PLAY'
+    '2': '&bSolo &7[Normal/Insane]'
+    '3': '&e&l%count% Players'
+    skin: 725954
+    selector:
+      title: '&7Play Skywars'
+      soloitem: '&aSkyWars (Solo Normal)'
+      soloLore:
+      - '&7Play Solo Normal SkyWars!'
+      - ''
+      - '&6Click to Play!'
+      soloinsaneitem: '&aSkyWars (Solo Insane)'
+      soloinsaneLore:
+      - '&7Play Solo Insane SkyWars!'
+      - ''
+      - '&6Click to Play!'
+  TEAM:
+    selector:
+      title: '&7Play Skywars'
+      teamitem: '&aSkyWars (Doubles Normal)'
+      teamLore:
+      - '&7Play Doubles Normal SkyWars!'
+      - ''
+      - '&6Click to Play!'
+      teaminsaneitem: '&aSkyWars (Doubles Insane)'
+      teaminsaneLore:
+      - '&7Play Doubles Insane SkyWars!'
+      - ''
+      - '&6Click to Play!'
+    '1': '&e&lCLICK TO PLAY'
+    '2': '&bDoubles &7[Normal/Insane]'
+    '3': '&e&l%count% Players'
+    skin: t5TXrDi0NvSb2+eING8fQkWVijf/nnoCeRPEJ9Km6FLsNfZCWZtdq8F1hphCyaFiAUAvlNI3okyTw+p3lilqAO/3n9IVFruVr0tl1EtUHVoskNGW9u/30Vcar07k47zSauMOX87Mic0FdUJRM0r5+di3EuSp9JQw3lck64Vp3zhLCc/V/hDBBgQovYh8cisdfERAG6tgGD96wHfEcYyuPU4Ed1ocz44iIXOPC+7/lA1TZxu8pTNTGSlaXCxDloC2npbptg0ydssl1+5MIEIuzKcr/ZUSfy4Qx6PtYCP/9pnSX9UCZM0+SNY5UNdGDMZTw7eF7PAoiVKEN/gyJsk7PoPUMD1Fvqlw23toOSqTKHPBXWnQ98eJpf1SE/p/1VRBfIWj9n1CuyJTqn3LGpxrW9yYfuFKvENTf9dXBeuFQYTv/bzuBiWanepO2Bpj+NVukeRyeP/SRudwFMdpwtlVnAphPvZms/34EeaP38GjGEmitR4meue8OuTqDDissRz6cy6+KiMktZuPhBqz5nFLwmAhMpU6ojM74KI41M87CWyCOrZ211E7Rve/h5RwJtlphA+wQrOf/tJGDIczjhRpKA2nDlg1/vlMIb3OtMRAULk4/bPpvugnPE4xWv2QkqJmYfB9szDryFYHx9s6JCuNu8WYBcnZexxrvBqsa9qkJZU=;eyJ0aW1lc3RhbXAiOjE1MTM0NTU4NjgyMTksInByb2ZpbGVJZCI6ImUzYjQ0NWM4NDdmNTQ4ZmI4YzhmYTNmMWY3ZWZiYThlIiwicHJvZmlsZU5hbWUiOiJNaW5pRGlnZ2VyVGVzdCIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTg1NDVjZjYzN2IzZTcxM2E5OTExOWZiZTVhOGQxYjgyMmNiZTQyZjdkMmYxNzM3MTcyOWNhODg2NWQ2ZTUifX19
+  MEGA:
+    '1': '&e&lCLICK TO PLAY'
+    '2': '&bMega'
+    '3': '&e&l%count% Players'
+    skin: sF8cfDyvt5WS7cw3MDHOqzMX6Y8THC4U8FZcsJtRmIqN8zC37GQvVcy9hauofmLMT4mX6VT05JVK3/jwcgYNZLicQcmXtihMMRjsHIUWcAdWEbmA5ZtaixIAaK8NQoITjuCnuTjQd4b6CVZTqVBmhGWEPXpVKieck2r1Az4sOvDuWh5SyXda1Mb2yQKtO3NeUcjDfrpRf7kU7qTDCS8hZ0lACeH8UgGKtczCEP5fF5AQNKQXkOuzkSNlDy+eW4Oyh30n4S4pvvJ9vdEV7UwXNdzZEJFudGKCqkm00d2PMLcSQf36UEZNzjcfXsacQshjIwYo65KgMhWC1iQ7jkhh8rSk1+iVCoWYU94vHSRXiRAbcyrVz23KNkXmIFljOQ/Y6MQMA8pckjM6yuH/IEE5E3mweU7uERyRvoT8Oku7mJi4zp1M8MFqGAlMqQz5fUGzVxVvOA3g7KrEv8RQZauad7YNddy22ML7KCq8lIhFeLAkhf/zKlW/k8at59JN9qZW2LZhlDpt5hccyqyO79GajQofm9JGLvSgcf/6ZUPVD9tEByAIEcuUQpjcCQ5AF7ZhxaCmBTbTOeMel1c/sVsklvpD1k5ce7kcC9BhDnFwLocoDcDMn1XBMQnbV3gYXcQk75lgbH8zLRR5C7b/ZFvrcwXkv9xb2lKVIf25Tn8fAEY=;eyJ0aW1lc3RhbXAiOjE1MDI2MzEzODIyNTIsInByb2ZpbGVJZCI6IjQzYTgzNzNkNjQyOTQ1MTBhOWFhYjMwZjViM2NlYmIzIiwicHJvZmlsZU5hbWUiOiJTa3VsbENsaWVudFNraW42Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9lYWViYmIyNGUwOTM4OWNjYTI5NWI3ZWQzMzg2YzBhMmUxZjE1MmNkYjY1YzU3MTFhMjgzZmE2MzMzOGUyIn19fQ==
+    selector:
+      title: '&7Play Skywars'
+      megaitem: '&aSkyWars (Mega Normal)'
+      megaLore:
+      - '&7Play Mega Normal SkyWars!'
+      - ''
+      - '&6Click to Play!'
+      megainsaneitem: '&aSkyWars (Mega Insane)'
+      megainsaneLore:
+      - '&7Play Mega Insane SkyWars!'
+      - ''
+      - '&6Click to Play!'
+  close: '&cClose'
+Chest-Hologram:
+  empty: '&cEmpty'
+Balloons:
+  itemName: '&aBalloons'
+  itemLore:
+  - '&7Select a balloon for your island.'
+  - ''
+  - '&eClick to view!'
+  shopName: '&8Balloons Shop'
+  selected: '&aYou have selected balloon &b%balloon%'
+  no-permission: '&cYou don''t have permission to use that balloon!'
+  already-unlocked: '&cYou already have that balloon!'
+  buy: '&aYou have bought balloon &b%balloon%'
+  no-enough-money: '&cYou don''t have enough money for that balloon!'

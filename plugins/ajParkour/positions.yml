@@ -1,0 +1,13 @@
+#  This is where the plugin stores all the areas and portals.
+#  Be careful when editing this file, it could cause some areas or portals to fail to load!
+
+areas:
+  spawn-parkour:
+    difficulty: MEDIUM
+    max: 2147483647
+    pos1: world,-7589531,161,-12361069,-55.01126,88.839386
+    pos2: world,-7589602,195,-12361141,127.37094,88.56305
+    fallpos: world,-7589567,70,-12361050,0.28826904,-3.9545722
+portals:
+  spawn-parkour:
+    loc: world,-7589567,72,-12361038,1.788208,89.94473

@@ -1,0 +1,24 @@
+#-- Possible Items Structures --
+# MATERIAL:AMOUNT:CHANCE
+# MATERIAL:AMOUNT:ENCHANTMENT:CHANCE
+# MATERIAL:AMOUNT:ENCHANTMENT:CUSTOMNAME:CHANCE
+# MATERIAL:AMOUNT:ENCHANTMENT;ENCHANTMENTLEVEL,ENCHANTMENT;ENCHANTMENTLEVEL:CHANCE
+# Example: DIAMOND_SWORD:1:DAMAGE_ALL;2,DURABILITY;3:100
+# MATERIAL:AMOUNT:ENCHANTMENT;ENCHANTMENTLEVEL,ENCHANTMENT;ENCHANTMENTLEVEL:CUSTOMNAME:CHANCE
+# Example: DIAMOND_SWORD:1:DAMAGE_ALL;2,DURABILITY;3:&cUltraSword:100
+# For material id use MATERIAL,ID: : :
+# Example: WOOL,6:16:100
+# For a list of enchantments, visit https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html
+# For Mobs eggs use the following structure: MATERIAL:AMOUNT:null:Spawn (MOBNAME):CHANCE 
+#Example: MONTER_EGG:1:null:Spawn Spider:50
+types:
+  default:
+    Items:
+      - 'GRASS:16:100'
+      - 'DIAMOND_SWORD:1:DAMAGE_ALL:&cUltraSword:100'
+      - 'WOOL,6:16:100'
+  op:
+    Items:
+      - 'DIAMOND_SWORD:1:DAMAGE_ALL;2,DURABILITY;3:&cUltraSword:100'
+      - 'DIAMOND_CHESTPLATE:1:100'
+      - 'MONSTER_EGG:1:null:Spawn Zombie:40'

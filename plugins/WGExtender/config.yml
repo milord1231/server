@@ -1,0 +1,41 @@
+claim:
+  vertexpand: false
+  blocklimits:
+    enabled: false
+    limits:
+      default: 30000
+      keykaku: 70000
+      gosi: 90000
+      samurai: 90000
+      buge: 110000
+      dayme: 130000
+      tenno: 150000
+      master: 160000
+      sensei: 220000
+      emperor: 350000
+      great-emperor: 500000
+      like_god: 750000
+      dragon: 1000000
+      op: 2000000
+regionprotect:
+  flow:
+    lava: false
+    water: false
+    other: false
+  fire:
+    spread:
+      toregion: false
+      inregion: false
+    burn: false
+  explosion:
+    block: false
+    entity: false
+autoflags:
+  enabled: false
+  flags: {}
+restrictcommands:
+  enabled: false
+  commands: []
+extendedwewand: false
+misc:
+  pvpmode: default

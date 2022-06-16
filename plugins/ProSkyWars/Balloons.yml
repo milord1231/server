@@ -1,0 +1,33 @@
+#You can get new textures or create your own at https://minecraft-heads.com/
+#Make sure you are using Minecraft-URL as texture code.
+balloons:
+  Test:
+    displayName: 'Test'
+    price: 5000
+    permission: proskywars.perks.arrowrecovery
+    rarity: Rare
+    texture:
+      - 'be78d8eb5883a110667b51ee20a3b21d52d089a0d4c91be3cb786c31828a2097'
+      - 'b2268cc2fb0af675fff17f15af4a6ac240bdbf40a8396e035bd1a5aeb4bcc27c'
+      - '54d943a6e9c755685b98b4f12a228767e0c6f980dfc1ea2650a8a06726c7d22f'
+      - '4dea74de59b82cc44178a12f5715290e30304ade63b1904643b04b22dc1e88a2'
+      - '78e99ddf9511d35b579067f6fb79a0a2a5b77fc4c2898bbef5712f9853cfbd04'
+      - '8da2246fc17659d90e2e82910fcf570f27cc452b6cf19c9ceab6bde183413f8c'
+      - 'fb1c268efec8d7d88a1cb88c2bfa097fa57037942299f7d202159fc93cd3036d'
+    lore-unlocked:
+      - '&7Balloons that will spawn on you island'
+      - ''
+      - '&aUnlocked'
+    lore-locked-permission:
+      - '&7Balloons that will spawn on you island'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&eCan be found in the SoulWell!'
+    lore-locked-money:
+      - '&7Balloons that will spawn on you island'
+      - ''
+      - '&7Rarity: &e%rarity%'
+      - ''
+      - '&ePrice: &b%price%'
+

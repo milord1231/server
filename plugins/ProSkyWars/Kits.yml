@@ -1,0 +1,85 @@
+#-- Possible Items Structures --
+# MATERIAL:ID:AMOUNT
+# MATERIAL:ID:AMOUNT:ENCHANTMENT;level
+# MATERIAL:ID:AMOUNT:ENCHANTMENT;level:CUSTOMNAME
+# For Multiple enchantments use following structure: MATERIAL:ID:AMOUNT:ENCHANTMENT1;LEVEL,ENCHANTMENT2;LEVEL ...
+# Example: 'LEATHER_CHESTPLATE:0:1:PROTECTION_FIRE;5,DAMAGE_ALL;1'
+# For a list of enchantments, visit https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html
+# For splash potions use the following format (on versions over 1.8):
+# - SPLASH_POTION,NIGHT_VISION:10
+# For 1.8 you can use the potion id for that version:
+# - SPLASH_POTION:10:1
+# You can find potion types here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionType.html
+kits:
+  Pyro:
+    displayitem: FLINT_AND_STEEL
+    permission: none
+    rarity: Common
+    price: 500
+    lore:
+      - '&7Set everyone on fire and'
+      - '&7watch them burn while'
+      - '&7you laugh and swim in lava'
+    armoritems:
+      - 'LEATHER_CHESTPLATE:PROTECTION_FIRE;5,DAMAGE_ALL;1' 
+    items:
+      - 'FLINT_AND_STEEL:0:1'
+      - 'LAVA_BUCKET:0:2'
+  Archer:
+    displayitem: BOW
+    permission: none
+    rarity: Rare
+    price: 500
+    lore:
+      - '&7Shoot your enemies and'
+      - '&7kill them all!'
+    armoritems:
+      - 'LEATHER_CHESTPLATE:PROTECTION_FIRE;5,DAMAGE_ALL;1' 
+    items:
+      - 'BOW:0:1'
+      - 'ARROW:0:10'
+  ArmorSmith:
+    displayitem: ANVIL
+    permission: none
+    rarity: Common
+    price: 500
+    lore:
+      -'&7Upgrade your items'
+    armoritems:
+      - 'DIAMOND_HELMET'
+    items:
+      - 'ANVIL:0:1'
+      - 'ENCHANTED_BOOK:0:1:PROTECTION_ENVIRONMENTAL;3'
+      - 'ENCHANTED_BOOK:0:1:DAMAGE_ALL;1'
+      - 'EXP_BOTTLE:0:1'
+  Armorer:
+    displayitem: LEATHER_CHESTPLATE
+    permission: none
+    rarity: COMMON
+    price: 500
+    lore:
+      - '&7Receive a leather chest and leggings'
+      - '&7that will help you stay alive'
+      - '&7in the early stages'
+    armoritems:
+      - 'LEATHER_CHESTPLATE'
+      - 'LEATHER_LEGGINGS'
+    items:
+      - 'BREAD:0:2'
+  Miner:
+    displayitem: STONE_PICKAXE
+    permission: none
+    rarity: COMMON
+    price: 500
+    lore:
+      - '&7Your enchanted pickaxe will help'
+      - '&7you mine faster than any one'
+      - '&7giving you the advantage to get'
+      - '&7decent gear and trap others'
+    armoritems:
+      - 'IRON_HELMET:PROTECTION_EXPLOSIONS;2'
+    items:
+      - 'STONE_PICKAXE:0:1:DIG_SPEED;1,DURABILITY;3'
+      - 'COOKED_BEEF:0:2'
+      - 'TNT:0:1'
+      - 'REDSTONE_TORCH_ON:0:1'

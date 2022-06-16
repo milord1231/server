@@ -1,0 +1,10 @@
+debug: false
+log-prefix: Stats
+database:
+  host: localhost
+  port: 3306
+  name: ''
+  prefix: stats_
+  user: root
+  pass: root
+  reconnect_interval: 5

@@ -1,0 +1,6 @@
+mysql:
+  url: jdbc:mysql://localhost:3306/stats5
+  username: username
+  password: password
+useRabbitMq: false
+server-id: 4f395fda-a199-48cb-a371-41c29c032e63

@@ -1,0 +1,27 @@
+# Chunky Configuration
+# https://github.com/pop4959/Chunky/wiki/Configuration
+
+version: 1
+language: en
+continue-on-restart: false
+silent: false
+update-interval: 1
+tasks:
+  world:
+    cancelled: true
+    radius: 200.0
+    x-center: 0.0
+    z-center: 0.0
+    iterator: concentric
+    shape: square
+    count: 729
+    time: 439
+  japanlobby-minesborka_ru:
+    cancelled: true
+    radius: 2000.0
+    x-center: 60.0
+    z-center: 653.0
+    iterator: concentric
+    shape: square
+    count: 62951
+    time: 3144674

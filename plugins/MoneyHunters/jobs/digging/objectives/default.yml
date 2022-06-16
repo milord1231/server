@@ -1,0 +1,169 @@
+# Objective name. It depends on the job type.
+# List of possible objective names for each job type: http://77.222.60.131:8080/plugin/moneyhunters/guide/job/creation
+CLAY:
+  # Enables/Disables this objective.
+  Enabled: true
+  # Min. and max. money amount to drop for this objective.
+  # You can use negative values to take money from player's balance.
+  Money:
+    Min: 3
+    Max: 6
+  # Min. and max. exp amount to give for this objective.
+  # You can use negative values to take exp from player's job.
+  Exp:
+    Min: 2
+    Max: 4
+  # Chance that this objective will drop money and/or exp.
+  Chance: 70
+  # Objective unlock settings.
+  Unlock:
+    # Min. player's job level to be able to gain money/exp from this objective.
+    Job_Min_Level: 0
+  # Objective daily limits for Exp and Money.
+  # When player exceed the limit, no money or exp from this objective will be given until the next day.
+  # Set to -1 for no limit(s).
+  # Scalable. Level placeholder is %job_level%.
+  # http://77.222.60.131:8080/plugin/engine/config/formats
+  Daily_Limits:
+    MONEY: -1.0
+    EXP: -1.0
+COARSE_DIRT:
+  Enabled: true
+  Chance: 80.0
+  Money:
+    Min: 5
+    Max: 6
+  Exp:
+    Min: 1
+    Max: 10
+  Unlock:
+    Job_Min_Level: 0
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'
+DIRT:
+  Enabled: true
+  Chance: 40.0
+  Money:
+    Min: 1
+    Max: 1
+  Exp:
+    Min: 1
+    Max: 1
+  Unlock:
+    Job_Min_Level: 0
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'
+GRASS_BLOCK:
+  Enabled: true
+  Chance: 20.0
+  Money:
+    Min: 0.5
+    Max: 0.5
+  Exp:
+    Min: 1
+    Max: 1
+  Unlock:
+    Job_Min_Level: 0
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'
+GRAVEL:
+  Enabled: true
+  Chance: 90.0
+  Money:
+    Min: 2
+    Max: 2
+  Exp:
+    Min: 1
+    Max: 1
+  Unlock:
+    Job_Min_Level: 2
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'
+MYCELIUM:
+  Enabled: true
+  Chance: 60.0
+  Money:
+    Min: 8
+    Max: 9
+  Exp:
+    Min: 5
+    Max: 5
+  Unlock:
+    Job_Min_Level: 4
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'
+PODZOL:
+  Enabled: true
+  Chance: 30.0
+  Money:
+    Min: 6
+    Max: 10
+  Exp:
+    Min: 1
+    Max: 8
+  Unlock:
+    Job_Min_Level: 7
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'
+RED_SAND:
+  Enabled: true
+  Chance: 70.0
+  Money:
+    Min: 9
+    Max: 15
+  Exp:
+    Min: 7
+    Max: 7
+  Unlock:
+    Job_Min_Level: 8
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'
+SAND:
+  Enabled: true
+  Chance: 100.0
+  Money:
+    Min: 0.05
+    Max: 0.05
+  Exp:
+    Min: 0.5
+    Max: 0.5
+  Unlock:
+    Job_Min_Level: 0
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'
+SNOW_BLOCK:
+  Enabled: true
+  Chance: 30.0
+  Money:
+    Min: 1
+    Max: 2
+  Exp:
+    Min: 1
+    Max: 3
+  Unlock:
+    Job_Min_Level: 0
+  Daily_Limits:
+    MONEY: '-1'
+    EXP: '-1'
+SOUL_SAND:
+  Enabled: true
+  Chance: 45.0
+  Money:
+    Min: 20
+    Max: 100
+  Exp:
+    Min: 1
+    Max: 10
+  Unlock:
+    Job_Min_Level: 25
+  Daily_Limits:
+    MONEY: '2000'
+    EXP: '-1'

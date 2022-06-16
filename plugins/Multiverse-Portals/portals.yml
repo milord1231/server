@@ -1,0 +1,40 @@
+portals:
+  spawn-main:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: milord
+    location: -7589567.0,71.0,-1.2361105E7:-7589567.0,71.0,-1.2361105E7
+    world: world
+  pvp-portal:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: milord
+    location: -7589567.0,46.0,-1.2361176E7:-7589567.0,46.0,-1.2361176E7
+    world: world
+    destination: p:spawn-main
+  skywars-portal-bones:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: milord
+    location: -7589634.0,70.0,-1.2361096E7:-7589630.0,74.0,-1.2361096E7
+    world: world
+    destination: SkyWarsMap
+  tp-from-skywars-to-spawn:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: milord
+    location: 21996.0,56.0,104.0:21999.0,59.0,104.0
+    world: SkyWarsMap
+    destination: p:spawn-main

@@ -1,0 +1,18 @@
+statistics:
+  name: Semchik
+  kills: 2
+  deaths: 2
+  wins: 2
+  money: 1600
+  souls: 22
+  projectiles_launched: 39
+  projectiles_hit: 8
+  blocks_breaked: 25
+  blocks_placed: 3
+  kit: Archer
+  cage: Redstone Cage
+  unlockedKits: Default , Archer , Pyro
+  unlockedCages: Default
+  unlockedTrails: Default
+  unlockedPerks: Default
+  unlockedBalloons: Default

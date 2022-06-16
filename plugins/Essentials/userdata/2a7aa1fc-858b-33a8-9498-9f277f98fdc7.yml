@@ -1,0 +1,40 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 26.131.51.174
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1655317692466
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1655387259566
+  login: 1655387270391
+  kits:
+    start: 1655387004071
+money: '743298.2516772375'
+last-account-name: Semchik
+lastlocation:
+  world: 091b2957-fdd9-4022-b12d-083fa9791450
+  world-name: world
+  x: -7589386.841592816
+  y: 128.86038699871935
+  z: -1.2361113339780293E7
+  yaw: 14.295867919921875
+  pitch: 63.406002044677734
+logoutlocation:
+  world: 091b2957-fdd9-4022-b12d-083fa9791450
+  world-name: world
+  x: -7589561.082918917
+  y: 71.0
+  z: -1.2361103908717455E7
+  yaw: -106.47998046875
+  pitch: 12.2794828414917

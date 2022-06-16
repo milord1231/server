@@ -1,0 +1,14 @@
+location: SkyWarsMap:21990,516:60,113:92,300
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: ''
+    height: 0.3
+  - content: '&e&lТоп победителей'
+    height: 0.3
+  actions: {}

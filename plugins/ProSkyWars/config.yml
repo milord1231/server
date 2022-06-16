@@ -1,0 +1,149 @@
+MySQL:
+  enabled: false
+  ip: localhost
+  port: 3306
+  database: proskywars
+  username: root
+  password: root
+  offline-mode: false
+General:
+  enableTitles: true
+  enable-vault: true
+  use-money-for-kits: true
+  use-money-for-cages: false
+  use-money-for-trails: false
+  use-money-for-perks: false
+  disable-hunger: true
+  refills: 2
+  holograms-update-minutes: 10
+  use-money-for-balloons: false
+  onJoinItems: false
+  joinItemWorlds: []
+  disable-ingame-scoreboard: false
+  disable-lobby-scoreboard: false
+  disable-custom-nametags: false
+  Use-Featherboard: false
+  solo-skip-waiting-lobby: false
+  ignore-spectators-spawn: false
+  leave-item-delay: true
+  disable-shop-item: false
+  disable-cages-item: false
+Leaderboards:
+  enabled: true
+  update-time-minutes: 10
+LobbyScoreboard:
+  enabled: true
+  allowed-worlds: []
+Broadcaster:
+  enabled: true
+  send-every: 60
+MysteryBox:
+  Material: ENDER_PORTAL_FRAME
+  souls-price: 10
+  use-coins: false
+  coins-price: 50
+  broadcast: false
+  reward-if-already-have: 50
+  common-chance: 7
+  rare-chance: 2
+  legendary-chance: 1
+  enable-kits: true
+  enable-cages: true
+  enable-trails: true
+  enable-perks: true
+  enable-balloons: true
+GameTimes:
+  lobbyTime: 20
+  startingTime: 10
+  timeUntilRefill: 200
+  timefromRefilltoGameEnd: 250
+  endTime: 10
+Rewards:
+  moneyOnWin: 1000
+  soulsOnWin: 10
+  commandsOnWin:
+  - 'broadcast %player% выиграл в SkyWars: BONES'
+  moneyPerKill: 100
+  soulsPerKill: 1
+  commandsPerKill: []
+Bungee-Mode:
+  enabled: false
+  hub:
+  - lobby
+  shutdown-after-amount-games: 5
+Saving-Task:
+  enabled: true
+  Save-Every-Minutes: 10
+PlaceholderAPI:
+  enabled: true
+Whitelist Commands:
+- sw leave
+Scoreboard-Animation:
+  enabled: false
+  delay: 4
+  title:
+  - '&e&lSKYWARS'
+  - '&f&lSKYWARS'
+  - '&6&lS&e&lKYWARS'
+  - '&f&lS&6&lK&e&lYWARS'
+  - '&f&lSK&6&lY&e&lWARS'
+  - '&f&lSKY&6&lW&e&lARS'
+  - '&f&lSKYW&6&lA&e&lRS'
+  - '&f&lSKYWA&6&lR&e&lS'
+  - '&f&lSKYWAR&6&lS'
+  - '&e&lSKYWARS'
+  - '&e&lSKYWARS'
+  - '&e&lSKYWARS'
+  - '&f&lSKYWARS'
+  - '&f&lSKYWARS'
+  - '&f&lSKYWARS'
+  - '&e&lSKYWARS'
+  - '&e&lSKYWARS'
+  - '&e&lSKYWARS'
+Souls:
+  defaultSouls: 100
+  vip1Souls: 130
+  vip2Souls: 160
+MongoDB:
+  enabled: false
+  hostname: localhost
+  port: 27017
+  database: proskywars
+  username: root
+  password: pass
+GUI-Inventories:
+  frame-material: STAINED_GLASS_PANE:7
+  Shop:
+    kits: BOW
+    cages: STAINED_GLASS
+    trails: ARROW
+    perks: ENCHANTMENT_TABLE
+    stats: PAPER
+    coins-souls: DOUBLE_PLANT
+    balloons: STRING
+SignGlass:
+  lobby-color-id: 5
+  starting-color-id: 4
+  ingame-color-id: 14
+  end-color-id: 3
+Redis:
+  enabled: false
+  hostname: localhost
+  port: 6379
+  password: pass
+Arena-Items:
+  kit-selector: BOW
+  cage-selector: GLASS
+  shop-selector: GLOWSTONE
+  leave-item: BED
+LeaveCommands:
+  enabled: true
+  commands:
+  - leave
+CompassTracker:
+  enabled: true
+  cooldown: 5
+Death-Commands:
+  enabled: false
+  Commands: []
+Team-Chat-Prefix: '!'
