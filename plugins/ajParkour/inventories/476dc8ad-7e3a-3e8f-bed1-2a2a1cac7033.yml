@@ -3,80 +3,83 @@ inventory:
   - null
   - null
   - null
-  - ==: org.bukkit.inventory.ItemStack
-    v: 2975
-    type: PLAYER_HEAD
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Skull
-        of Semchik"}],"text":""}'
-      Damage: 3
-      skull-owner:
-        ==: PlayerProfile
-        uniqueId: 2a7aa1fc-858b-33a8-9498-9f277f98fdc7
-        name: Semchik
-        properties:
-        - name: textures
-          value: ewogICJ0aW1lc3RhbXAiIDogMTY1NTMxNDc0MTgyOSwKICAicHJvZmlsZUlkIiA6ICI3YTljMGEzNjdmMzk0MGU3YTBmYTA3Yzg3MjU5YTdkZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJzZW1jaGlrIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2ZmYzJjNzNlMDEwOWRmYTZjNzc4OTQ4Njc2NWJjMWI0Zjg0ZjgwOWQxNzg3NGRjYjQ1MzJhYTAyMmYyNzk0NmMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==
-          signature: PSN/6UnsziDB1iSuzkzDoGvoMGS2R/x9EjvW3WocT6NFVzXjlv4BuhjSVXdks6/mtyGqiG+yP2LMZzOthronBi78HzTzhNSyNoTxMGNB8mPvs7Ju393Pf5H7sSDnnRdKfNCYUbjzhMZNJASv2gVd7ipJj4UZa01SRVHGsDpEgZF4XFvXr6mEP4UZIfoW+Xj/S8sXs0g/VGIvj5LG6Vs9zm1tzzKB/a9/Dx34MLmIqtTjhbpC5diy+Ucu5PXdlJbGoqjeDx5tFOxArhHXa9h4GYPftexdTxdroaPE4yJJsAnAi5GoG+nuDsz+cTs2shF45Gdfg+NDfK4G4cyBKHsX+VeDPLABL+jD+mDpvml2AnD74DYtjfwJTUT46qtwckA/lKlSa61LHEfBIENyafdFSWL9YyXsQ3imVv4Ns9bqm7T7Oo6T+fyFxiULDTeyuTRheh3F9XM5JRWTqnpO6Cid7HeSRnpeuQcIwURL/HJA7f1G3rF5RIRZ/fIeLimvxcIV4mdJ+50TPQowm3VEj105Xb/Iv9KgYYxEbEc9JmxUx4nOnIKy41ZvooJBJLbdcBm9kNhClLgdyaLl9jJKV77t5KiDmfgdhy4EPG2JlS6o5xo3uF92m19FzLk6zjwdd3CWYhhaa+CoQlJWxUMPQmy+MCNxtQTCJ8dj2hcrWtdbG2c=
+  - null
   content:
   - ==: org.bukkit.inventory.ItemStack
     v: 2975
-    type: OAK_SIGN
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
-  - ==: org.bukkit.inventory.ItemStack
-    v: 2975
-    type: PLAYER_HEAD
+    type: WOODEN_SWORD
     meta:
       ==: ItemMeta
-      meta-type: SKULL
-      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Skull
-        of Semchik"}],"text":""}'
-      Damage: 3
-      skull-owner:
-        ==: PlayerProfile
-        uniqueId: 2a7aa1fc-858b-33a8-9498-9f277f98fdc7
-        name: Semchik
-        properties:
-        - name: textures
-          value: ewogICJ0aW1lc3RhbXAiIDogMTY1NTMxNDc0MTgyOSwKICAicHJvZmlsZUlkIiA6ICI3YTljMGEzNjdmMzk0MGU3YTBmYTA3Yzg3MjU5YTdkZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJzZW1jaGlrIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2ZmYzJjNzNlMDEwOWRmYTZjNzc4OTQ4Njc2NWJjMWI0Zjg0ZjgwOWQxNzg3NGRjYjQ1MzJhYTAyMmYyNzk0NmMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==
-          signature: PSN/6UnsziDB1iSuzkzDoGvoMGS2R/x9EjvW3WocT6NFVzXjlv4BuhjSVXdks6/mtyGqiG+yP2LMZzOthronBi78HzTzhNSyNoTxMGNB8mPvs7Ju393Pf5H7sSDnnRdKfNCYUbjzhMZNJASv2gVd7ipJj4UZa01SRVHGsDpEgZF4XFvXr6mEP4UZIfoW+Xj/S8sXs0g/VGIvj5LG6Vs9zm1tzzKB/a9/Dx34MLmIqtTjhbpC5diy+Ucu5PXdlJbGoqjeDx5tFOxArhHXa9h4GYPftexdTxdroaPE4yJJsAnAi5GoG+nuDsz+cTs2shF45Gdfg+NDfK4G4cyBKHsX+VeDPLABL+jD+mDpvml2AnD74DYtjfwJTUT46qtwckA/lKlSa61LHEfBIENyafdFSWL9YyXsQ3imVv4Ns9bqm7T7Oo6T+fyFxiULDTeyuTRheh3F9XM5JRWTqnpO6Cid7HeSRnpeuQcIwURL/HJA7f1G3rF5RIRZ/fIeLimvxcIV4mdJ+50TPQowm3VEj105Xb/Iv9KgYYxEbEc9JmxUx4nOnIKy41ZvooJBJLbdcBm9kNhClLgdyaLl9jJKV77t5KiDmfgdhy4EPG2JlS6o5xo3uF92m19FzLk6zjwdd3CWYhhaa+CoQlJWxUMPQmy+MCNxtQTCJ8dj2hcrWtdbG2c=
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 3
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: STONE_PICKAXE
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: STONE_AXE
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: APPLE
+    amount: 32
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: SAND
+    amount: 32
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: OAK_LOG
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: OAK_LOG
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: LEATHER_BOOTS
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: EMERALD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Донат-меню"}],"text":""}'
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: LEATHER_HELMET
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: LEATHER_LEGGINGS
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: LEATHER_CHESTPLATE
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
   - null

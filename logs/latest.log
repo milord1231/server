@@ -1,557 +1,1303 @@
-[16:34:44] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[16:34:47] [Worker-Main-1/INFO]: Loaded 7 recipes
-[16:34:52] [Server thread/INFO]: Starting minecraft server version 1.18.2
-[16:34:52] [Server thread/INFO]: Loading properties
-[16:34:52] [Server thread/INFO]: This server is running Paper version git-Paper-379 (MC: 1.18.2) (Implementing API version 1.18.2-R0.1-SNAPSHOT) (Git: 276d830)
-[16:34:52] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[16:34:52] [Server thread/INFO]: Using 4 threads for Netty based IO
-[16:34:52] [Server thread/INFO]: Default game type: SURVIVAL
-[16:34:52] [Server thread/INFO]: Generating keypair
-[16:34:53] [Server thread/INFO]: Starting Minecraft server on *:25565
-[16:34:53] [Server thread/INFO]: Using default channel type
-[16:34:53] [Server thread/INFO]: Paper: Using Java 11 compression from Velocity.
-[16:34:53] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[16:34:54] [Server thread/ERROR]: [STDERR] [org.bukkit.craftbukkit.v1_18_R2.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[16:34:59] [Server thread/WARN]: Legacy plugin ClearLag v2.7.7 does not specify an api-version.
-[16:34:59] [Server thread/WARN]: Legacy plugin AutoSaveWorld v4.15 does not specify an api-version.
-[16:34:59] [Server thread/WARN]: Legacy plugin MultiWorld v5.2.8 does not specify an api-version.
-[16:34:59] [Server thread/ERROR]: Could not load 'plugins\themis_0_13_0.jar' in folder 'plugins'
-org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [ProtocolLib]. Please download and install these plugins to run 'Themis'.
-	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:291) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.loadPlugins(CraftServer.java:418) ~[paper-1.18.2.jar:git-Paper-379]
-	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:288) ~[paper-1.18.2.jar:git-Paper-379]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1164) ~[paper-1.18.2.jar:git-Paper-379]
+[11:33:15] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[11:33:18] [Worker-Main-1/INFO]: Loaded 7 recipes
+[11:33:21] [Server thread/INFO]: Starting minecraft server version 1.18.2
+[11:33:21] [Server thread/INFO]: Loading properties
+[11:33:21] [Server thread/INFO]: This server is running Paper version git-Paper-379 (MC: 1.18.2) (Implementing API version 1.18.2-R0.1-SNAPSHOT) (Git: 276d830)
+[11:33:21] [Server thread/INFO]: Using 4 threads for Netty based IO
+[11:33:21] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[11:33:21] [Server thread/INFO]: Default game type: SURVIVAL
+[11:33:21] [Server thread/INFO]: Generating keypair
+[11:33:22] [Server thread/INFO]: Starting Minecraft server on *:25565
+[11:33:22] [Server thread/INFO]: Using default channel type
+[11:33:22] [Server thread/INFO]: Paper: Using Java 11 compression from Velocity.
+[11:33:22] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[11:33:24] [Server thread/ERROR]: [STDERR] [org.bukkit.craftbukkit.v1_18_R2.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[11:33:28] [Server thread/WARN]: Legacy plugin ClearLag v2.7.7 does not specify an api-version.
+[11:33:28] [Server thread/WARN]: Legacy plugin AutoSaveWorld v4.15 does not specify an api-version.
+[11:33:28] [Server thread/WARN]: Legacy plugin MultiWorld v5.2.8 does not specify an api-version.
+[11:33:28] [Server thread/WARN]: Legacy plugin BlockBlocker v0.65 does not specify an api-version.
+[11:33:29] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.30
+[11:33:30] [Server thread/INFO]: [Colored Signs] Loading ColoredSigns v5.0.0
+[11:33:30] [Server thread/INFO]: [Tim] Loading TimTheEnchanter v2.1
+[11:33:30] [Server thread/INFO]: [Chunky] Loading Chunky v1.2.202
+[11:33:30] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.11.1
+[11:33:30] [Server thread/INFO]: [ClearLag] Loading ClearLag v2.7.7
+[11:33:30] [Server thread/INFO]: [AutoSaveWorld] Loading AutoSaveWorld v4.15
+[11:33:30] [Server thread/INFO]: [MultiWorld] Loading MultiWorld v5.2.8
+[11:33:30] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v14.1.15
+[11:33:30] [Server thread/INFO]: [DamageIndicator] Loading DamageIndicator v1.2.0
+[11:33:30] [Server thread/INFO]: [BlockBlocker] Loading BlockBlocker v0.65
+[11:33:30] [Server thread/INFO]: [Resources] Loading Resources v1.7
+[11:33:30] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[11:33:30] [Server thread/INFO]: [MyCommand] Loading MyCommand v5.7.2
+[11:33:30] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v7.2.10+1742f98
+[11:33:31] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@38f4dbe8]
+[11:33:31] [Server thread/INFO]: [DecentHolograms] Loading DecentHolograms v2.4.2
+[11:33:31] [Server thread/INFO]: [Essentials] Loading Essentials v2.19.5-dev+19-96c6c95
+[11:33:31] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v4.3.1-b861
+[11:33:31] [Server thread/INFO]: [zAuctionHouseV3] Loading zAuctionHouseV3 v3.0.9.3
+[11:33:31] [Server thread/INFO]: [ProSkyWars] Loading ProSkyWars v1.0
+[11:33:31] [Server thread/INFO]: [ajParkour] Loading ajParkour v2.12.10
+[11:33:31] [Server thread/INFO]: [ChestCommands] Loading ChestCommands v4.0.3
+[11:33:31] [Server thread/INFO]: [DeluxeMenus] Loading DeluxeMenus v1.13.5-Release
+[11:33:31] [Server thread/INFO]: [DeluxeMenus] NMS hook has been setup successfully!
+[11:33:31] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat v2.19.5-dev+19-96c6c95
+[11:33:31] [Server thread/INFO]: [TAB] Loading TAB v3.1.1
+[11:33:31] [Server thread/INFO]: [Multiverse-Portals] Loading Multiverse-Portals v4.2.1-b834
+[11:33:31] [Server thread/INFO]: [NexEngine] Loading NexEngine v2.1.2 build-18/05/2022
+[11:33:31] [Server thread/INFO]: [EssentialsSpawn] Loading EssentialsSpawn v2.19.5-dev+19-96c6c95
+[11:33:31] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-SNAPSHOT-b2501
+[11:33:31] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v7.0.7+216b061
+[11:33:31] [Server thread/INFO]: [MoneyHunters] Loading MoneyHunters v7.0.3 Pro
+[11:33:31] [Server thread/INFO]: [WGExtender] Loading WGExtender v3.0
+[11:33:31] [Server thread/INFO]: [QualityArmory] Loading QualityArmory v2.0.6
+[11:33:31] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[11:33:31] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.30
+[11:33:32] [Server thread/INFO]:         __    
+[11:33:32] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.30
+[11:33:32] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[11:33:32] [Server thread/INFO]: 
+[11:33:32] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[11:33:33] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[11:33:34] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[11:33:34] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[11:33:34] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 3115ms)
+[11:33:34] [Server thread/INFO]: [AutoSaveWorld] Enabling AutoSaveWorld v4.15*
+[11:33:34] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[11:33:34] [Server thread/WARN]: [Vault] Loaded class com.earth2me.essentials.api.Economy from Essentials v2.19.5-dev+19-96c6c95 which is not a depend or softdepend of this plugin.
+[11:33:34] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[11:33:34] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[11:33:34] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[11:33:34] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[11:33:34] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.10+1742f98
+[11:33:34] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[11:33:35] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[11:33:35] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_18_R2.PaperweightAdapter as the Bukkit adapter
+[11:33:36] [Server thread/INFO]: [NexEngine] Enabling NexEngine v2.1.2 build-18/05/2022
+[11:33:36] [Server thread/INFO]: [NexEngine] Loaded NMS version: V1_18_R2
+[11:33:36] [Server thread/INFO]: [NexEngine] Successfully hooked with LuckPerms permissions
+[11:33:36] [Server thread/INFO]: [NexEngine] Successfully hooked with EssentialsX Economy economy
+[11:33:36] [Server thread/INFO]: [NexEngine] Successfully hooked with LuckPerms chat
+[11:33:36] [Server thread/INFO]: [NexEngine] Successfully hooked with Vault!
+[11:33:36] [Server thread/INFO]: [NexEngine] Found 0 external module(s).
+[11:33:36] [Server thread/INFO]: [NexEngine] Plugin loaded in 249 ms!
+[11:33:36] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[11:33:36] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[11:33:36] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[11:33:36] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[11:33:36] [Server thread/INFO]: Preparing level "world"
+[11:33:42] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[11:33:42] [Server thread/INFO]: Time elapsed: 270 ms
+[11:33:42] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[11:33:42] [Server thread/INFO]: Time elapsed: 66 ms
+[11:33:42] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[11:33:42] [Server thread/INFO]: Time elapsed: 67 ms
+[11:33:42] [Server thread/INFO]: [Colored Signs] Enabling ColoredSigns v5.0.0
+[11:33:42] [Server thread/INFO]: [Tim] Enabling TimTheEnchanter v2.1
+[11:33:42] [Server thread/INFO]: [Chunky] Enabling Chunky v1.2.202
+[11:33:42] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.1
+[11:33:42] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[11:33:42] [Server thread/INFO]: [ClearLag] Enabling ClearLag v2.7.7*
+[11:33:42] [Server thread/INFO]: [ClearLag] Loading modules...
+[11:33:43] [Server thread/WARN]: [ClearLag] mob-range requires you to use bukkit v1_8_R1 (1.8 Spigot)
+[11:33:43] [Server thread/INFO]: [ClearLag] Modules have been loaded!
+[11:33:43] [Server thread/INFO]: [ClearLag] Clearlag is now enabled!
+[11:33:43] [Server thread/INFO]: [MultiWorld] Enabling MultiWorld v5.2.8*
+[11:33:43] [Thread-12/INFO]: [ClearLag] Checking for updates...
+[11:33:43] [Server thread/INFO]: Preparing start region for dimension minecraft:skywarsmap
+[11:33:43] [Server thread/INFO]: Time elapsed: 197 ms
+[11:33:43] [Server thread/INFO]: [MultiWorld] v5.2.8 enabled.
+[11:33:43] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v14.1.15
+[11:33:43] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing PaperSkinRefresher[0;39m
+[11:33:43] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mDetected Minecraft [33;1mv1_18_R2[32;1m, using [33;1mPaperSkinRefresher[32;1m.[0;39m
+[11:33:44] [Server thread/INFO]: [SkinsRestorer] [ACF] Enabled Asynchronous Tab Completion Support!
+[11:33:44] [Server thread/INFO]: [DamageIndicator] Enabling DamageIndicator v1.2.0
+[11:33:44] [Server thread/WARN]: [AutoSaveWorld] Loaded class com.zenya.damageindicator.DamageIndicator from DamageIndicator v1.2.0 which is not a depend or softdepend of this plugin.
+[11:33:44] [Server thread/WARN]: [AutoSaveWorld] Plugin DamageIndicator attempted to establish connection https://api.spigotmc.org/legacy/premium.php?user_id=%25%25__USER__%25%25&resource_id=%25%25__RESOURCE__%25%25once=9379992 in main server thread
+[11:33:44] [Thread-12/INFO]: [ClearLag] No updates found!
+[11:33:44] [Server thread/WARN]: [AutoSaveWorld] Plugin DamageIndicator attempted to establish connection socket://api.spigotmc.org:443 in main server thread
+[11:33:45] [Server thread/ERROR]: [DamageIndicator] Failed to load config file "locale/en-us.yml" as it has syntax errors! Use this website to find them: "https://www.yamlchecker.com/". 
+[11:33:45] [Server thread/INFO]: [BlockBlocker] Enabling BlockBlocker v0.65*
+[11:33:45] [Server thread/INFO]: [BlockBlocker] [STDOUT] BlockBlocker v0.65 enable
+[11:33:45] [Server thread/WARN]: Nag author(s): '[moon_werewolf]' of 'BlockBlocker' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[11:33:45] [Server thread/INFO]: [Resources] Enabling Resources v1.7
+[11:33:45] [Server thread/INFO]: [MyCommand] Enabling MyCommand v5.7.2
+[11:33:45] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-* MyCommand v.5.7.2*-=-=-=-=-=-=-=-=-=-*
+[11:33:45] [Server thread/INFO]: | Hooked on Vault 1.7.3-b131
+[11:33:45] [Server thread/INFO]: | Command file(s) found : 1
+[11:33:45] [Server thread/INFO]: | Config : Ready.
+[11:33:45] [Server thread/INFO]: | ProtocolLib not found.
+[11:33:45] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mycommand [1.0.0]
+[11:33:45] [Server thread/INFO]: | Placeholder_API : Hooked, Ok.
+[11:33:45] [Server thread/INFO]: | Custom commands loaded : 7
+[11:33:45] [Server thread/INFO]: | You're running the latest version of MyCommand.
+[11:33:45] [Server thread/INFO]: |          by emmerrei a.k.a. ivanfromitaly.           
+[11:33:45] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-=-*   Done!   *-=-=-=-=-=-=-=-=-=-=-*
+[11:33:45] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.4.2
+[11:33:45] [Server thread/INFO]: [Essentials] Enabling Essentials v2.19.5-dev+19-96c6c95
+[11:33:46] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[11:33:46] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[11:33:46] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
+[11:33:46] [Server thread/INFO]: [Essentials] Using locale ru_RU
+[11:33:46] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[11:33:46] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[11:33:46] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[11:33:46] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[11:33:46] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.1-b861
+[11:33:46] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.1-b861" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[11:33:46] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[11:33:46] [Server thread/INFO]: [Multiverse-Core] 4 - World(s) loaded.
+[11:33:47] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
+[11:33:47] [Server thread/INFO]: [Multiverse-Core] Version 4.3.1-b861 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3] Enabling zAuctionHouseV3 v3.0.9.3
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] === ENABLE START ===
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Plugin Version V3.0.9.3
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] C:\Users\paden\Desktop\minecraft server\Server\plugins\zAuctionHouseV3\config.json loaded successfully !
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Loading of 3 tax items
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Loading of 2 price items
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Loading inventories in progress...
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory auction !
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory buyconfirm !
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory removeconfirm !
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory expire !
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory buying !
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory items !
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory categories !
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory sell !
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory sellshow !
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory category !
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory adminremove !
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory search !
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory show !
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Inventories loading complete.
+[11:33:47] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: zauctionhouse [3.0.9.3]
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Loading 3 inventories
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Loading 0 commands
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] C:\Users\paden\Desktop\minecraft server\Server\plugins\zAuctionHouseV3\items.json loaded successfully !
+[11:33:47] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] === ENABLE DONE (424ms) ===
+[11:33:47] [Server thread/INFO]: [ProSkyWars] Enabling ProSkyWars v1.0
+[11:33:47] [Server thread/WARN]: [AutoSaveWorld] Loaded class com.mineorigin.minigame.Main from ProSkyWars v1.0 which is not a depend or softdepend of this plugin.
+[11:33:47] [Server thread/WARN]: [AutoSaveWorld] Plugin ProSkyWars attempted to establish connection https://api.spigotmc.org/legacy/premium.php?user_id=%25%25__USER__%25%25&resource_id=%25%25__RESOURCE__%25%25once=9379992 in main server thread
+[11:33:47] [Server thread/INFO]: [SkyWars] Loaded 11 Sign(s)!
+[11:33:48] [Server thread/INFO]: [SkyWars] Loaded 1 Arena(s)!
+[11:33:48] [Server thread/INFO]: [SkyWars] Loaded 2 ChestType(s)!
+[11:33:48] [Server thread/INFO]: [SkyWars] Loaded 5 Kit(s)!
+[11:33:48] [Server thread/INFO]: [SkyWars] Loaded 9 Cage(s)!
+[11:33:48] [Server thread/INFO]: [SkyWars] Loaded 8 Trail(s)!
+[11:33:48] [Server thread/INFO]: [SkyWars] Loaded 12 Perk(s)!
+[11:33:48] [Server thread/INFO]: [SkyWars] Loaded 1 Balloon(s)!
+[11:33:48] [Server thread/INFO]: [Skywars] Citizens not found NPC's disabled!
+[11:33:48] [Server thread/ERROR]: [ProSkyWars] Plugin ProSkyWars v1.0 has failed to register events for class com.mineorigin.minigame.listeners.NPCInventoryClick because net/citizensnpcs/api/event/NPCLeftClickEvent does not exist.
+[11:33:48] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: ProSkywars [1.0]
+[11:33:48] [Server thread/INFO]: PlaceholderAPI hooked successfully!
+[11:33:48] [Server thread/INFO]: [ajParkour] Enabling ajParkour v2.12.10
+[11:33:48] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: ajpk [2.12.10]
+[11:33:48] [Server thread/INFO]: ajParkour v2.12.10 by ajgeiss0702 has been enabled!
+[11:33:48] [Server thread/INFO]: [ChestCommands] Enabling ChestCommands v4.0.3
+[11:33:48] [Server thread/INFO]: [ChestCommands] Hooked Vault
+[11:33:48] [Server thread/INFO]: [ChestCommands] Hooked PlaceholderAPI
+[11:33:48] [Server thread/INFO]: [DeluxeMenus] Enabling DeluxeMenus v1.13.5-Release
+[11:33:48] [Server thread/INFO]: [DeluxeMenus] Successfully hooked into PlaceholderAPI!
+[11:33:49] [Server thread/INFO]: [DeluxeMenus] 3 GUI menus loaded!
+[11:33:49] [Server thread/INFO]: [DeluxeMenus] You are running the latest version of DeluxeMenus!
+[11:33:49] [Server thread/INFO]: [DeluxeMenus] Successfully hooked into Vault!
+[11:33:49] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: deluxemenus [1.13.5-Release]
+[11:33:49] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.19.5-dev+19-96c6c95
+[11:33:49] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[11:33:49] [Server thread/INFO]: [TAB] Enabling TAB v3.1.1
+[11:33:49] [Server thread/INFO]: [TAB] §7Server version: 1.18.2 (v1_18_R2)
+[11:33:49] [Server thread/INFO]: [TAB] §7Loaded NMS hook in 28ms
+[11:33:49] [Server thread/INFO]: [TAB] §aEnabled in 187ms
+[11:33:49] [Server thread/INFO]: [Multiverse-Portals] Enabling Multiverse-Portals v4.2.1-b834
+[11:33:49] [Server thread/INFO]: [Multiverse-Portals] 4 - Portals(s) loaded
+[11:33:49] [Server thread/INFO]: [Multiverse-Portals] Found WorldEdit. Using it for selections.
+[11:33:49] [Server thread/INFO]: [Multiverse-Portals 4.2.1-b834]  Enabled - By Rigby and fernferret
+[11:33:49] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.19.5-dev+19-96c6c95
+[11:33:49] [Server thread/INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
+[11:33:49] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-SNAPSHOT-b2501
+[11:33:49] [Server thread/INFO]: [AuthMe] SQLite Setup finished
+[11:33:50] [Server thread/INFO]: [AuthMe] Hooked into LuckPerms!
+[11:33:50] [Server thread/INFO]: [AuthMe] Hooked successfully into Essentials
+[11:33:50] [Server thread/INFO]: [AuthMe] Hooked successfully into Multiverse-Core
+[11:33:50] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[11:33:50] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-SNAPSHOT build n.2501 successfully enabled!
+[11:33:50] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.7+216b061
+[11:33:50] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[11:33:50] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[11:33:50] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[11:33:50] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[11:33:50] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[11:33:50] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[11:33:50] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[11:33:50] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[11:33:50] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[11:33:50] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[11:33:50] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[11:33:50] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[11:33:50] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[11:33:50] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[11:33:50] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[11:33:51] [Server thread/INFO]: [WorldGuard] (SkyWarsMap) TNT ignition is PERMITTED.
+[11:33:51] [Server thread/INFO]: [WorldGuard] (SkyWarsMap) Lighters are PERMITTED.
+[11:33:51] [Server thread/INFO]: [WorldGuard] (SkyWarsMap) Lava fire is PERMITTED.
+[11:33:51] [Server thread/INFO]: [WorldGuard] (SkyWarsMap) Fire spread is UNRESTRICTED.
+[11:33:51] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'SkyWarsMap'
+[11:33:51] [Server thread/INFO]: [WorldGuard] Loading region data...
+[11:33:51] [Server thread/WARN]: [NexEngine] Loaded class com.sk89q.worldguard.WorldGuard from WorldGuard v7.0.7+216b061 which is not a depend or softdepend of this plugin.
+[11:33:51] [Server thread/INFO]: [NexEngine] Successfully hooked with WorldGuard!
+[11:33:51] [Server thread/INFO]: [MoneyHunters] Enabling MoneyHunters v7.0.3 Pro
+[11:33:51] [Server thread/INFO]: [MoneyHunters] Powered by: NexEngine
+[11:33:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: moneyhunters [7.0.3 Pro]
+[11:33:51] [Server thread/INFO]: [MoneyHunters] Successfully hooked with PlaceholderAPI!
+[11:33:51] [Server thread/INFO]: [MoneyHunters] Found 0 external module(s).
+[11:33:51] [Server thread/INFO]: [MoneyHunters] Registered currency: vault ($)
+[11:33:52] [Server thread/ERROR]: [MoneyHunters] Could not load job 'mythic.yml': No dependency installed: MythicMobs
+[11:33:52] [Server thread/INFO]: [MoneyHunters] Jobs Loaded: 5
+[11:33:52] [Server thread/INFO]: [MoneyHunters] Thank you for using the Pro version <3 !
+[11:33:52] [Server thread/INFO]: [MoneyHunters] Plugin loaded in 939 ms!
+[11:33:52] [Server thread/INFO]: [WGExtender] Enabling WGExtender v3.0
+[11:33:52] [Server thread/INFO]: [QualityArmory] Enabling QualityArmory v2.0.6
+[11:33:52] [Server thread/INFO]: [QualityArmory] Hooked with WorldGuard!
+[11:33:52] [Server thread/INFO]: [QualityArmory] It appears you are running WorldGuard. If you want to implement flags you can download the QAWorldGuard addon: https://www.spigotmc.org/resources/96868/
+[11:33:53] [Server thread/INFO]: [QualityArmory] -Loaded 11 Ammo types.
+[11:33:53] [Server thread/INFO]: [QualityArmory] -Loaded 16 Misc.
+[11:33:53] [Server thread/INFO]: [QualityArmory] -Loaded 70 Gun types.
+[11:33:53] [Server thread/INFO]: [QualityArmory] -Loading Attachment: awpasiimov
+[11:33:53] [Server thread/INFO]: [QualityArmory] -Loading Attachment: p30silenced
+[11:33:53] [Server thread/INFO]: [QualityArmory] -Loading Attachment: uzicorn
+[11:33:53] [Server thread/INFO]: [QualityArmory] -Loaded 3 Attachment types.
+[11:33:53] [Server thread/INFO]: [QualityArmory] -Loaded 4 Armor types.
+[11:33:53] [Server thread/WARN]: [AutoSaveWorld] Loaded class me.zombie_striker.qg.GithubUpdater from QualityArmory v2.0.6 which is not a depend or softdepend of this plugin.
+[11:33:53] [Server thread/WARN]: [AutoSaveWorld] Plugin QualityArmory attempted to establish connection https://api.github.com/repos/ZombieStriker/QualityArmory/releases/latest in main server thread
+[11:33:54] [Server thread/WARN]: [AutoSaveWorld] Plugin QualityArmory attempted to establish connection socket://api.github.com:443 in main server thread
+[11:33:54] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[11:33:54] [Server thread/INFO]: Running delayed init tasks
+[11:33:54] [Server thread/INFO]:    >> Loaded 0 Layers
+[11:33:54] [Server thread/INFO]:    >> Loaded 0 Loot Tables
+[11:33:54] [Server thread/INFO]:    >> Loaded 0 Resources
+[11:33:54] [Server thread/INFO]:    >> Loaded 0 Locations
+[11:33:54] [Server thread/INFO]: Resources loaded files after Multiverse-Core loaded
+[11:33:54] [Server thread/INFO]: [DecentHolograms] Loading holograms... 
+[11:33:54] [ForkJoinPool.commonPool-worker-3/WARN]: [PlaceholderAPI] Loaded class net.ess3.api.IEssentials from Essentials v2.19.5-dev+19-96c6c95 which is not a depend or softdepend of this plugin.
+[11:33:55] [Server thread/INFO]: [DecentHolograms] Loaded 8 holograms!
+[11:33:55] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[11:33:55] [Server thread/INFO]: Updating leaderboards
+[11:33:55] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: essentials [1.5.1]
+[11:33:55] [Server thread/WARN]: [PlaceholderAPI] Loaded class net.luckperms.api.LuckPerms from LuckPerms v5.4.30 which is not a depend or softdepend of this plugin.
+[11:33:55] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: luckperms [5.1-R2]
+[11:33:55] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: statistic [2.0.1]
+[11:33:55] [Server thread/WARN]: [PlaceholderAPI] Loaded class net.milkbowl.vault.economy.Economy from Vault v1.7.3-b131 which is not a depend or softdepend of this plugin.
+[11:33:55] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: vault [1.7.0]
+[11:33:55] [Server thread/INFO]: 4 placeholder hook(s) registered!
+[11:33:55] [Server thread/INFO]: Done (33.794s)! For help, type "help"
+[11:33:55] [Server thread/INFO]: Timings Reset
+[11:33:55] [Craft Scheduler Thread - 28 - Vault/INFO]: [Vault] Checking for Updates ... 
+[11:33:55] [Craft Scheduler Thread - 18 - AuthMe/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[11:33:55] [Craft Scheduler Thread - 11 - Essentials/INFO]: [Essentials] §6Получение информации о версии...
+[11:33:55] [Craft Scheduler Thread - 18 - AuthMe/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[11:33:55] [Craft Scheduler Thread - 18 - AuthMe/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[11:33:55] [Craft Scheduler Thread - 24 - MoneyHunters/INFO]: [MoneyHunters] Auto-save: Saved 0 online users | 0 offline users.
+[11:33:55] [Craft Scheduler Thread - 18 - AuthMe/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins\AuthMe\GeoLite2-Country.mmdb (Не удается найти указанный файл)
+[11:33:55] [Craft Scheduler Thread - 26 - MoneyHunters/INFO]: [MoneyHunters] Leaderboards updated!
+[11:33:55] [Craft Scheduler Thread - 28 - Vault/INFO]: [Vault] No new version available
+[11:33:55] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[11:33:55] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[11:33:55] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[11:33:55] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[11:33:55] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
+[11:33:55] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[11:33:55] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[11:33:55] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Current version: [32;1m14.1.15[0;39m
+[11:33:55] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[11:33:55] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[11:33:55] [Craft Scheduler Thread - 14 - ajParkour/INFO]: [ajParkour] You are up to date! (2.12.10)
+[11:33:56] [Craft Scheduler Thread - 12 - zAuctionHouseV3/INFO]: [zAuctionHouseV3 v3.0.9.3] New update available. Your version: 3.0.9.3, latest version: 3.0.9.4
+[11:33:56] [Craft Scheduler Thread - 12 - zAuctionHouseV3/INFO]: [zAuctionHouseV3 v3.0.9.3] Download plugin here: https://groupez.dev/resources/1
+[11:34:21] [WorldGuard Region I/O/INFO]: [WorldGuard] Region data changes made in 'world' have been background saved
+[11:40:34] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 60 seconds!
+[11:41:14] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 20 seconds!
+[11:41:34] [Server thread/INFO]: [Очистка мира] Removed 1 Entities!
+[11:42:34] [User Authenticator #1/INFO]: UUID of player milord is 476dc8ad-7e3a-3e8f-bed1-2a2a1cac7033
+[11:42:35] [Server thread/INFO]: milord[/127.0.0.1:54721] logged in with entity id 130 at ([world]-7589453.258137352, 82.40843910270141, -1.2361197982353747E7)
+[11:42:35] [Server thread/INFO]: Приветсвуем тебя на сервере, milord!
+[11:43:53] [Craft Scheduler Thread - 53 - AuthMe/INFO]: [AuthMe] milord logged in 127.0.0.1
+[11:43:54] [Server thread/INFO]: Updating leaderboards
+[11:43:54] [Server thread/INFO]:    >> Saved 0 Layers
+[11:43:54] [Server thread/INFO]:    >> Saved 0 Loot Tables
+[11:43:54] [Server thread/INFO]:    >> Saved 0 Resources
+[11:43:54] [Server thread/INFO]:    >> Saved 0 Locations
+[11:45:33] [Server thread/INFO]: milord issued server command: /br sphere air 2
+[11:45:40] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6189ms or 123 ticks behind
+[11:47:47] [Server thread/INFO]: milord issued server command: /br heightmap
+[11:48:20] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 60 seconds!
+[11:48:36] [AutoSaveWorld AutoSaveThread/INFO]: AutoSaving
+[11:48:41] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[11:48:41] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[11:48:41] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[11:48:41] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[11:48:41] [AutoSaveWorld AutoSaveThread/INFO]: AutoSave Complete
+[11:48:47] [Timer-1/INFO]: [zAuctionHouseV3 v3.0.9.3] C:\Users\paden\Desktop\minecraft server\Server\plugins\zAuctionHouseV3\items.json successfully saved !
+[11:48:54] [Server thread/INFO]: milord issued server command: /br heightmap
+[11:49:00] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 20 seconds!
+[11:49:01] [Server thread/INFO]: milord issued server command: /br heightmap mountain1
+[11:49:03] [Server thread/INFO]: milord issued server command: /br heightmap mountain1 https://i.imgur.com/hzCwsG7.png
+[11:49:14] [Server thread/INFO]: milord issued server command: /br heightmap 10 https://i.imgur.com/hzCwsG7.png
+[11:49:18] [Server thread/INFO]: milord issued server command: /br heightmap https://i.imgur.com/hzCwsG7.png
+[11:49:18] [Server thread/ERROR]: An unexpected error while handling a WorldEdit command
+java.nio.file.InvalidPathException: Illegal char <:> at index 5: https://i.imgur.com/hzCwsG7.png
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77) ~[?:?]
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:92) ~[?:?]
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232) ~[?:?]
+	at java.nio.file.Path.resolve(Path.java:515) ~[?:?]
+	at com.sk89q.worldedit.util.asset.AssetLoaders.getAssetLoader(AssetLoaders.java:114) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.command.BrushCommands.heightmapBrush(BrushCommands.java:370) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.command.BrushCommandsRegistration.cmd$heightmap(BrushCommandsRegistration.java:520) ~[worldedit-bukkit-7.2.10.jar:?]
+	at org.enginehub.piston.CommandManager.execute(CommandManager.java:157) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.extension.platform.PlatformCommandManager.handleCommand(PlatformCommandManager.java:497) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.MethodHandleEventHandler.dispatch(MethodHandleEventHandler.java:51) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:193) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:181) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.bukkit.WorldEditPlugin.onCommand(WorldEditPlugin.java:383) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55) ~[worldedit-bukkit-7.2.10.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.dispatchCommand(CraftServer.java:906) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleCommand(ServerGamePacketListenerImpl.java:2307) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleChat(ServerGamePacketListenerImpl.java:2118) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleChat(ServerGamePacketListenerImpl.java:2099) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundChatPacket.handle(ServerboundChatPacket.java:46) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundChatPacket.a(ServerboundChatPacket.java:6) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1400) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:188) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1377) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1370) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1348) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1230) ~[paper-1.18.2.jar:git-Paper-379]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.18.2.jar:git-Paper-379]
 	at java.lang.Thread.run(Thread.java:833) ~[?:?]
-[16:34:59] [Server thread/WARN]: Legacy plugin BlockBlocker v0.65 does not specify an api-version.
-[16:34:59] [Server thread/ERROR]: Could not load 'plugins\moontops.jar' in folder 'plugins'
-org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [HolographicDisplays]. Please download and install these plugins to run 'WIMTops'.
-	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:291) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.loadPlugins(CraftServer.java:418) ~[paper-1.18.2.jar:git-Paper-379]
-	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:288) ~[paper-1.18.2.jar:git-Paper-379]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1164) ~[paper-1.18.2.jar:git-Paper-379]
+[11:49:20] [Server thread/INFO]: [Очистка мира] Removed 1 Entities!
+[11:49:26] [Server thread/INFO]: milord issued server command: /br heightmap https://i.imgur.com/hzCwsG7.png 10
+[11:49:26] [Server thread/ERROR]: An unexpected error while handling a WorldEdit command
+java.nio.file.InvalidPathException: Illegal char <:> at index 5: https://i.imgur.com/hzCwsG7.png
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77) ~[?:?]
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:92) ~[?:?]
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232) ~[?:?]
+	at java.nio.file.Path.resolve(Path.java:515) ~[?:?]
+	at com.sk89q.worldedit.util.asset.AssetLoaders.getAssetLoader(AssetLoaders.java:114) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.command.BrushCommands.heightmapBrush(BrushCommands.java:370) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.command.BrushCommandsRegistration.cmd$heightmap(BrushCommandsRegistration.java:520) ~[worldedit-bukkit-7.2.10.jar:?]
+	at org.enginehub.piston.CommandManager.execute(CommandManager.java:157) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.extension.platform.PlatformCommandManager.handleCommand(PlatformCommandManager.java:497) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.MethodHandleEventHandler.dispatch(MethodHandleEventHandler.java:51) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:193) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:181) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.bukkit.WorldEditPlugin.onCommand(WorldEditPlugin.java:383) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55) ~[worldedit-bukkit-7.2.10.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.dispatchCommand(CraftServer.java:906) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleCommand(ServerGamePacketListenerImpl.java:2307) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleChat(ServerGamePacketListenerImpl.java:2118) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleChat(ServerGamePacketListenerImpl.java:2099) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundChatPacket.handle(ServerboundChatPacket.java:46) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundChatPacket.a(ServerboundChatPacket.java:6) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1400) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:188) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1377) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1370) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1348) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1230) ~[paper-1.18.2.jar:git-Paper-379]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.18.2.jar:git-Paper-379]
 	at java.lang.Thread.run(Thread.java:833) ~[?:?]
-[16:35:00] [Server thread/WARN]: Legacy plugin Statistics v1.2.4 does not specify an api-version.
-[16:35:00] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.30
-[16:35:01] [Server thread/INFO]: [Colored Signs] Loading ColoredSigns v5.0.0
-[16:35:01] [Server thread/INFO]: [Tim] Loading TimTheEnchanter v2.1
-[16:35:01] [Server thread/INFO]: [Chunky] Loading Chunky v1.2.202
-[16:35:01] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.11.1
-[16:35:01] [Server thread/INFO]: [ClearLag] Loading ClearLag v2.7.7
-[16:35:01] [Server thread/INFO]: [AutoSaveWorld] Loading AutoSaveWorld v4.15
-[16:35:01] [Server thread/INFO]: [MultiWorld] Loading MultiWorld v5.2.8
-[16:35:01] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v14.1.15
-[16:35:01] [Server thread/INFO]: [DamageIndicator] Loading DamageIndicator v1.2.0
-[16:35:01] [Server thread/INFO]: [BlockBlocker] Loading BlockBlocker v0.65
-[16:35:01] [Server thread/INFO]: [Stats] Loading Stats v5.3.6
-[16:35:01] [Server thread/INFO]: [Resources] Loading Resources v1.7
-[16:35:01] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
-[16:35:01] [Server thread/INFO]: [MyCommand] Loading MyCommand v5.7.2
-[16:35:01] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v7.2.10+1742f98
-[16:35:02] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@5dbcb283]
-[16:35:02] [Server thread/INFO]: [DecentHolograms] Loading DecentHolograms v2.4.2
-[16:35:02] [Server thread/INFO]: [Essentials] Loading Essentials v2.19.5-dev+19-96c6c95
-[16:35:02] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v4.3.1-b861
-[16:35:02] [Server thread/INFO]: [ProSkyWars] Loading ProSkyWars v1.0
-[16:35:02] [Server thread/INFO]: [ajParkour] Loading ajParkour v2.12.10
-[16:35:02] [Server thread/INFO]: [ChestCommands] Loading ChestCommands v4.0.3
-[16:35:02] [Server thread/INFO]: [DeluxeMenus] Loading DeluxeMenus v1.13.5-Release
-[16:35:02] [Server thread/INFO]: [DeluxeMenus] NMS hook has been setup successfully!
-[16:35:02] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat v2.19.5-dev+19-96c6c95
-[16:35:02] [Server thread/INFO]: [TAB] Loading TAB v3.1.1
-[16:35:02] [Server thread/INFO]: [ServerSigns] Loading ServerSigns v4.7.0
-[16:35:02] [Server thread/INFO]: [Multiverse-Portals] Loading Multiverse-Portals v4.2.1-b834
-[16:35:02] [Server thread/INFO]: [NexEngine] Loading NexEngine v2.1.2 build-18/05/2022
-[16:35:02] [Server thread/INFO]: [EssentialsSpawn] Loading EssentialsSpawn v2.19.5-dev+19-96c6c95
-[16:35:02] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-SNAPSHOT-b2501
-[16:35:02] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v7.0.7+216b061
-[16:35:02] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.30-SNAPSHOT (build 2565)
-[16:35:02] [Server thread/INFO]: [Statistics] Loading Statistics v1.2.4
-[16:35:02] [Server thread/INFO]: [MoneyHunters] Loading MoneyHunters v7.0.3 Pro
-[16:35:02] [Server thread/INFO]: [WGExtender] Loading WGExtender v3.0
-[16:35:02] [Server thread/INFO]: [QualityArmory] Loading QualityArmory v2.0.6
-[16:35:02] [Server thread/INFO]: [zAuctionHouseV3] Loading zAuctionHouseV3 v3.0.9.3
-[16:35:02] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[16:35:02] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.30
-[16:35:03] [Server thread/INFO]:         __    
-[16:35:03] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.30
-[16:35:03] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[16:35:03] [Server thread/INFO]: 
-[16:35:03] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[16:35:04] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[16:35:04] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[16:35:05] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[16:35:05] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 3031ms)
-[16:35:05] [Server thread/INFO]: [AutoSaveWorld] Enabling AutoSaveWorld v4.15*
-[16:35:05] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
-[16:35:05] [Server thread/WARN]: [Vault] Loaded class com.earth2me.essentials.api.Economy from Essentials v2.19.5-dev+19-96c6c95 which is not a depend or softdepend of this plugin.
-[16:35:05] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
-[16:35:05] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[16:35:05] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
-[16:35:05] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
-[16:35:05] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.10+1742f98
-[16:35:05] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[16:35:05] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
-[16:35:06] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_18_R2.PaperweightAdapter as the Bukkit adapter
-[16:35:07] [Server thread/INFO]: [NexEngine] Enabling NexEngine v2.1.2 build-18/05/2022
-[16:35:07] [Server thread/INFO]: [NexEngine] Loaded NMS version: V1_18_R2
-[16:35:07] [Server thread/INFO]: [NexEngine] Successfully hooked with LuckPerms permissions
-[16:35:07] [Server thread/INFO]: [NexEngine] Successfully hooked with EssentialsX Economy economy
-[16:35:07] [Server thread/INFO]: [NexEngine] Successfully hooked with LuckPerms chat
-[16:35:07] [Server thread/INFO]: [NexEngine] Successfully hooked with Vault!
-[16:35:07] [Server thread/INFO]: [NexEngine] Found 0 external module(s).
-[16:35:07] [Server thread/INFO]: [NexEngine] Plugin loaded in 212 ms!
-[16:35:07] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[16:35:07] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[16:35:07] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[16:35:07] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[16:35:07] [Server thread/INFO]: Preparing level "world"
-[16:35:13] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[16:35:13] [Server thread/INFO]: Time elapsed: 305 ms
-[16:35:13] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[16:35:13] [Server thread/INFO]: Time elapsed: 91 ms
-[16:35:13] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[16:35:13] [Server thread/INFO]: Time elapsed: 73 ms
-[16:35:13] [Server thread/INFO]: [Colored Signs] Enabling ColoredSigns v5.0.0
-[16:35:13] [Server thread/INFO]: [Tim] Enabling TimTheEnchanter v2.1
-[16:35:13] [Server thread/INFO]: [Chunky] Enabling Chunky v1.2.202
-[16:35:13] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.1
-[16:35:14] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[16:35:14] [Server thread/INFO]: [ClearLag] Enabling ClearLag v2.7.7*
-[16:35:14] [Server thread/INFO]: [ClearLag] Loading modules...
-[16:35:14] [Server thread/WARN]: [ClearLag] mob-range requires you to use bukkit v1_8_R1 (1.8 Spigot)
-[16:35:14] [Server thread/INFO]: [ClearLag] Modules have been loaded!
-[16:35:14] [Server thread/INFO]: [ClearLag] Clearlag is now enabled!
-[16:35:14] [Server thread/INFO]: [MultiWorld] Enabling MultiWorld v5.2.8*
-[16:35:14] [Thread-12/INFO]: [ClearLag] Checking for updates...
-[16:35:14] [Server thread/INFO]: Preparing start region for dimension minecraft:skywarsmap
-[16:35:14] [Server thread/INFO]: Time elapsed: 53 ms
-[16:35:14] [Server thread/INFO]: [MultiWorld] v5.2.8 enabled.
-[16:35:14] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v14.1.15
-[16:35:15] [Thread-12/INFO]: [ClearLag] No updates found!
-[16:35:15] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing PaperSkinRefresher[0;39m
-[16:35:15] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mDetected Minecraft [33;1mv1_18_R2[32;1m, using [33;1mPaperSkinRefresher[32;1m.[0;39m
-[16:35:15] [Server thread/INFO]: [SkinsRestorer] [ACF] Enabled Asynchronous Tab Completion Support!
-[16:35:15] [Server thread/INFO]: [DamageIndicator] Enabling DamageIndicator v1.2.0
-[16:35:15] [Server thread/WARN]: [AutoSaveWorld] Loaded class com.zenya.damageindicator.DamageIndicator from DamageIndicator v1.2.0 which is not a depend or softdepend of this plugin.
-[16:35:15] [Server thread/WARN]: [AutoSaveWorld] Plugin DamageIndicator attempted to establish connection https://api.spigotmc.org/legacy/premium.php?user_id=%25%25__USER__%25%25&resource_id=%25%25__RESOURCE__%25%25once=9379992 in main server thread
-[16:35:15] [Server thread/WARN]: [AutoSaveWorld] Plugin DamageIndicator attempted to establish connection socket://api.spigotmc.org:443 in main server thread
-[16:35:16] [Server thread/ERROR]: [DamageIndicator] Failed to load config file "locale/en-us.yml" as it has syntax errors! Use this website to find them: "https://www.yamlchecker.com/". 
-[16:35:16] [Server thread/INFO]: [BlockBlocker] Enabling BlockBlocker v0.65*
-[16:35:16] [Server thread/INFO]: [BlockBlocker] [STDOUT] BlockBlocker v0.65 enable
-[16:35:16] [Server thread/WARN]: Nag author(s): '[moon_werewolf]' of 'BlockBlocker' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
-[16:35:16] [Server thread/INFO]: [Stats] Enabling Stats v5.3.6
-[16:35:16] [Server thread/INFO]: [Stats] Stats is not yet configured
-[16:35:16] [Server thread/INFO]: [Stats] Stats has generated a config.yml file
-[16:35:16] [Server thread/INFO]: [Stats] Please configure Stats and then restart your server
-[16:35:16] [Server thread/INFO]: [Stats] Disabling Stats v5.3.6
-[16:35:16] [Server thread/INFO]: [Resources] Enabling Resources v1.7
-[16:35:16] [Server thread/INFO]: [MyCommand] Enabling MyCommand v5.7.2
-[16:35:16] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-* MyCommand v.5.7.2*-=-=-=-=-=-=-=-=-=-*
-[16:35:16] [Server thread/INFO]: | Hooked on Vault 1.7.3-b131
-[16:35:16] [Server thread/INFO]: | Command file(s) found : 1
-[16:35:16] [Server thread/INFO]: | Config : Ready.
-[16:35:16] [Server thread/INFO]: | ProtocolLib not found.
-[16:35:16] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mycommand [1.0.0]
-[16:35:16] [Server thread/INFO]: | Placeholder_API : Hooked, Ok.
-[16:35:16] [Server thread/INFO]: | Custom commands loaded : 7
-[16:35:16] [Server thread/INFO]: | You're running the latest version of MyCommand.
-[16:35:16] [Server thread/INFO]: |          by emmerrei a.k.a. ivanfromitaly.           
-[16:35:16] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-=-*   Done!   *-=-=-=-=-=-=-=-=-=-=-*
-[16:35:16] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.4.2
-[16:35:16] [Server thread/INFO]: [Essentials] Enabling Essentials v2.19.5-dev+19-96c6c95
-[16:35:18] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[16:35:18] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[16:35:21] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
-[16:35:21] [Server thread/INFO]: [Essentials] Using locale ru_RU
-[16:35:21] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[16:35:21] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[16:35:21] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
-[16:35:21] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
-[16:35:21] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.1-b861
-[16:35:21] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.1-b861" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
-[16:35:21] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
-[16:35:22] [Server thread/INFO]: [Multiverse-Core] 4 - World(s) loaded.
-[16:35:22] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
-[16:35:22] [Server thread/INFO]: [Multiverse-Core] Version 4.3.1-b861 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
-[16:35:22] [Server thread/INFO]: [ProSkyWars] Enabling ProSkyWars v1.0
-[16:35:22] [Server thread/WARN]: [AutoSaveWorld] Loaded class com.mineorigin.minigame.Main from ProSkyWars v1.0 which is not a depend or softdepend of this plugin.
-[16:35:22] [Server thread/WARN]: [AutoSaveWorld] Plugin ProSkyWars attempted to establish connection https://api.spigotmc.org/legacy/premium.php?user_id=%25%25__USER__%25%25&resource_id=%25%25__RESOURCE__%25%25once=9379992 in main server thread
-[16:35:22] [Server thread/WARN]: [AutoSaveWorld] Plugin ProSkyWars attempted to establish connection socket://api.spigotmc.org:443 in main server thread
-[16:35:23] [Server thread/INFO]: [SkyWars] Loaded 11 Sign(s)!
-[16:35:23] [Server thread/INFO]: [SkyWars] Loaded 1 Arena(s)!
-[16:35:23] [Server thread/INFO]: [SkyWars] Loaded 2 ChestType(s)!
-[16:35:23] [Server thread/INFO]: [SkyWars] Loaded 5 Kit(s)!
-[16:35:23] [Server thread/INFO]: [SkyWars] Loaded 9 Cage(s)!
-[16:35:23] [Server thread/INFO]: [SkyWars] Loaded 8 Trail(s)!
-[16:35:23] [Server thread/INFO]: [SkyWars] Loaded 12 Perk(s)!
-[16:35:23] [Server thread/INFO]: [SkyWars] Loaded 1 Balloon(s)!
-[16:35:23] [Server thread/INFO]: [SkyWars] Loaded 0 NPC(s)!
-[16:35:23] [Server thread/INFO]: [Skywars] Citizens found NPC's Enabled!
-[16:35:23] [Server thread/WARN]: [ProSkyWars] Loaded class net.citizensnpcs.api.event.NPCRightClickEvent from Citizens v2.0.30-SNAPSHOT (build 2565) which is not a depend or softdepend of this plugin.
-[16:35:23] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: ProSkywars [1.0]
-[16:35:23] [Server thread/INFO]: PlaceholderAPI hooked successfully!
-[16:35:23] [Server thread/INFO]: [ajParkour] Enabling ajParkour v2.12.10
-[16:35:23] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: ajpk [2.12.10]
-[16:35:23] [Server thread/INFO]: ajParkour v2.12.10 by ajgeiss0702 has been enabled!
-[16:35:23] [Server thread/INFO]: [ChestCommands] Enabling ChestCommands v4.0.3
-[16:35:23] [Server thread/INFO]: [ChestCommands] Hooked Vault
-[16:35:23] [Server thread/INFO]: [ChestCommands] Hooked PlaceholderAPI
-[16:35:24] [Server thread/INFO]: [DeluxeMenus] Enabling DeluxeMenus v1.13.5-Release
-[16:35:24] [Server thread/INFO]: [DeluxeMenus] Successfully hooked into PlaceholderAPI!
-[16:35:24] [Server thread/INFO]: [DeluxeMenus] 3 GUI menus loaded!
-[16:35:24] [Server thread/INFO]: [DeluxeMenus] You are running the latest version of DeluxeMenus!
-[16:35:24] [Server thread/INFO]: [DeluxeMenus] Successfully hooked into Vault!
-[16:35:24] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: deluxemenus [1.13.5-Release]
-[16:35:24] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.19.5-dev+19-96c6c95
-[16:35:24] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
-[16:35:24] [Server thread/INFO]: [TAB] Enabling TAB v3.1.1
-[16:35:24] [Server thread/INFO]: [TAB] §7Server version: 1.18.2 (v1_18_R2)
-[16:35:24] [Server thread/INFO]: [TAB] §7Loaded NMS hook in 25ms
-[16:35:25] [Server thread/INFO]: [TAB] §aEnabled in 199ms
-[16:35:25] [Server thread/INFO]: [ServerSigns] Enabling ServerSigns v4.7.0
-[16:35:25] [Server thread/INFO]: [ServerSigns] Version 4.7.0 is now enabled.
-[16:35:25] [Server thread/INFO]: [Multiverse-Portals] Enabling Multiverse-Portals v4.2.1-b834
-[16:35:25] [Server thread/INFO]: [Multiverse-Portals] 4 - Portals(s) loaded
-[16:35:25] [Server thread/INFO]: [Multiverse-Portals] Found WorldEdit. Using it for selections.
-[16:35:25] [Server thread/INFO]: [Multiverse-Portals 4.2.1-b834]  Enabled - By Rigby and fernferret
-[16:35:25] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.19.5-dev+19-96c6c95
-[16:35:25] [Server thread/INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
-[16:35:25] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-SNAPSHOT-b2501
-[16:35:25] [Server thread/INFO]: [AuthMe] SQLite Setup finished
-[16:35:25] [Server thread/INFO]: [AuthMe] Hooked into LuckPerms!
-[16:35:26] [Server thread/INFO]: [AuthMe] Hooked successfully into Essentials
-[16:35:26] [Server thread/INFO]: [AuthMe] Hooked successfully into Multiverse-Core
-[16:35:26] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
-[16:35:26] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-SNAPSHOT build n.2501 successfully enabled!
-[16:35:26] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.7+216b061
-[16:35:26] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
-[16:35:26] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
-[16:35:26] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
-[16:35:26] [Server thread/INFO]: [WorldGuard] (SkyWarsMap) TNT ignition is PERMITTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] (SkyWarsMap) Lighters are PERMITTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] (SkyWarsMap) Lava fire is PERMITTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] (SkyWarsMap) Fire spread is UNRESTRICTED.
-[16:35:26] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'SkyWarsMap'
-[16:35:26] [Server thread/INFO]: [WorldGuard] Loading region data...
-[16:35:27] [Server thread/WARN]: [NexEngine] Loaded class com.sk89q.worldguard.WorldGuard from WorldGuard v7.0.7+216b061 which is not a depend or softdepend of this plugin.
-[16:35:27] [Server thread/INFO]: [NexEngine] Successfully hooked with WorldGuard!
-[16:35:27] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.30-SNAPSHOT (build 2565)
-[16:35:27] [Server thread/WARN]: [AutoSaveWorld] Loaded class net.citizensnpcs.Citizens from Citizens v2.0.30-SNAPSHOT (build 2565) which is not a depend or softdepend of this plugin.
-[16:35:27] [Server thread/WARN]: [AutoSaveWorld] Plugin Citizens attempted to establish connection https://api.spigotmc.org/legacy/premium.php?user_id=%25%25__USER__%25%25&resource_id=%25%25__RESOURCE__%25%25once=9379992 in main server thread
-[16:35:27] [Server thread/ERROR]: [Citizens] Missing translation for system language (ru_RU): defaulting to English
-[16:35:27] [Server thread/INFO]: [Citizens] Loaded economy handling via Vault.
-[16:35:27] [Server thread/WARN]: [NexEngine] Loaded class net.citizensnpcs.api.trait.TraitInfo from Citizens v2.0.30-SNAPSHOT (build 2565) which is not a depend or softdepend of this plugin.
-[16:35:27] [Server thread/INFO]: [NexEngine] Successfully hooked with Citizens!
-[16:35:27] [Server thread/INFO]: [Statistics] Enabling Statistics v1.2.4*
-[16:35:27] [Server thread/INFO]: [Statistics] +------ [ Fetching Patches ] ------+
-[16:35:27] [Server thread/INFO]: [Statistics] |  All patch files are up to date  |
-[16:35:27] [Server thread/INFO]: [Statistics] +----------------------------------+
-[16:35:27] [Server thread/WARN]: [AutoSaveWorld] Loaded class com.wolvencraft.yasp.db.Database from Statistics v1.2.4 which is not a depend or softdepend of this plugin.
-[16:35:27] [Server thread/WARN]: [AutoSaveWorld] Plugin Statistics attempted to establish connection socket://localhost:3306 in main server thread
-[16:35:27] [Server thread/WARN]: [AutoSaveWorld] Plugin Statistics attempted to establish connection socket://localhost:3306 in main server thread
-[16:35:27] [Server thread/ERROR]: [Statistics] Cannot establish a database connection!
-[16:35:27] [Server thread/ERROR]: [Statistics] Is the plugin set up correctly?
-[16:35:27] [Server thread/INFO]: [MoneyHunters] Enabling MoneyHunters v7.0.3 Pro
-[16:35:27] [Server thread/INFO]: [MoneyHunters] Powered by: NexEngine
-[16:35:27] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: moneyhunters [7.0.3 Pro]
-[16:35:27] [Server thread/INFO]: [MoneyHunters] Successfully hooked with PlaceholderAPI!
-[16:35:27] [Server thread/INFO]: [MoneyHunters] Found 0 external module(s).
-[16:35:27] [Server thread/INFO]: [MoneyHunters] Registered currency: vault ($)
-[16:35:28] [Server thread/ERROR]: [MoneyHunters] Could not load job 'mythic.yml': No dependency installed: MythicMobs
-[16:35:28] [Server thread/INFO]: [MoneyHunters] Jobs Loaded: 5
-[16:35:28] [Server thread/INFO]: [MoneyHunters] Thank you for using the Pro version <3 !
-[16:35:28] [Server thread/INFO]: [MoneyHunters] Plugin loaded in 576 ms!
-[16:35:28] [Server thread/INFO]: [WGExtender] Enabling WGExtender v3.0
-[16:35:28] [Server thread/INFO]: [QualityArmory] Enabling QualityArmory v2.0.6
-[16:35:28] [Server thread/INFO]: [QualityArmory] Hooked with WorldGuard!
-[16:35:28] [Server thread/INFO]: [QualityArmory] It appears you are running WorldGuard. If you want to implement flags you can download the QAWorldGuard addon: https://www.spigotmc.org/resources/96868/
-[16:35:28] [Server thread/INFO]: [QualityArmory] -Loaded 11 Ammo types.
-[16:35:28] [Server thread/INFO]: [QualityArmory] -Loaded 16 Misc.
-[16:35:29] [Server thread/INFO]: [QualityArmory] -Loaded 70 Gun types.
-[16:35:29] [Server thread/INFO]: [QualityArmory] -Loading Attachment: awpasiimov
-[16:35:29] [Server thread/INFO]: [QualityArmory] -Loading Attachment: p30silenced
-[16:35:29] [Server thread/INFO]: [QualityArmory] -Loading Attachment: uzicorn
-[16:35:29] [Server thread/INFO]: [QualityArmory] -Loaded 3 Attachment types.
-[16:35:29] [Server thread/INFO]: [QualityArmory] -Loaded 4 Armor types.
-[16:35:29] [Server thread/WARN]: [AutoSaveWorld] Loaded class me.zombie_striker.qg.GithubUpdater from QualityArmory v2.0.6 which is not a depend or softdepend of this plugin.
-[16:35:29] [Server thread/WARN]: [AutoSaveWorld] Plugin QualityArmory attempted to establish connection https://api.github.com/repos/ZombieStriker/QualityArmory/releases/latest in main server thread
-[16:35:29] [Server thread/WARN]: [AutoSaveWorld] Plugin QualityArmory attempted to establish connection socket://api.github.com:443 in main server thread
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3] Enabling zAuctionHouseV3 v3.0.9.3
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] === ENABLE START ===
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Plugin Version V3.0.9.3
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] C:\Users\paden\Desktop\minecraft server\Server\plugins\zAuctionHouseV3\config.json loaded successfully !
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Loading of 3 tax items
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Loading of 2 price items
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Loading inventories in progress...
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory auction !
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory buyconfirm !
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory removeconfirm !
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory expire !
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory buying !
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory items !
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory categories !
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory sell !
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory sellshow !
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory category !
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory adminremove !
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory search !
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Successful loading of the inventory show !
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Inventories loading complete.
-[16:35:29] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: zauctionhouse [3.0.9.3]
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Loading 3 inventories
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] Loading 0 commands
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] C:\Users\paden\Desktop\minecraft server\Server\plugins\zAuctionHouseV3\items.json loaded successfully !
-[16:35:29] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] === ENABLE DONE (303ms) ===
-[16:35:30] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[16:35:30] [Server thread/INFO]: Running delayed init tasks
-[16:35:30] [Server thread/INFO]:    >> Loaded 0 Layers
-[16:35:30] [Server thread/INFO]:    >> Loaded 0 Loot Tables
-[16:35:30] [Server thread/INFO]:    >> Loaded 0 Resources
-[16:35:30] [Server thread/INFO]:    >> Loaded 0 Locations
-[16:35:30] [Server thread/INFO]: Resources loaded files after Multiverse-Core loaded
-[16:35:30] [Server thread/INFO]: [DecentHolograms] Loading holograms... 
-[16:35:30] [ForkJoinPool.commonPool-worker-3/WARN]: [PlaceholderAPI] Loaded class net.ess3.api.IEssentials from Essentials v2.19.5-dev+19-96c6c95 which is not a depend or softdepend of this plugin.
-[16:35:30] [Server thread/INFO]: [DecentHolograms] Loaded 8 holograms!
-[16:35:30] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
-[16:35:30] [Server thread/INFO]: Updating leaderboards
-[16:35:30] [Server thread/INFO]: [Citizens] Loaded 0 NPCs.
-[16:35:30] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: essentials [1.5.1]
-[16:35:30] [Server thread/WARN]: [PlaceholderAPI] Loaded class net.luckperms.api.LuckPerms from LuckPerms v5.4.30 which is not a depend or softdepend of this plugin.
-[16:35:30] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: luckperms [5.1-R2]
-[16:35:30] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: statistic [2.0.1]
-[16:35:30] [Server thread/WARN]: [PlaceholderAPI] Loaded class net.milkbowl.vault.economy.Economy from Vault v1.7.3-b131 which is not a depend or softdepend of this plugin.
-[16:35:30] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: vault [1.7.0]
-[16:35:30] [Server thread/INFO]: 4 placeholder hook(s) registered!
-[16:35:30] [Server thread/INFO]: Done (37.853s)! For help, type "help"
-[16:35:30] [Server thread/INFO]: Timings Reset
-[16:35:30] [Craft Scheduler Thread - 11 - Essentials/INFO]: [Essentials] §6Получение информации о версии...
-[16:35:30] [Craft Scheduler Thread - 18 - AuthMe/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
-[16:35:30] [Craft Scheduler Thread - 18 - AuthMe/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
-[16:35:30] [Craft Scheduler Thread - 18 - AuthMe/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
-[16:35:30] [Craft Scheduler Thread - 29 - Vault/INFO]: [Vault] Checking for Updates ... 
-[16:35:30] [Craft Scheduler Thread - 25 - MoneyHunters/INFO]: [MoneyHunters] Auto-save: Saved 0 online users | 0 offline users.
-[16:35:30] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[16:35:30] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[16:35:30] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
-[16:35:30] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
-[16:35:30] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
-[16:35:30] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[16:35:30] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[16:35:30] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Current version: [32;1m14.1.15[0;39m
-[16:35:30] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
-[16:35:30] [Craft Scheduler Thread - 6 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[16:35:30] [Craft Scheduler Thread - 27 - MoneyHunters/INFO]: [MoneyHunters] Leaderboards updated!
-[16:35:30] [Craft Scheduler Thread - 18 - AuthMe/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins\AuthMe\GeoLite2-Country.mmdb (Не удается найти указанный файл)
-[16:35:30] [Craft Scheduler Thread - 16 - ServerSigns/INFO]: [Metrics] http://mcstats.org/report/ServerSigns
-[16:35:30] [Craft Scheduler Thread - 29 - Vault/INFO]: [Vault] No new version available
-[16:35:31] [Craft Scheduler Thread - 20 - zAuctionHouseV3/INFO]: [zAuctionHouseV3 v3.0.9.3] New update available. Your version: 3.0.9.3, latest version: 3.0.9.4
-[16:35:31] [Craft Scheduler Thread - 20 - zAuctionHouseV3/INFO]: [zAuctionHouseV3 v3.0.9.3] Download plugin here: https://groupez.dev/resources/1
-[16:35:31] [Craft Scheduler Thread - 13 - ajParkour/INFO]: [ajParkour] You are up to date! (2.12.10)
-[16:35:56] [WorldGuard Region I/O/INFO]: [WorldGuard] Region data changes made in 'world' have been background saved
-[16:37:02] [User Authenticator #1/INFO]: UUID of player milord is 476dc8ad-7e3a-3e8f-bed1-2a2a1cac7033
-[16:37:03] [Server thread/INFO]: milord has made the advancement [Cover Me with Diamonds]
-[16:37:03] [Server thread/INFO]: milord[/26.79.66.12:54531] logged in with entity id 139 at ([SkyWarsMap]22016.35806804219, 21.96455249140337, -39.278239374310324)
-[16:37:04] [Server thread/INFO]: Приветсвуем тебя на сервере, milord!
-[16:37:36] [User Authenticator #1/INFO]: UUID of player Semchik is 2a7aa1fc-858b-33a8-9498-9f277f98fdc7
-[16:37:36] [Server thread/INFO]: Semchik[/26.131.51.174:60259] logged in with entity id 167 at ([SkyWarsMap]22013.31926269207, 21.96455249140337, -38.65478030962939)
-[16:37:36] [Server thread/INFO]: Приветсвуем тебя на сервере, Semchik!
-[16:37:55] [Craft Scheduler Thread - 39 - AuthMe/INFO]: [AuthMe] milord logged in 26.79.66.12
-[16:38:07] [Craft Scheduler Thread - 35 - AuthMe/INFO]: [AuthMe] Semchik logged in 26.131.51.174
-[16:38:27] [Server thread/INFO]: Semchik issued server command: /gm 1
-[16:38:45] [Server thread/INFO]: Semchik issued server command: /enchant all
-[16:39:09] [Server thread/INFO]: Made Semchik no longer a server operator
-[16:39:14] [Server thread/INFO]: CONSOLE issued server command: /gm 0 Semchik
-[16:39:14] [Server thread/INFO]: Установлен режим игры выживание для игрока [Великий Дракон-Предводитель] Semchik.
-[16:39:41] [luckperms-command-executor/INFO]: [LP] semchik had their existing parent groups cleared, and now only inherits default in context global.
-[16:39:46] [Server thread/INFO]: Made milord no longer a server operator
-[16:39:53] [Server thread/INFO]: CONSOLE issued server command: /clear Semchik
-[16:39:53] [Server thread/INFO]: Весь инвентарь [Великий Дракон-Предводитель] Semchik был очищен.
-[16:40:01] [Server thread/INFO]: milord issued server command: /kit start
-[16:40:04] [Server thread/INFO]: Semchik issued server command: /kit start
-[16:40:13] [Server thread/WARN]: [NexEngine] Loaded class com.sk89q.worldedit.bukkit.BukkitAdapter from WorldEdit v7.2.10+1742f98 which is not a depend or softdepend of this plugin.
-[16:40:44] [Server thread/INFO]: milord issued server command: /donate
-[16:41:29] [Server thread/INFO]: Semchik issued server command: /gm 1
-[16:41:29] [Server thread/INFO]: [Essentials] §cSemchik §4отказано в доступе к команде.
-[16:41:29] [Server thread/INFO]: milord issued server command: /enchant all
-[16:41:52] [Server thread/INFO]: Semchik issued server command: /kti start
-[16:41:58] [Server thread/INFO]: Unknown command. Type "/help" for help.
-[16:42:03] [Server thread/INFO]: Semchik issued server command: /max hp semchik 20
-[16:42:10] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 60 seconds!
-[16:42:11] [Server thread/INFO]: Unknown command. Type "/help" for help.
-[16:42:21] [Server thread/INFO]: Semchik issued server command: /kit start
-[16:42:37] [Server thread/INFO]: CONSOLE issued server command: /kit reset Semchik start
-[16:42:37] [Server thread/INFO]: Ошибка: Такого набора не существует.
-[16:42:45] [Server thread/INFO]: CONSOLE issued server command: /kit reset start
-[16:42:45] [Server thread/INFO]: Ошибка: Игрок не найден.
-[16:42:50] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 20 seconds!
-[16:42:56] [Server thread/INFO]: CONSOLE issued server command: /kit reset start
-[16:42:56] [Server thread/INFO]: Ошибка: Игрок не найден.
-[16:43:02] [Server thread/INFO]: CONSOLE issued server command: /kit reset Semchik
-[16:43:02] [Server thread/INFO]: Ошибка: Такого набора не существует.
-[16:43:08] [Server thread/INFO]: CONSOLE issued server command: /kitreset Semchik
-[16:43:08] [Server thread/INFO]: Справка по команде: /kitreset
-[16:43:08] [Server thread/INFO]: Описание: Сбрасывает перезарядку на указанном наборе.
-[16:43:08] [Server thread/INFO]: Использование;
-[16:43:08] [Server thread/INFO]: /kitreset <набор> [игрок] - Сбрасывает время ожидания указанного набора для вас или другого игрока, если он указан
-[16:43:10] [Server thread/INFO]: [Очистка мира] Removed 3 Entities!
-[16:43:12] [Server thread/INFO]: CONSOLE issued server command: /kitreset start Semchik
-[16:43:12] [Server thread/INFO]: Сброс перезарядки набора start для [Ронин] Semchik.
-[16:43:16] [Server thread/INFO]: Semchik issued server command: /kit start'
-[16:43:21] [Server thread/INFO]: milord issued server command: /kits
-[16:43:24] [Server thread/INFO]: Semchik issued server command: /kit start
-[16:45:30] [Server thread/INFO]: Updating leaderboards
-[16:45:30] [Server thread/INFO]:    >> Saved 0 Layers
-[16:45:30] [Server thread/INFO]:    >> Saved 0 Loot Tables
-[16:45:30] [Server thread/INFO]:    >> Saved 0 Resources
-[16:45:30] [Server thread/INFO]:    >> Saved 0 Locations
-[16:45:30] [Craft Scheduler Thread - 55 - ServerSigns/INFO]: [Metrics] http://mcstats.org/report/ServerSigns
-[16:46:55] [Server thread/WARN]: milord moved too quickly! 3.0523281255736947,25.0,73.62843461707234
-[16:47:01] [Server thread/INFO]: Made milord a server operator
-[16:47:03] [Server thread/INFO]: Made Semchik a server operator
-[16:47:08] [Server thread/INFO]: Semchik issued server command: /gm 1
-[16:47:12] [luckperms-command-executor/INFO]: [LP] semchik had their existing parent groups cleared, and now only inherits gosi in context global.
-[16:47:15] [Server thread/INFO]: Semchik issued server command: /kik milord
-[16:47:29] [luckperms-command-executor/INFO]: [LP] milord had their existing parent groups cleared, and now only inherits dragon in context global.
-[16:47:39] [Server thread/INFO]: milord issued server command: /kick Semchik дурак
-[16:47:39] [Server thread/INFO]: Semchik lost connection: дурак
-[16:47:39] [Server thread/INFO]: Semchik left the game
-[16:47:39] [Server thread/INFO]: §6Игрок§c §7[Ронин] §rmilord§r §6выкинул§c Semchik§6 за§c дурак§6.
-[16:47:48] [Server thread/INFO]: milord issued server command: /gm
-[16:47:49] [Server thread/INFO]: milord issued server command: /gm 1
-[16:47:50] [User Authenticator #2/INFO]: UUID of player Semchik is 2a7aa1fc-858b-33a8-9498-9f277f98fdc7
-[16:47:50] [Server thread/INFO]: Semchik[/26.131.51.174:60279] logged in with entity id 598 at ([world]-7589561.087982676, 71.0, -1.2361103912477242E7)
-[16:47:50] [Server thread/INFO]: Приветсвуем тебя на сервере, Semchik!
-[16:48:13] [Server thread/INFO]: CONSOLE issued server command: /jail Semchik spawnjail 50s
-[16:48:13] [Server thread/INFO]: Игрок Semchik посажен в тюрьму на 50 секунд.
-[16:48:13] [Server thread/INFO]: §6Игрок§c CONSOLE §6посадил§c Semchik §6в тюрьму за§c 50 секунд§6.
-[16:48:13] [Server thread/WARN]: Semchik moved too quickly! -59.712061235681176,-1.0,78.51879388652742
-[16:48:14] [Craft Scheduler Thread - 63 - AuthMe/INFO]: [AuthMe] Semchik logged in 26.131.51.174
-[16:48:50] [Server thread/INFO]: Semchik issued server command: /ban milord 10
-[16:49:00] [Async Chat Thread - #0/INFO]: [L] [Великий Дракон-Предводитель] milord:  ./kick
-[16:49:05] [Server thread/WARN]: Semchik moved too quickly! 62.69686850346625,-4.866372254886784,-45.73105689883232
-[16:49:12] [Server thread/INFO]: milord issued server command: //wand
-[16:49:30] [Server thread/INFO]: milord issued server command: //set 0
-[16:49:31] [Server thread/INFO]: Semchik has made the advancement [Stone Age]
-[16:49:41] [Server thread/INFO]: milord issued server command: //set 0
-[16:49:50] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 60 seconds!
-[16:49:51] [Server thread/INFO]: milord issued server command: //set 0
-[16:49:55] [Server thread/INFO]: Semchik issued server command: // wand
-[16:49:58] [Server thread/INFO]: milord issued server command: //set 0
-[16:50:07] [AutoSaveWorld AutoSaveThread/INFO]: AutoSaving
-[16:50:09] [Server thread/INFO]: milord issued server command: //set 0
-[16:50:10] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+[11:50:10] [Server thread/INFO]: milord issued server command: //br height 20 https://i.imgur.com/hzCwsG7.png
+[11:50:31] [Server thread/INFO]: milord issued server command: //br heightmap mountain1
+[11:50:34] [Server thread/INFO]: milord issued server command: //br heightmap 10
+[11:50:36] [Server thread/INFO]: milord issued server command: //br heightmap 10 mountain1
+[11:50:46] [Server thread/INFO]: milord issued server command: //br heightmap mountain1
+[11:50:47] [Server thread/INFO]: milord issued server command: //br heightmap mountain1 10
+[11:50:50] [Server thread/INFO]: milord issued server command: //br heightmap 20
+[11:50:52] [Server thread/INFO]: milord issued server command: //br heightmap 20 mountain1
+[11:51:22] [Server thread/INFO]: milord issued server command: //br heightmap 20 https://i.imgur.com/hzCwsG7.png
+[11:51:26] [Server thread/INFO]: milord issued server command: //br heightmap https://i.imgur.com/hzCwsG7.png
+[11:51:26] [Server thread/ERROR]: An unexpected error while handling a WorldEdit command
+java.nio.file.InvalidPathException: Illegal char <:> at index 5: https://i.imgur.com/hzCwsG7.png
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77) ~[?:?]
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:92) ~[?:?]
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232) ~[?:?]
+	at java.nio.file.Path.resolve(Path.java:515) ~[?:?]
+	at com.sk89q.worldedit.util.asset.AssetLoaders.getAssetLoader(AssetLoaders.java:114) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.command.BrushCommands.heightmapBrush(BrushCommands.java:370) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.command.BrushCommandsRegistration.cmd$heightmap(BrushCommandsRegistration.java:520) ~[worldedit-bukkit-7.2.10.jar:?]
+	at org.enginehub.piston.CommandManager.execute(CommandManager.java:157) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.extension.platform.PlatformCommandManager.handleCommand(PlatformCommandManager.java:497) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.MethodHandleEventHandler.dispatch(MethodHandleEventHandler.java:51) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:193) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:181) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.bukkit.WorldEditPlugin.onCommand(WorldEditPlugin.java:383) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55) ~[worldedit-bukkit-7.2.10.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.dispatchCommand(CraftServer.java:906) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleCommand(ServerGamePacketListenerImpl.java:2307) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleChat(ServerGamePacketListenerImpl.java:2118) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleChat(ServerGamePacketListenerImpl.java:2099) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundChatPacket.handle(ServerboundChatPacket.java:46) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundChatPacket.a(ServerboundChatPacket.java:6) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1400) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:188) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1377) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1370) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1348) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1230) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.18.2.jar:git-Paper-379]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+[11:51:28] [Server thread/INFO]: milord issued server command: //br heightmap https://i.imgur.com/hzCwsG7.png 20
+[11:51:28] [Server thread/ERROR]: An unexpected error while handling a WorldEdit command
+java.nio.file.InvalidPathException: Illegal char <:> at index 5: https://i.imgur.com/hzCwsG7.png
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77) ~[?:?]
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:92) ~[?:?]
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232) ~[?:?]
+	at java.nio.file.Path.resolve(Path.java:515) ~[?:?]
+	at com.sk89q.worldedit.util.asset.AssetLoaders.getAssetLoader(AssetLoaders.java:114) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.command.BrushCommands.heightmapBrush(BrushCommands.java:370) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.command.BrushCommandsRegistration.cmd$heightmap(BrushCommandsRegistration.java:520) ~[worldedit-bukkit-7.2.10.jar:?]
+	at org.enginehub.piston.CommandManager.execute(CommandManager.java:157) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.extension.platform.PlatformCommandManager.handleCommand(PlatformCommandManager.java:497) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.MethodHandleEventHandler.dispatch(MethodHandleEventHandler.java:51) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:193) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:181) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.bukkit.WorldEditPlugin.onCommand(WorldEditPlugin.java:383) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55) ~[worldedit-bukkit-7.2.10.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.dispatchCommand(CraftServer.java:906) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleCommand(ServerGamePacketListenerImpl.java:2307) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleChat(ServerGamePacketListenerImpl.java:2118) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleChat(ServerGamePacketListenerImpl.java:2099) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundChatPacket.handle(ServerboundChatPacket.java:46) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundChatPacket.a(ServerboundChatPacket.java:6) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1400) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:188) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1377) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1370) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1348) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1230) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.18.2.jar:git-Paper-379]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+[11:52:35] [Server thread/INFO]: milord issued server command: //br height 50 https://i.imgur.com/JoSyq0z.png 0.1 0.7 -r
+[11:52:41] [Server thread/INFO]: milord issued server command: //br heightmap 50 https://i.imgur.com/JoSyq0z.png 0.1 0.7 -r
+[11:52:52] [Server thread/INFO]: milord issued server command: //br heightmap 50 "https://i.imgur.com/JoSyq0z.png" 0.1 0.7 -r
+[11:53:05] [Server thread/INFO]: milord issued server command: //br heightmap 50 "https://i.imgur.com/JoSyq0z.png" 0.1
+[11:53:08] [Server thread/INFO]: milord issued server command: //br heightmap 50 "https://i.imgur.com/JoSyq0z.png" 0.1 0.4
+[11:53:10] [Server thread/INFO]: milord issued server command: //br heightmap 50 "https://i.imgur.com/JoSyq0z.png" 0.1 -r
+[11:53:12] [Server thread/INFO]: milord issued server command: //br heightmap 50 "https://i.imgur.com/JoSyq0z.png"
+[11:53:13] [Server thread/INFO]: milord issued server command: //br heightmap 50 "https://i.imgur.com/JoSyq0z.png
+[11:53:17] [Server thread/INFO]: milord issued server command: //br heightmap 50 "https://i.imgur.com/JoSyq0z.png
+[11:53:21] [Server thread/INFO]: milord issued server command: //br heightmap 50 https://i.imgur.com/JoSyq0z.png
+[11:53:25] [Server thread/INFO]: milord issued server command: //br heightmap https://i.imgur.com/JoSyq0z.png
+[11:53:25] [Server thread/ERROR]: An unexpected error while handling a WorldEdit command
+java.nio.file.InvalidPathException: Illegal char <:> at index 5: https://i.imgur.com/JoSyq0z.png
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77) ~[?:?]
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:92) ~[?:?]
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232) ~[?:?]
+	at java.nio.file.Path.resolve(Path.java:515) ~[?:?]
+	at com.sk89q.worldedit.util.asset.AssetLoaders.getAssetLoader(AssetLoaders.java:114) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.command.BrushCommands.heightmapBrush(BrushCommands.java:370) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.command.BrushCommandsRegistration.cmd$heightmap(BrushCommandsRegistration.java:520) ~[worldedit-bukkit-7.2.10.jar:?]
+	at org.enginehub.piston.CommandManager.execute(CommandManager.java:157) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.extension.platform.PlatformCommandManager.handleCommand(PlatformCommandManager.java:497) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.MethodHandleEventHandler.dispatch(MethodHandleEventHandler.java:51) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:193) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:181) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.bukkit.WorldEditPlugin.onCommand(WorldEditPlugin.java:383) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55) ~[worldedit-bukkit-7.2.10.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.dispatchCommand(CraftServer.java:906) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleCommand(ServerGamePacketListenerImpl.java:2307) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleChat(ServerGamePacketListenerImpl.java:2118) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleChat(ServerGamePacketListenerImpl.java:2099) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundChatPacket.handle(ServerboundChatPacket.java:46) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundChatPacket.a(ServerboundChatPacket.java:6) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1400) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:188) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1377) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1370) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1348) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1230) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.18.2.jar:git-Paper-379]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+[11:53:27] [Server thread/INFO]: milord issued server command: //br heightmap https://i.imgur.com/JoSyq0z.png 50
+[11:53:27] [Server thread/ERROR]: An unexpected error while handling a WorldEdit command
+java.nio.file.InvalidPathException: Illegal char <:> at index 5: https://i.imgur.com/JoSyq0z.png
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77) ~[?:?]
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:92) ~[?:?]
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232) ~[?:?]
+	at java.nio.file.Path.resolve(Path.java:515) ~[?:?]
+	at com.sk89q.worldedit.util.asset.AssetLoaders.getAssetLoader(AssetLoaders.java:114) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.command.BrushCommands.heightmapBrush(BrushCommands.java:370) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.command.BrushCommandsRegistration.cmd$heightmap(BrushCommandsRegistration.java:520) ~[worldedit-bukkit-7.2.10.jar:?]
+	at org.enginehub.piston.CommandManager.execute(CommandManager.java:157) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.extension.platform.PlatformCommandManager.handleCommand(PlatformCommandManager.java:497) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.MethodHandleEventHandler.dispatch(MethodHandleEventHandler.java:51) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:193) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:181) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.bukkit.WorldEditPlugin.onCommand(WorldEditPlugin.java:383) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55) ~[worldedit-bukkit-7.2.10.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.dispatchCommand(CraftServer.java:906) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleCommand(ServerGamePacketListenerImpl.java:2307) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleChat(ServerGamePacketListenerImpl.java:2118) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleChat(ServerGamePacketListenerImpl.java:2099) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundChatPacket.handle(ServerboundChatPacket.java:46) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundChatPacket.a(ServerboundChatPacket.java:6) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1400) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:188) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1377) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1370) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1348) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1230) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.18.2.jar:git-Paper-379]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+[11:53:32] [Server thread/INFO]: milord issued server command: //br heightmap https://i.imgur.com/JoSyq0z.png 50
+[11:53:32] [Server thread/ERROR]: An unexpected error while handling a WorldEdit command
+java.nio.file.InvalidPathException: Illegal char <:> at index 5: https://i.imgur.com/JoSyq0z.png
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77) ~[?:?]
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:92) ~[?:?]
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232) ~[?:?]
+	at java.nio.file.Path.resolve(Path.java:515) ~[?:?]
+	at com.sk89q.worldedit.util.asset.AssetLoaders.getAssetLoader(AssetLoaders.java:114) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.command.BrushCommands.heightmapBrush(BrushCommands.java:370) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.command.BrushCommandsRegistration.cmd$heightmap(BrushCommandsRegistration.java:520) ~[worldedit-bukkit-7.2.10.jar:?]
+	at org.enginehub.piston.CommandManager.execute(CommandManager.java:157) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.extension.platform.PlatformCommandManager.handleCommand(PlatformCommandManager.java:497) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.MethodHandleEventHandler.dispatch(MethodHandleEventHandler.java:51) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:193) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:181) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.worldedit.bukkit.WorldEditPlugin.onCommand(WorldEditPlugin.java:383) ~[worldedit-bukkit-7.2.10.jar:?]
+	at com.sk89q.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55) ~[worldedit-bukkit-7.2.10.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.dispatchCommand(CraftServer.java:906) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleCommand(ServerGamePacketListenerImpl.java:2307) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleChat(ServerGamePacketListenerImpl.java:2118) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleChat(ServerGamePacketListenerImpl.java:2099) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundChatPacket.handle(ServerboundChatPacket.java:46) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundChatPacket.a(ServerboundChatPacket.java:6) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1400) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:188) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1377) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1370) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1348) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1230) ~[paper-1.18.2.jar:git-Paper-379]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.18.2.jar:git-Paper-379]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+[11:53:37] [Server thread/INFO]: milord issued server command: //br heightmap
+[11:54:00] [Server thread/INFO]: Updating leaderboards
+[11:54:01] [Server thread/INFO]:    >> Saved 0 Layers
+[11:54:01] [Server thread/INFO]:    >> Saved 0 Loot Tables
+[11:54:01] [Server thread/INFO]:    >> Saved 0 Resources
+[11:54:01] [Server thread/INFO]:    >> Saved 0 Locations
+[11:54:01] [Craft Scheduler Thread - 67 - MoneyHunters/INFO]: [MoneyHunters] Auto-save: Saved 1 online users | 0 offline users.
+[11:54:01] [Server thread/INFO]: milord issued server command: /brush
+[11:54:04] [Server thread/INFO]: milord issued server command: /brush help
+[11:56:00] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 60 seconds!
+[11:56:40] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 20 seconds!
+[11:57:00] [Server thread/INFO]: [Очистка мира] Removed 0 Entities!
+[11:59:53] [Server thread/INFO]: milord issued server command: /вфн
+[11:59:57] [Server thread/INFO]: milord issued server command: /sun
+[12:00:00] [Server thread/INFO]: milord issued server command: /day;sun
+[12:00:02] [Server thread/INFO]: milord issued server command: /day
+[12:00:17] [Server thread/INFO]: milord issued server command: /br sphere stone 20
+[12:00:53] [Server thread/INFO]: milord issued server command: //undo
+[12:01:57] [Server thread/INFO]: milord issued server command: /br smooth 20
+[12:03:23] [Server thread/INFO]: milord issued server command: /br gravity 20
+[12:03:34] [Server thread/INFO]: milord issued server command: //undo
+[12:03:35] [Server thread/INFO]: milord issued server command: //undo
+[12:03:36] [Server thread/INFO]: milord issued server command: //undo
+[12:03:37] [Server thread/INFO]: milord issued server command: //undo
+[12:03:38] [Server thread/INFO]: milord issued server command: //undo
+[12:03:38] [Server thread/INFO]: milord issued server command: //undo
+[12:03:40] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 60 seconds!
+[12:03:42] [Server thread/INFO]: milord issued server command: /br gravity 4
+[12:03:43] [AutoSaveWorld AutoSaveThread/INFO]: AutoSaving
+[12:03:43] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
 java.lang.RuntimeException: Can't find method saveLevel with params length 0
 	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
-[16:50:10] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+[12:03:43] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
 java.lang.RuntimeException: Can't find method saveLevel with params length 0
 	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
-[16:50:10] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+[12:03:43] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
 java.lang.RuntimeException: Can't find method saveLevel with params length 0
 	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
-[16:50:10] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+[12:03:43] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
 java.lang.RuntimeException: Can't find method saveLevel with params length 0
 	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
 	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
-[16:50:10] [AutoSaveWorld AutoSaveThread/INFO]: AutoSave Complete
-[16:50:14] [Server thread/INFO]: Semchik issued server command: /gm 1
-[16:50:29] [Timer-1/INFO]: [zAuctionHouseV3 v3.0.9.3] C:\Users\paden\Desktop\minecraft server\Server\plugins\zAuctionHouseV3\items.json successfully saved !
-[16:50:30] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 20 seconds!
-[16:50:50] [Server thread/INFO]: [Очистка мира] Removed 1 Entities!
-[16:50:56] [Server thread/INFO]: milord issued server command: //expand 1000 up
-[16:50:58] [Server thread/INFO]: Semchik issued server command: /sp area 5
-[16:50:58] [Server thread/INFO]: milord issued server command: //set 0
-[16:51:03] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5027ms or 100 ticks behind
-[16:51:04] [Server thread/WARN]: milord moved too quickly! -21.688399595208466,12.749748428000714,1.899549314752221
-[16:51:23] [Async Chat Thread - #1/INFO]: [L] [Госи] Semchik:  ./sp area 5
-[16:51:28] [Server thread/INFO]: milord issued server command: /sp area 1000
-[16:51:31] [Server thread/INFO]: milord issued server command: /sp area 5
-[16:52:04] [Server thread/INFO]: milord issued server command: //expand 1000 up
-[16:52:06] [Server thread/INFO]: milord issued server command: //set 0
-[16:52:09] [Server thread/WARN]: milord moved too quickly! -10.526995956897736,11.81226462949131,16.17994155548513
-[16:52:24] [Server thread/INFO]: milord issued server command: /speed fly 4
-[16:52:51] [Server thread/INFO]: milord issued server command: //expand 1000 up
-[16:52:53] [Server thread/INFO]: milord issued server command: //set 0
-[16:52:58] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5289ms or 105 ticks behind
-[16:53:17] [Server thread/INFO]: milord issued server command: //expand 1000 up
-[16:53:18] [Server thread/INFO]: milord issued server command: //set 0
-[16:53:45] [Server thread/INFO]: milord issued server command: /sp area 5
-[16:53:55] [Server thread/INFO]: milord issued server command: /sp area 5
-[16:53:58] [Server thread/INFO]: milord issued server command: //
-[16:54:25] [Server thread/INFO]: milord issued server command: //set dirt
-[16:55:04] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:09] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:09] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:10] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:13] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:14] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:15] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:16] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:18] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:22] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:24] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:26] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:29] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:30] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:31] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:32] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:33] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:36] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:37] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:38] [Server thread/INFO]: milord issued server command: /bigtree jungle
-[16:55:40] [Server thread/INFO]: Updating leaderboards
-[16:55:40] [Craft Scheduler Thread - 80 - ServerSigns/INFO]: [Metrics] http://mcstats.org/report/ServerSigns
-[16:55:40] [Server thread/INFO]:    >> Saved 0 Layers
-[16:55:40] [Server thread/INFO]:    >> Saved 0 Loot Tables
-[16:55:40] [Server thread/INFO]:    >> Saved 0 Resources
-[16:55:41] [Server thread/INFO]:    >> Saved 0 Locations
-[16:55:41] [Craft Scheduler Thread - 78 - MoneyHunters/INFO]: [MoneyHunters] Auto-save: Saved 2 online users | 0 offline users.
-[16:56:19] [Async Chat Thread - #2/INFO]: [L] [Госи] Semchik:  ,ыгт
-[16:56:22] [Server thread/INFO]: Semchik issued server command: /sun
-[16:56:28] [Server thread/INFO]: milord issued server command: /jail Semchik spawnjail 5s
-[16:56:40] [Server thread/INFO]: CONSOLE issued server command: /jail Semchik spawnjail 50s
-[16:56:40] [Server thread/INFO]: Вы не можете отправить этого игрока в тюрьму!
-[16:57:40] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 60 seconds!
-[16:57:55] [Server thread/INFO]: milord issued server command: /invsee Semchik
-[16:58:10] [Server thread/INFO]: milord issued server command: /invsee Semchik
-[16:58:20] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 20 seconds!
-[16:58:40] [Server thread/INFO]: [Очистка мира] Removed 5 Entities!
-[17:00:12] [Server thread/INFO]: milord issued server command: /tphere Semchik
-[17:00:12] [Server thread/WARN]: Semchik moved too quickly! 27.364832072518766,-44.82399227236961,-425.9609367400408
-[17:00:23] [Server thread/INFO]: milord issued server command: /tphere Semchik
-[17:00:30] [Async Chat Thread - #3/INFO]: [L] [Великий Дракон-Предводитель] milord:  ./schem load gora
-[17:00:55] [Server thread/INFO]: milord issued server command: /tp Semchik
-[17:00:55] [Server thread/WARN]: milord moved too quickly! -6.437378641217947,-61.36890830999674,-54.50107092037797
-[17:01:12] [Server thread/INFO]: Semchik issued server command: /schem load gora
-[17:01:17] [WorldEdit Task Executor - 0/INFO]: Semchik loaded C:\Users\paden\Desktop\minecraft server\Server\plugins\WorldEdit\schematics\gora.schem
-[17:01:24] [Server thread/INFO]: milord lost connection: Disconnected
-[17:01:25] [Server thread/INFO]: milord left the game
-[17:01:29] [Server thread/INFO]: Semchik issued server command: //paste
+[12:03:43] [AutoSaveWorld AutoSaveThread/INFO]: AutoSave Complete
+[12:03:47] [Timer-1/INFO]: [zAuctionHouseV3 v3.0.9.3] C:\Users\paden\Desktop\minecraft server\Server\plugins\zAuctionHouseV3\items.json successfully saved !
+[12:03:48] [Server thread/INFO]: milord issued server command: //undo
+[12:03:49] [Server thread/INFO]: milord issued server command: //undo
+[12:04:00] [Server thread/INFO]: Updating leaderboards
+[12:04:00] [Craft Scheduler Thread - 96 - MoneyHunters/INFO]: [MoneyHunters] Leaderboards updated!
+[12:04:01] [Server thread/INFO]:    >> Saved 0 Layers
+[12:04:01] [Server thread/INFO]:    >> Saved 0 Loot Tables
+[12:04:01] [Server thread/INFO]:    >> Saved 0 Resources
+[12:04:01] [Server thread/INFO]:    >> Saved 0 Locations
+[12:04:20] [Server thread/INFO]: milord issued server command: /br gravity 2
+[12:04:20] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 20 seconds!
+[12:04:32] [Server thread/INFO]: milord issued server command: //undo
+[12:04:33] [Server thread/INFO]: milord issued server command: //undo
+[12:04:34] [Server thread/INFO]: milord issued server command: //undo
+[12:04:34] [Server thread/INFO]: milord issued server command: //undo
+[12:04:35] [Server thread/INFO]: milord issued server command: //undo
+[12:04:35] [Server thread/INFO]: milord issued server command: //undo
+[12:04:36] [Server thread/INFO]: milord issued server command: //undo
+[12:04:36] [Server thread/INFO]: milord issued server command: //undo
+[12:04:37] [Server thread/INFO]: milord issued server command: //undo
+[12:04:37] [Server thread/INFO]: milord issued server command: //undo
+[12:04:38] [Server thread/INFO]: milord issued server command: //undo
+[12:04:39] [Server thread/INFO]: milord issued server command: //undo
+[12:04:39] [Server thread/INFO]: milord issued server command: //undo
+[12:04:40] [Server thread/INFO]: milord issued server command: //undo
+[12:04:40] [Server thread/INFO]: [Очистка мира] Removed 4 Entities!
+[12:04:40] [Server thread/INFO]: milord issued server command: //undo
+[12:04:42] [Server thread/INFO]: milord issued server command: //undo
+[12:04:49] [Server thread/INFO]: milord issued server command: //undo
+[12:04:56] [Server thread/INFO]: milord issued server command: /br sphere stone 2
+[12:05:12] [Server thread/INFO]: milord issued server command: /br smooth 100
+[12:05:15] [Server thread/INFO]: milord issued server command: /br smooth 10
+[12:05:43] [Server thread/INFO]: milord issued server command: /br smooth 20
+[12:06:08] [Server thread/INFO]: milord issued server command: /br gravity 2
+[12:06:17] [Server thread/INFO]: milord issued server command: /br gravity
+[12:06:20] [Server thread/INFO]: milord issued server command: /br gravity help
+[12:06:27] [Server thread/INFO]: milord issued server command: /br gravity 6 10
+[12:06:31] [Server thread/INFO]: milord issued server command: /br gravity 6 -g
+[12:06:35] [Server thread/INFO]: milord issued server command: //undo
+[12:06:36] [Server thread/INFO]: milord issued server command: //undo
+[12:06:36] [Server thread/INFO]: milord issued server command: //undo
+[12:06:37] [Server thread/INFO]: milord issued server command: //undo
+[12:06:37] [Server thread/INFO]: milord issued server command: //undo
+[12:06:38] [Server thread/INFO]: milord issued server command: //undo
+[12:06:38] [Server thread/INFO]: milord issued server command: //undo
+[12:06:38] [Server thread/INFO]: milord issued server command: //undo
+[12:06:39] [Server thread/INFO]: milord issued server command: //undo
+[12:06:39] [Server thread/INFO]: milord issued server command: //undo
+[12:06:39] [Server thread/INFO]: milord issued server command: //undo
+[12:06:40] [Server thread/INFO]: milord issued server command: //undo
+[12:06:40] [Server thread/INFO]: milord issued server command: //undo
+[12:06:41] [Server thread/INFO]: milord issued server command: //undo
+[12:06:41] [Server thread/INFO]: milord issued server command: //undo
+[12:06:42] [Server thread/INFO]: milord issued server command: //undo
+[12:06:42] [Server thread/INFO]: milord issued server command: //undo
+[12:06:42] [Server thread/INFO]: milord lost connection: Kicked for spamming
+[12:06:42] [Server thread/INFO]: milord left the game
+[12:06:52] [AutoSaveWorld AutoSaveThread/INFO]: AutoSaving
+[12:06:52] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:06:52] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:06:52] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:06:52] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:06:52] [AutoSaveWorld AutoSaveThread/INFO]: AutoSave Complete
+[12:07:00] [User Authenticator #2/INFO]: UUID of player milord is 476dc8ad-7e3a-3e8f-bed1-2a2a1cac7033
+[12:07:00] [Server thread/INFO]: milord[/127.0.0.1:55048] logged in with entity id 1627 at ([world]-7589362.217374624, 136.3635014046884, -1.2361114219027422E7)
+[12:07:00] [Server thread/INFO]: Приветсвуем тебя на сервере, milord!
+[12:07:39] [Craft Scheduler Thread - 103 - AuthMe/INFO]: [AuthMe] milord logged in 127.0.0.1
+[12:08:02] [Server thread/INFO]: milord issued server command: /br smooth #solid
+[12:08:16] [Server thread/INFO]: milord issued server command: /br smooth 10 acacia_log
+[12:08:25] [Server thread/INFO]: milord issued server command: /br smooth 10 #existing
+[12:08:47] [Server thread/INFO]: milord issued server command: /br smooth 20 #dregion
+[12:08:52] [Server thread/INFO]: milord issued server command: /br smooth 20 #existing
+[12:09:24] [Server thread/INFO]: milord issued server command: /br smooth 20 #exposed
+[12:11:15] [Server thread/INFO]: milord issued server command: /br set cuboid air
+[12:11:20] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 60 seconds!
+[12:11:22] [Server thread/INFO]: milord issued server command: //undo
+[12:11:23] [Server thread/INFO]: milord issued server command: //undo
+[12:11:24] [Server thread/INFO]: milord issued server command: //undo
+[12:11:27] [Server thread/INFO]: milord issued server command: /br set cuboid air 5
+[12:11:31] [Server thread/INFO]: milord issued server command: /br set cuboid 5 air
+[12:11:35] [Server thread/INFO]: milord issued server command: //undo
+[12:11:36] [Server thread/INFO]: milord issued server command: //undo
+[12:11:39] [Server thread/INFO]: milord issued server command: /br set cuboid 3 air
+[12:11:45] [Server thread/INFO]: milord issued server command: //undo
+[12:11:46] [Server thread/INFO]: milord issued server command: //undo
+[12:11:46] [Server thread/INFO]: milord issued server command: //undo
+[12:11:47] [Server thread/INFO]: milord issued server command: //undo
+[12:12:00] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 20 seconds!
+[12:12:20] [Server thread/INFO]: [Очистка мира] Removed 0 Entities!
+[12:13:02] [Server thread/INFO]: milord issued server command: /br set cuboid 1 air
+[12:14:00] [Server thread/INFO]: Updating leaderboards
+[12:14:00] [Craft Scheduler Thread - 124 - MoneyHunters/INFO]: [MoneyHunters] Auto-save: Saved 1 online users | 0 offline users.
+[12:14:01] [Server thread/INFO]:    >> Saved 0 Layers
+[12:14:01] [Server thread/INFO]:    >> Saved 0 Loot Tables
+[12:14:01] [Server thread/INFO]:    >> Saved 0 Resources
+[12:14:01] [Server thread/INFO]:    >> Saved 0 Locations
+[12:14:03] [Server thread/INFO]: milord issued server command: /autosave
+[12:14:04] [AutoSaveWorld AutoSaveThread/INFO]: AutoSaving
+[12:14:04] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:14:04] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:14:04] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:14:04] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:14:04] [AutoSaveWorld AutoSaveThread/INFO]: AutoSave Complete
+[12:14:28] [Server thread/INFO]: milord issued server command: /effect give milord minecraft:night_vision 100000
+[12:14:29] [Server thread/INFO]: [milord: Applied effect Night Vision to milord]
+[12:14:31] [Server thread/INFO]: milord issued server command: /day
+[12:14:46] [Server thread/INFO]: milord issued server command: /mask stone grass_block
+[12:14:50] [Server thread/INFO]: milord issued server command: /mask stone
+[12:14:53] [Server thread/INFO]: milord issued server command: /mask stone
+[12:15:22] [Server thread/INFO]: milord issued server command: //br sphere 10 grass_block
+[12:15:29] [Server thread/INFO]: milord issued server command: //br sphere 10 grass_block
+[12:15:33] [Server thread/INFO]: milord issued server command: //br sphere 10
+[12:15:42] [Server thread/INFO]: milord issued server command: //br sphere 10 grass_block
+[12:16:11] [Server thread/INFO]: milord issued server command: //br sphere grass_block 5
+[12:17:53] [Server thread/INFO]: milord issued server command: //undo
+[12:17:54] [Server thread/INFO]: milord issued server command: //undo
+[12:17:54] [Server thread/INFO]: milord issued server command: //undo
+[12:17:55] [Server thread/INFO]: milord issued server command: //undo
+[12:17:57] [Server thread/INFO]: milord issued server command: //undo
+[12:18:47] [Timer-1/INFO]: [zAuctionHouseV3 v3.0.9.3] C:\Users\paden\Desktop\minecraft server\Server\plugins\zAuctionHouseV3\items.json successfully saved !
+[12:19:00] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 60 seconds!
+[12:19:40] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 20 seconds!
+[12:19:45] [AutoSaveWorld AutoSaveThread/INFO]: AutoSaving
+[12:19:46] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:19:46] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:19:46] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:19:46] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:19:46] [AutoSaveWorld AutoSaveThread/INFO]: AutoSave Complete
+[12:20:00] [Server thread/INFO]: [Очистка мира] Removed 1 Entities!
+[12:21:52] [Server thread/INFO]: milord issued server command: //wand
+[12:22:25] [Server thread/INFO]: milord issued server command: //expand 40 up
+[12:23:01] [Server thread/INFO]: milord issued server command: //replace stone stone,coal_ore,gravel,copper_ore,iron_ore
+[12:23:39] [AutoSaveWorld AutoSaveThread/INFO]: AutoSaving
+[12:23:41] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:23:41] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:23:41] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:23:41] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:23:41] [AutoSaveWorld AutoSaveThread/INFO]: AutoSave Complete
+[12:23:53] [Server thread/INFO]: milord lost connection: Disconnected
+[12:23:54] [Server thread/INFO]: milord left the game
+[12:24:00] [Server thread/INFO]: Updating leaderboards
+[12:24:01] [Server thread/INFO]:    >> Saved 0 Layers
+[12:24:01] [Server thread/INFO]:    >> Saved 0 Loot Tables
+[12:24:01] [Server thread/INFO]:    >> Saved 0 Resources
+[12:24:01] [Server thread/INFO]:    >> Saved 0 Locations
+[12:26:40] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 60 seconds!
+[12:27:20] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 20 seconds!
+[12:27:41] [Server thread/INFO]: [Очистка мира] Removed 0 Entities!
+[12:33:47] [Timer-1/INFO]: [zAuctionHouseV3 v3.0.9.3] C:\Users\paden\Desktop\minecraft server\Server\plugins\zAuctionHouseV3\items.json successfully saved !
+[12:34:00] [Server thread/INFO]: Updating leaderboards
+[12:34:01] [Craft Scheduler Thread - 166 - MoneyHunters/INFO]: [MoneyHunters] Auto-save: Saved 0 online users | 0 offline users.
+[12:34:02] [Server thread/INFO]:    >> Saved 0 Layers
+[12:34:02] [Server thread/INFO]:    >> Saved 0 Loot Tables
+[12:34:02] [Server thread/INFO]:    >> Saved 0 Resources
+[12:34:02] [Server thread/INFO]:    >> Saved 0 Locations
+[12:34:02] [Craft Scheduler Thread - 168 - MoneyHunters/INFO]: [MoneyHunters] Leaderboards updated!
+[12:34:20] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 60 seconds!
+[12:35:00] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 20 seconds!
+[12:35:20] [Server thread/INFO]: [Очистка мира] Removed 0 Entities!
+[12:38:44] [AutoSaveWorld AutoSaveThread/INFO]: AutoSaving
+[12:38:50] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5479ms or 109 ticks behind
+[12:38:50] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:38:51] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:38:51] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:38:51] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:38:51] [AutoSaveWorld AutoSaveThread/INFO]: AutoSave Complete
+[12:40:36] [User Authenticator #3/WARN]: [LuckPerms] Processing login for milord took 1132ms.
+[12:40:36] [User Authenticator #3/INFO]: UUID of player milord is 476dc8ad-7e3a-3e8f-bed1-2a2a1cac7033
+[12:40:43] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 7138ms or 142 ticks behind
+[12:40:46] [Server thread/INFO]: milord[/127.0.0.1:55415] logged in with entity id 3386 at ([world]-7589480.661491894, 101.91348828327838, -1.2361093090626683E7)
+[12:40:48] [Server thread/INFO]: Приветсвуем тебя на сервере, milord!
+[12:41:45] [Craft Scheduler Thread - 201 - AuthMe/INFO]: [AuthMe] milord logged in 127.0.0.1
+[12:42:13] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 60 seconds!
+[12:42:53] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 20 seconds!
+[12:43:13] [Server thread/INFO]: [Очистка мира] Removed 3 Entities!
+[12:44:13] [Server thread/INFO]: Updating leaderboards
+[12:44:14] [Server thread/INFO]:    >> Saved 0 Layers
+[12:44:14] [Server thread/INFO]:    >> Saved 0 Loot Tables
+[12:44:14] [Server thread/INFO]:    >> Saved 0 Resources
+[12:44:14] [Server thread/INFO]:    >> Saved 0 Locations
+[12:45:05] [Server thread/INFO]: milord issued server command: //replace iron_ore stone,stone,iron_ore
+[12:45:15] [Server thread/INFO]: milord issued server command: //expand 40 up
+[12:45:17] [Server thread/INFO]: milord issued server command: //replace iron_ore stone,stone,iron_ore
+[12:45:37] [Server thread/INFO]: milord issued server command: //replace coal_ore stone,stone,coal_ore
+[12:45:51] [Server thread/INFO]: milord issued server command: //replace copper_ore stone,stone,copper_ore
+[12:46:09] [Server thread/INFO]: milord issued server command: /br sphere stone 2
+[12:46:38] [Server thread/INFO]: milord issued server command: /br smooth 2
+[12:46:50] [Server thread/INFO]: milord issued server command: /autosave
+[12:46:51] [AutoSaveWorld AutoSaveThread/INFO]: AutoSaving
+[12:46:53] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:46:53] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:46:53] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:46:53] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:46:53] [AutoSaveWorld AutoSaveThread/INFO]: AutoSave Complete
+[12:47:12] [Server thread/INFO]: milord issued server command: /br sphere ice 3
+[12:47:24] [Server thread/INFO]: milord issued server command: /mask stone
+[12:47:44] [Server thread/INFO]: milord issued server command: /br sphere ice 4
+[12:48:38] [Server thread/INFO]: milord issued server command: /br sphere snow_block 4
+[12:48:47] [Timer-1/INFO]: [zAuctionHouseV3 v3.0.9.3] C:\Users\paden\Desktop\minecraft server\Server\plugins\zAuctionHouseV3\items.json successfully saved !
+[12:49:53] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 60 seconds!
+[12:50:00] [Server thread/INFO]: milord issued server command: /brush unbind
+[12:50:15] [Server thread/INFO]: milord issued server command: /autosave
+[12:50:16] [AutoSaveWorld AutoSaveThread/INFO]: AutoSaving
+[12:50:17] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:50:17] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:50:17] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:50:17] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:50:17] [AutoSaveWorld AutoSaveThread/INFO]: AutoSave Complete
+[12:50:33] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 20 seconds!
+[12:50:44] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 11285ms or 225 ticks behind
+[12:50:44] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - git-Paper-379 (MC: 1.18.2) ---
+[12:50:45] [Server thread/INFO]: milord issued server command: //wand
+[12:50:45] [Paper Watchdog Thread/ERROR]: The server has not responded for 11 seconds! Creating thread dump
+[12:50:45] [Paper Watchdog Thread/ERROR]: ------------------------------
+[12:50:45] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[12:50:48] [Paper Watchdog Thread/ERROR]: ------------------------------
+[12:50:48] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[12:50:48] [Paper Watchdog Thread/ERROR]: 	PID: 25 | Suspended: false | Native: false | State: TIMED_WAITING
+[12:50:48] [Paper Watchdog Thread/ERROR]: 	Stack:
+[12:50:48] [Paper Watchdog Thread/ERROR]: 		java.base@17.0.3.1/jdk.internal.misc.Unsafe.park(Native Method)
+[12:50:48] [Paper Watchdog Thread/ERROR]: 		java.base@17.0.3.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+[12:50:48] [Paper Watchdog Thread/ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.waitForTasks(BlockableEventLoop.java:148)
+[12:50:48] [Paper Watchdog Thread/ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:137)
+[12:50:48] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1348)
+[12:50:48] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1230)
+[12:50:48] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316)
+[12:50:48] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer$$Lambda$4096/0x000000080148bb50.run(Unknown Source)
+[12:50:48] [Paper Watchdog Thread/ERROR]: 		java.base@17.0.3.1/java.lang.Thread.run(Thread.java:833)
+[12:50:48] [Paper Watchdog Thread/ERROR]: ------------------------------
+[12:50:48] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[12:50:48] [Paper Watchdog Thread/ERROR]: ------------------------------
+[12:51:04] [Server thread/INFO]: [Очистка мира] Removed 44 Entities!
+[12:51:07] [Server thread/WARN]: milord moved too quickly! -4.589543535374105,-16.514995336586253,2.779610648751259
+[12:51:19] [Server thread/INFO]: milord issued server command: //expand vert
+[12:51:29] [Server thread/INFO]: milord issued server command: /rg claim pre-spawn
+[12:51:38] [Server thread/INFO]: milord issued server command: /rg flags pre-spawn
+[12:51:45] [Server thread/INFO]: milord issued server command: /rg info
+[12:51:50] [Server thread/INFO]: milord issued server command: /rg info
+[12:51:51] [WorldGuard Region I/O/INFO]: [WorldGuard] Region data changes made in 'world' have been background saved
+[12:51:53] [Server thread/INFO]: milord issued server command: /rg info spawn
+[12:51:59] [Server thread/INFO]: milord issued server command: /rg flags pre-spawn
+[12:52:17] [Server thread/INFO]: milord lost connection: Disconnected
+[12:52:18] [Server thread/INFO]: milord left the game
+[12:53:00] [AutoSaveWorld AutoSaveThread/INFO]: AutoSaving
+[12:53:04] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:53:04] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:53:04] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:53:04] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[12:53:04] [AutoSaveWorld AutoSaveThread/INFO]: AutoSave Complete
+[12:54:24] [Server thread/INFO]: Updating leaderboards
+[12:54:24] [Craft Scheduler Thread - 226 - MoneyHunters/INFO]: [MoneyHunters] Auto-save: Saved 0 online users | 0 offline users.
+[12:54:26] [Server thread/INFO]:    >> Saved 0 Layers
+[12:54:26] [Server thread/INFO]:    >> Saved 0 Loot Tables
+[12:54:26] [Server thread/INFO]:    >> Saved 0 Resources
+[12:54:26] [Server thread/INFO]:    >> Saved 0 Locations
+[12:57:44] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 60 seconds!
+[12:58:24] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 20 seconds!
+[12:58:44] [Server thread/INFO]: [Очистка мира] Removed 1 Entities!
+[13:03:47] [Timer-1/INFO]: [zAuctionHouseV3 v3.0.9.3] C:\Users\paden\Desktop\minecraft server\Server\plugins\zAuctionHouseV3\items.json successfully saved !
+[13:04:24] [Server thread/INFO]: Updating leaderboards
+[13:04:24] [Craft Scheduler Thread - 251 - MoneyHunters/INFO]: [MoneyHunters] Leaderboards updated!
+[13:04:26] [Server thread/INFO]:    >> Saved 0 Layers
+[13:04:26] [Server thread/INFO]:    >> Saved 0 Loot Tables
+[13:04:26] [Server thread/INFO]:    >> Saved 0 Resources
+[13:04:26] [Server thread/INFO]:    >> Saved 0 Locations
+[13:05:24] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 60 seconds!
+[13:06:04] [Server thread/INFO]: [Очистка мира] Warning Ground items will be removed in 20 seconds!
+[13:06:24] [Server thread/INFO]: [Очистка мира] Removed 0 Entities!
+[13:08:06] [AutoSaveWorld AutoSaveThread/INFO]: AutoSaving
+[13:08:06] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[13:08:06] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[13:08:06] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[13:08:06] [AutoSaveWorld AutoSaveThread/ERROR]: [AutoSaveWorld] Could not dump RegionFileCache
+java.lang.RuntimeException: Can't find method saveLevel with params length 0
+	at autosaveworld.utils.ReflectionUtils.getMethod(ReflectionUtils.java:49) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.dumpRegionCache(AutoSaveThread.java:135) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.performSave(AutoSaveThread.java:122) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.features.save.AutoSaveThread.doTask(AutoSaveThread.java:70) ~[AutoSaveWorld.jar:?]
+	at autosaveworld.utils.Threads$IntervalTaskThread.run(Threads.java:103) ~[AutoSaveWorld.jar:?]
+[13:08:06] [AutoSaveWorld AutoSaveThread/INFO]: AutoSave Complete
+[13:11:59] [Server thread/INFO]: Stopping the server
+[13:11:59] [Server thread/INFO]: Stopping server
+[13:11:59] [Server thread/INFO]: [QualityArmory] Disabling QualityArmory v2.0.6
+[13:11:59] [Server thread/INFO]: [WGExtender] Disabling WGExtender v3.0
+[13:11:59] [Server thread/INFO]: [MoneyHunters] Disabling MoneyHunters v7.0.3 Pro
+[13:11:59] [Server thread/INFO]: [MoneyHunters] Auto-save: Saved 0 online users | 0 offline users.
+[13:11:59] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.7+216b061
+[13:11:59] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
+[13:11:59] [Server thread/INFO]: [AuthMe] Disabling AuthMe v5.6.0-SNAPSHOT-b2501
+[13:12:00] [Server thread/INFO]: [AuthMe] Waiting for 0 tasks to finish
+[13:12:00] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-SNAPSHOT-b2501 disabled!
+[13:12:00] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.19.5-dev+19-96c6c95
+[13:12:00] [Server thread/INFO]: [NexEngine] Disabling NexEngine v2.1.2 build-18/05/2022
+[13:12:00] [Server thread/INFO]: [Multiverse-Portals] Disabling Multiverse-Portals v4.2.1-b834
+[13:12:00] [Server thread/INFO]: [TAB] Disabling TAB v3.1.1
+[13:12:00] [Server thread/INFO]: [TAB] §aDisabled in 83ms
+[13:12:00] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.19.5-dev+19-96c6c95
+[13:12:00] [Server thread/INFO]: [DeluxeMenus] Disabling DeluxeMenus v1.13.5-Release
+[13:12:00] [Server thread/INFO]: [ChestCommands] Disabling ChestCommands v4.0.3
+[13:12:00] [Server thread/INFO]: [ajParkour] Disabling ajParkour v2.12.10
+[13:12:00] [Server thread/INFO]: [ajParkour] Removing all active players from parkour because the plugin is disabling.
+[13:12:00] [Server thread/INFO]: ajParkour v2.12.10 by ajgeiss0702 has been disabled!
+[13:12:00] [Server thread/INFO]: [ProSkyWars] Disabling ProSkyWars v1.0
+[13:12:02] [Server thread/INFO]: [zAuctionHouseV3] Disabling zAuctionHouseV3 v3.0.9.3
+[13:12:02] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] === DISABLE START ===
+[13:12:02] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] C:\Users\paden\Desktop\minecraft server\Server\plugins\zAuctionHouseV3\config.json successfully saved !
+[13:12:02] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] C:\Users\paden\Desktop\minecraft server\Server\plugins\zAuctionHouseV3\items.json successfully saved !
+[13:12:02] [Server thread/INFO]: [zAuctionHouseV3 v3.0.9.3] === DISABLE DONE (133ms) ===
+[13:12:02] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.3.1-b861
+[13:12:02] [Server thread/INFO]: [Essentials] Disabling Essentials v2.19.5-dev+19-96c6c95
+[13:12:02] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[13:12:03] [Server thread/INFO]: [DecentHolograms] Disabling DecentHolograms v2.4.2
+[13:12:03] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.2.10+1742f98
+[13:12:03] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[13:12:03] [Server thread/INFO]: [MyCommand] Disabling MyCommand v5.7.2
+[13:12:03] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-* MyCommand v.5.7.2*-=-=-=-=-=-=-=-=-=-*
+[13:12:03] [Server thread/INFO]: | Tasks : Stopped all tasks.
+[13:12:03] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-=-*    Bye!   *-=-=-=-=-=-=-=-=-=-=-*
+[13:12:03] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[13:12:03] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion: vault
+[13:12:03] [Server thread/INFO]: [Resources] Disabling Resources v1.7
+[13:12:03] [Server thread/INFO]:    >> Saved 0 Layers
+[13:12:03] [Server thread/INFO]:    >> Saved 0 Loot Tables
+[13:12:03] [Server thread/INFO]:    >> Saved 0 Resources
+[13:12:03] [Server thread/INFO]:    >> Saved 0 Locations
+[13:12:03] [Server thread/INFO]: [BlockBlocker] Disabling BlockBlocker v0.65
+[13:12:03] [Server thread/INFO]: [BlockBlocker] [STDOUT] BlockBlocker v0.65 disable
+[13:12:03] [Server thread/WARN]: Nag author(s): '[moon_werewolf]' of 'BlockBlocker' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[13:12:03] [Server thread/INFO]: [DamageIndicator] Disabling DamageIndicator v1.2.0
+[13:12:03] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v14.1.15
+[13:12:03] [Server thread/INFO]: [MultiWorld] Disabling MultiWorld v5.2.8
+[13:12:03] [Server thread/INFO]: [MultiWorld] Disabled.
+[13:12:03] [Server thread/INFO]: [AutoSaveWorld] Disabling AutoSaveWorld v4.15
+[13:12:03] [Server thread/INFO]: AutoSaving
+[13:12:03] [Server thread/INFO]: AutoSave Complete
+[13:12:09] [Server thread/INFO]: [ClearLag] Disabling ClearLag v2.7.7
+[13:12:09] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.1
+[13:12:09] [Server thread/INFO]: [Chunky] Disabling Chunky v1.2.202
+[13:12:09] [Server thread/INFO]: [Tim] Disabling TimTheEnchanter v2.1
+[13:12:09] [Server thread/INFO]: [Colored Signs] Disabling ColoredSigns v5.0.0
+[13:12:09] [Server thread/INFO]: Colored Signs is now disabled!
+[13:12:09] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.30
+[13:12:09] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[13:12:09] [Server thread/INFO]: [LuckPerms] Closing storage...
+[13:12:09] [Server thread/INFO]: [LuckPerms] Goodbye!
+[13:12:09] [Server thread/INFO]: Saving players
+[13:12:09] [Server thread/INFO]: Saving worlds
+[13:12:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[13:12:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[13:12:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[13:12:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[SkyWarsMap]'/minecraft:skywarsmap
+[13:12:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[13:12:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[13:12:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[13:12:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (SkyWarsMap): All chunks are saved
+[13:12:16] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[13:12:19] [Server thread/INFO]: Saving usercache.json
+[13:12:19] [Server thread/INFO]: Flushing Chunk IO
+[13:12:19] [Server thread/INFO]: Closing Thread Pool
+[13:12:19] [Server thread/INFO]: Closing Server

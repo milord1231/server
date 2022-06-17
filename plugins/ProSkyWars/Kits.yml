@@ -11,75 +11,65 @@
 # - SPLASH_POTION:10:1
 # You can find potion types here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionType.html
 kits:
-  Pyro:
+  Creative:
     displayitem: FLINT_AND_STEEL
     permission: none
     rarity: Common
-    price: 500
+    price: 50
     lore:
-      - '&7Set everyone on fire and'
-      - '&7watch them burn while'
-      - '&7you laugh and swim in lava'
-    armoritems:
-      - 'LEATHER_CHESTPLATE:PROTECTION_FIRE;5,DAMAGE_ALL;1' 
+      - '&7Застройся или доберись до центра с помощью блоков!'
     items:
-      - 'FLINT_AND_STEEL:0:1'
-      - 'LAVA_BUCKET:0:2'
+      -'DIRT:0:30'
+      -'STONE_SHOVEL:0:1'
   Archer:
     displayitem: BOW
     permission: none
     rarity: Rare
     price: 500
     lore:
-      - '&7Shoot your enemies and'
-      - '&7kill them all!'
+      - '&7Стреляй во врагов!'
     armoritems:
-      - 'LEATHER_CHESTPLATE:PROTECTION_FIRE;5,DAMAGE_ALL;1' 
+      - 'IRON_CHESTPLATE:0:1' 
     items:
       - 'BOW:0:1'
-      - 'ARROW:0:10'
-  ArmorSmith:
-    displayitem: ANVIL
+      - 'ARROW:0:30'
+  Armorer:
+    displayitem: DIAMOND_CHESTPLATE
     permission: none
-    rarity: Common
-    price: 500
+    rarity: Epic
+    price: 3400
     lore:
-      -'&7Upgrade your items'
+      -'&7Я БРОНИРОВАННЫЙ!'
     armoritems:
       - 'DIAMOND_HELMET'
-    items:
-      - 'ANVIL:0:1'
-      - 'ENCHANTED_BOOK:0:1:PROTECTION_ENVIRONMENTAL;3'
-      - 'ENCHANTED_BOOK:0:1:DAMAGE_ALL;1'
-      - 'EXP_BOTTLE:0:1'
-  Armorer:
-    displayitem: LEATHER_CHESTPLATE
+      - 'DIAMOND_CHESTPLATE'
+      - 'DIAMOND_LEGGINGS'
+      - 'DIAMOND_BOOTS'
+  ArmorerPRO:
+    displayitem: NETHERITE_CHESTPLATE
     permission: none
-    rarity: COMMON
-    price: 500
+    rarity: Legendary
+    price: 10000
     lore:
-      - '&7Receive a leather chest and leggings'
-      - '&7that will help you stay alive'
-      - '&7in the early stages'
+      - '&7Я еще более бронированный!'
     armoritems:
-      - 'LEATHER_CHESTPLATE'
-      - 'LEATHER_LEGGINGS'
+      - 'NETHERITE_HELMET'
+      - 'NETHERITE_CHESTPLATE'
+      - 'NETHERITE_LEGGINGS'
+      - 'NETHERITE_BOOTS'
     items:
-      - 'BREAD:0:2'
-  Miner:
-    displayitem: STONE_PICKAXE
+      - 'DIAMOND_SWORD:0:1'
+  God:
+    displayitem: NETHER_STAR
     permission: none
-    rarity: COMMON
-    price: 500
+    rarity: LegendaryX
+    price: 1000000
     lore:
-      - '&7Your enchanted pickaxe will help'
-      - '&7you mine faster than any one'
-      - '&7giving you the advantage to get'
-      - '&7decent gear and trap others'
+      - '&7Легкая победа?'
     armoritems:
-      - 'IRON_HELMET:PROTECTION_EXPLOSIONS;2'
+      - 'NETHERITE_HELMET:0:1'
+      - 'NETHERITE_CHESTPLATE:0:1'
+      - 'NETHERITE_LEGGINGS:0:1'
+      - 'NETHERITE_BOOTS:0:1'
     items:
-      - 'STONE_PICKAXE:0:1:DIG_SPEED;1,DURABILITY;3'
-      - 'COOKED_BEEF:0:2'
-      - 'TNT:0:1'
-      - 'REDSTONE_TORCH_ON:0:1'
+      - 'DIAMOND_SWORD:0:1'

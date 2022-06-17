@@ -15,9 +15,9 @@ regions:
         max: {x: -7589562, y: 53, z: -12361140}
         members: {}
         flags:
-            natural-health-regen: allow
-            other-explosion: deny
             deny-message: §cЗдесь нельзя использовать команду %what%
+            other-explosion: deny
+            natural-health-regen: allow
             oldpvp-attackspeed: false
             oldpvp-noshieldblock: false
             invincible: deny
@@ -26,8 +26,8 @@ regions:
             enderdragon-block-damage: deny
             snowman-trails: deny
             mob-damage: deny
-            ravager-grief: deny
             entity-painting-destroy: deny
+            ravager-grief: deny
             heal-amount: 0
             heal-delay: 1
             use-anvil: allow
@@ -40,9 +40,9 @@ regions:
             item-drop: allow
             creeper-explosion: deny
             exp-drops: allow
+            fall-damage: allow
             game-mode: survival
             blocked-cmds: [/heal, /gm 1, /spawn, /god]
-            fall-damage: allow
             item-pickup: allow
             damage-animals: deny
             entry-deny-message: §cЭтого делать здесь нельзя!
@@ -56,17 +56,17 @@ regions:
         min: {x: -7589647, y: -64, z: -12361193}
         max: {x: -7589476, y: 319, z: -12361013}
         members: {}
-        flags: {time-lock: day, other-explosion: deny, lava-fire: deny, frosted-ice-form: deny,
+        flags: {other-explosion: deny, time-lock: day, lava-fire: deny, frosted-ice-form: deny,
             mycelium-spread: deny, water-flow: allow, invincible: allow, leaf-decay: deny,
-            ice-melt: deny, snow-fall: deny, chest-access: allow, weather-lock: clear,
+            snow-fall: deny, ice-melt: deny, chest-access: allow, weather-lock: clear,
             fire-spread: deny, heal-min-health: 10.0, enderdragon-block-damage: deny,
             coral-fade: deny, snowman-trails: deny, rock-growth: deny, mob-damage: deny,
-            ravager-grief: deny, entity-painting-destroy: deny, heal-amount: 20, heal-delay: 5,
-            mushroom-growth: deny, lightning: deny, wither-damage: deny, ice-form: deny,
-            enderman-grief: deny, pvp: deny, crop-growth: deny, soil-dry: deny, creeper-explosion: deny,
-            send-chat: allow, exp-drops: deny, vine-growth: deny, heal-max-health: 20.0,
-            frosted-ice-melt: deny, snow-melt: deny, lava-flow: allow, receive-chat: allow,
-            ghast-fireball: deny, grass-growth: deny}
+            entity-painting-destroy: deny, ravager-grief: deny, heal-amount: 20, heal-delay: 5,
+            mushroom-growth: deny, lightning: deny, ice-form: deny, wither-damage: deny,
+            enderman-grief: deny, pvp: deny, crop-growth: deny, creeper-explosion: deny,
+            soil-dry: deny, send-chat: allow, exp-drops: deny, vine-growth: deny,
+            heal-max-health: 20.0, snow-melt: deny, frosted-ice-melt: deny, receive-chat: allow,
+            lava-flow: allow, ghast-fireball: deny, grass-growth: deny}
         owners:
             unique-ids: [476dc8ad-7e3a-3e8f-bed1-2a2a1cac7033]
         type: cuboid
@@ -76,4 +76,13 @@ regions:
         flags: {}
         owners: {}
         type: global
+        priority: 0
+    pre-spawn:
+        min: {x: -7589734, y: -64, z: -12361247}
+        max: {x: -7589357, y: 319, z: -12360926}
+        members: {}
+        flags: {}
+        owners:
+            unique-ids: [476dc8ad-7e3a-3e8f-bed1-2a2a1cac7033]
+        type: cuboid
         priority: 0
